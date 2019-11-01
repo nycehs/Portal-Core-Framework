@@ -9333,7 +9333,7 @@ address:last-child {
 }
 
 hr {
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 html[dir="rtl"] .text-right {
