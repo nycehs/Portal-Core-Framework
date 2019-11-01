@@ -284,19 +284,6 @@ body {
 	}
 
 
-	/*custom color for select menu*/
-	select:focus {
-		content: attr(title);
-		background: #666;
-		color: #A513B6;
-		position: absolute;
-		width: 100%;
-		left: 0;
-		border: none;
-	}
-
-
-
 	/*this hides descriptions on the NR selection page*/
 	.tab-container {
 		display: none;
