@@ -239,7 +239,7 @@
 
                     <div class="nav-item dropdown">
     
-                        <a class="nav-link li-modal" href="modal.html" id="nav-item-03" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
+                        <a class="nav-link li-modal" href="Modal.html" id="nav-item-03" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
                         </a>    
                     </div>
                     <!-- .nav-item -->
@@ -279,6 +279,28 @@
                  <div class="row">
                     <div class="col-lg-6">
                         <h3>1. Choose report</h3>
+                        <select class="form-control form-control-lg" id="report" name="report" required size="5" style="overflow-y:hidden;">
+                            <option value="Asthma">Asthma and the environment</option>
+                            <option value="Climate">Climate and health</option>
+                            <option value="Housing">Housing and health</option>
+                            <option value="Outdoor">Outdoor air and health</option>
+                            <option value="Active">Active design, physical activity, and health</option>
+
+                        </select>
+
+                        <div id="information">click  for information</div>
+                        <div id="Asthma" class="tab-container"> <h4>Asthma and the environment</h4>
+                            <p>Asthma is a leading cause of hospitalizations for children. It can be made worse by housing and neighborhood characteristics. There are powerful inequities that drive racial disparities in asthma in NYC.</p></div>
+                        <div id="Climate" class="tab-container"> <h4>Climate and health</h4>
+                            <p>As the climate changes, we track New York City's risk for extreme heat, storms and flooding, and episodes of elevated ozone. These have important public health impacts: already, heat kills more people than all other natural disasters.</p></div>
+                        <div id="Housing" class="tab-container"> <h4>Housing and health</h4>
+                            <p>Housing conditions can drive health outcomes like asthma, lead poisoning, and carbon monoxide poisoning. We track housing neighborhood characteristics that can put people at risk - and special populations that are vulnernerable.</p></div>
+                        <div id="Outdoor" class="tab-container">  <h4>Outdoor air and health</h4>
+                            <p>Air pollution is one of the most important environmental threats to people who live in urban areas. Exposures are linked to respiratory and heart diseases, cancers, and premature deaths. Meanwhile, emissions, levels of exposure, and population vulnerability vary across neighborhoods. </p></div>
+                        <div id="Active" class="tab-container"> <h4>Active design, physical activity, and health</h4>
+                            <p>The design and condition of buildings, streets, public transportation, and parks influence how much physical activity people get, how much they use active transportation, and how much other healthy behavior they do. A neighborhood built environment can also affect the safety of its residents. </p></div>
+
+                        <!--
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <a class="nav-link active" id="v-pills-asthma-tab" data-toggle="pill" href="#v-pills-asthma" role="tab" aria-controls="v-pills-asthma" aria-selected="true">Asthma and the environment</a>
                                 <a class="nav-link" id="v-pills-Climate-tab" data-toggle="pill" href="#v-pills-Climate" role="tab" aria-controls="v-pills-Climate" aria-selected="false">Climate and health</a>
@@ -286,6 +308,7 @@
                                 <a class="nav-link" id="v-pills-Outdoor-tab" data-toggle="pill" href="#v-pills-Outdoor" role="tab" aria-controls="v-pills-Outdoor" aria-selected="false">Outdoor air and health</a>
                                 <a class="nav-link" id="v-pills-Active-tab" data-toggle="pill" href="#v-pills-Active" role="tab" aria-controls="v-pills-Active" aria-selected="false">Active design and physical activity</a>
                               </div>
+                              <hr>
                               <div class="tab-content" id="v-pills-tabContent">
                                 <br>
                                 <div class="tab-pane fade show active" id="v-pills-asthma" role="tabpanel" aria-labelledby="v-pills-asthma-tab">
@@ -306,6 +329,7 @@
                                     <h4>Active design, physical activity, and health</h4>
                                     <p>The design and condition of buildings, streets, public transportation, and parks influence how much physical activity people get, how much they use active transportation, and how much other healthy behavior they do. A neighborhood built environment can also affect the safety of its residents. </p></div>
                               </div>
+                              -->
                                               
 
                     </div>
@@ -559,6 +583,26 @@
       $('#theModal').modal('show').find('.modal-content').load($(this).attr('href'));
     });
   </script>
+
+
+<!--this script makes the menu display some content-->
+<script>
+// on change event watches for selection on the <select>
+    $('.form-control').on('change', function(event) {
+  // event prevent default prevents any unintended behavior
+  event.preventDefault();
+  // get all the tabs for later use
+  var tabs = $('.tab-container');
+  // get the value of the select option for use in targeting the desired tab
+  var target = event.target.value;
+  // old non es6 dumb way of combining target w/ jquery selector function
+  var targetTab = $('#' + target);
+  // toggle css classes to adjust content visibility by removing open class from all tabs to reset visiblity, then adding open to target to display it. 
+  tabs.removeClass('open');
+  targetTab.addClass('open');
+});
+</script>
+
 
 </body>
 
