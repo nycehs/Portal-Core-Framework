@@ -14,13 +14,13 @@
     <title>Data Stories: EH Data Portal</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css"
 
     <!-- NYC Theme CSS -->
-    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="/css/theme.css">
 
     <!-- Custom Portal CSS -->
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="/css/custom.css">
 
 </head>
 
@@ -29,59 +29,8 @@
     <!-- For keyboard users -->
     <a class="sr-only sr-only-focusable skip-menu" href="#skip-header-target">Skip Header</a>
 
-    <header id="global-header" class="titleslide" role="banner" style="background-image: url(images/background.png);">
+    <header id="global-header" class="titleslide" role="banner" style="background-image: url(/images/background.png);">
 
-        <div class="bg-black text-white" id="nyc-top-header">
-
-            <div class="container-fluid wide">
-
-                <div class="row py-1 align-items-center justify-content-between">
-
-                    <div class="col-auto">
-                        <p class="d-none d-md-flex fs-md">
-                            <a class="text-reset" href="https://www1.nyc.gov/">
-                                <strong>nyc.gov</strong>
-                            </a>
-                            <span class="mx-1" aria-hidden="true">|</span>
-                            Department of Health
-                        </p>
-                    </div>
-                    <!-- .col -->
-
-                    <div class="col-auto">
-
-                        <ul class="extensible-list horizontal fs-md">
-                            <li>
-                                <a class="text-reset" href="http://www1.nyc.gov/">
-                                    <strong>
-                                        311
-                                    </strong>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-reset" href="http://www1.nyc.gov/home/search/index.page">
-                                    <strong>
-                                        Search all NYC.gov
-                                    </strong>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www1.nyc.gov/" title="Go to nyc.gov">
-                                    <img class="d-block" src="../images/nyc-bubble-logo.svg" width="45" alt="NYC Logo">
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- .col -->
-
-                </div>
-                <!-- .row -->
-
-            </div>
-            <!-- .container-fluid -->
-
-        </div>
         <!-- #nyc-top-header -->
 
         <div class="wrap-header">
@@ -192,22 +141,250 @@
     </header>
     <!-- #global-header -->
 
+    <!--this div specifics TK but it overlaps a blank bit on Main and we'll use it for our "back" header"-->
+<div style="margin-bottom: -48px; height: 48px; background: #000000; color: #fff">back</div>
+    <!--end div work TK-->
+
+    <main role="main">
 
 
-    <main id="skip-header-target" role="main" style="background-color:#f8f9fa;">
-     <div class="container wide">
-        IMAGE GOES HERE
-     </div>
-
-     <DIV CLASS="container medium">header goes here</DIV>
-
-     <div class="container narrow"><p>Text goes here. However I think I want to use the example-article-single-column instead just for simplicity. Will still need to re-source all the referenced files for the folder but that's okay. Will I need different folders for title images? Maybe but you can maybe rebuild things.</p> </div>
+        <!-- Add your custom image class below (replace 'oculus' with your own custom class) -->
+        <div class="bg-primary d-flex flex-column titlesection" style="background-image: url(title1.jpg);">
 
 
+            <div class="container my-auto">
+                <div class="row">
+                    <div class="col-lg-9 offset-lg-3">
+                        <div class="narrow my-3">
+                            <h1>A new look for the Environment & Health Data Portal</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Toggle #sidebar-nav on mobile -->
+            <div class="container d-lg-none">
 
-        
+                <div class="narrow">
+
+                    <div class="btn-toggle narrow">
+                        <button class="btn btn-block btn-lg btn-primary shadow" data-toggle="collapse"
+                            data-target="#sidebar-nav" aria-expanded="false" aria-controls="sidebar-nav">
+                            <span class="title">Title</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <article class="container" id="skip-header-target">
+
+            <div class="row">
+
+                <div class="col-lg-3 collapse d-lg-block" id="sidebar-nav">
+
+                    <div class="mt-5">
+
+                        <a class="sr-only sr-only-focusable skip-menu" href="#primary-content" title="Skip Nav">Skip Nav</a>
+
+                        <nav role="navigation">
+
+                            <div class="list-group custom-active">
+                                <a href="#1" class="list-group-item list-group-item-action active" aria-current="page">
+                                    Link
+                                </a>
+                                <a href="#1" class="list-group-item list-group-item-action">
+                                    Link
+                                </a>
+                                <a href="#1" class="list-group-item list-group-item-action">
+                                    Link
+                                </a>
+                                <a href="#1" class="list-group-item list-group-item-action">
+                                    Link
+                                </a>
+                                <a href="#1" class="list-group-item list-group-item-action">
+                                    Link
+                                </a>
+                            </div>
+
+                        </nav>
+
+                    </div>
+                    <!-- .sticky-top -->
+
+                </div>
+                <!-- .col -->
+
+                <div class="col-lg-9 overflow-hidden" id="primary-content">
+
+                    <div class="my-5">
+
+                        <div class="narrow my-4">
+
+                            <h2>Lorem ipsum dolor sit amet</h2>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi mi
+                                dictumst porttitor <a href="#1">est volutpat</a>.
+                            </p>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                        </div>
+                        <!-- .narrow -->
+
+                        <div class="medium my-4">
+
+                            <figure class="figure">
+                                <img class="figure-img" src="https://via.placeholder.com/1000x500" alt="Placeholder">
+                                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                            </figure>
+
+                        </div>
+                        <!-- .container -->
+
+                        <div class="narrow my-4">
+
+                            <h2>Excepteur sint occaecat</h2>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                        </div>
+                        <!-- .narrow -->
+
+                        <footer class="narrow my-4" id="article-footer">
+
+                            <div class="border-top border-dark pt-3">
+
+                                <ul class="extensible-list horizontal text-muted" id="share-buttons">
+                                    <li class="text-muted">
+                                        <span class="fas fa-share" title="Share this page" ></span>
+                                    </li>
+                                    <li>
+                                        <a class="text-muted" href="#" title="Share on Facebook">
+                                            <span class="fab fa-facebook-f"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-muted" href="#" title="Share on Twitter">
+                                            <span class="fab fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-muted" href="#" title="Share through email">
+                                            <span class="fa fa-envelope"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- .narrow -->
+
+                        </footer>
+                        <!-- #article-footer -->
+
+                    </div>
+                    <!-- .my-5 -->
+
+                </div>
+                <!-- #primary-content -->
+
+            </div>
+            <!-- .row -->
+
+        </article>
+        <!-- #primary-content -->
+
     </main>
+
+
+
+    
+
 
     <footer class="bg-black" id="global-footer" role="contentinfo">
 
@@ -419,7 +596,7 @@
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- NYC template JS (RTL, search and language toggle, back to top)  -->
-    <script src="../js/main.js"></script>
+    <script src="/js/main.js"></script>
 
 
 

@@ -292,3 +292,24 @@ body {
 	  .tab-container.open {
 		display: block;
 	  }
+
+
+
+	  /*styles for data stories */
+
+	  .titlesection {
+		  background-size: cover;
+		  width: 100%;
+		  height: 400px;
+	  }
+
+	  .titlesection h1{
+		padding-top: 15px;
+		position: middle;
+		padding-bottom: 15px;
+		background-color: rgba(132,132,132,0.5);
+		color: #fff;
+		text-align: center;
+		font-size: 3em;
+		margin-bottom: 15px;
+	}
