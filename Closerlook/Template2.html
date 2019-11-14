@@ -57,10 +57,11 @@
     </header>
     <!-- #global-header -->
 
+    <body class="scrollspy-container" data-spy="scroll" data-target="#myScrollspy" data-offset="20" >
     <main role="main">
 
         <!-- Add your custom image class below (replace 'oculus' with your own custom class) -->
-        <div class="bg-primary banner-with-background oculus d-flex flex-column" style="height: 500px;">
+        <div class="bg-primary banner-with-background oculus d-flex flex-column" style="height: 450px;">
 
             <div class="container-fluid my-auto">
                 <div class="narrow my-3">
@@ -91,27 +92,25 @@
 
                     <div class="sticky-top narrow collapse d-xl-block" id="sidebar-nav">
 
-                        <nav class="mx-xl-n2 pt-4 py-xl-0" role="navigation">
+                        <nav class="mx-xl-n2 pt-4 py-xl-0" role="navigation" id="myScrollspy">
 
                             <a class="sr-only sr-only-focusable skip-menu" href="#primary-content">Skip Nav</a>
 
                             <div class="list-group list-group-flush border-bottom" role="list">
 
-                                <a href="#1" class="list-group-item list-group-item-action active" aria-current="page" role="listitem">
-                                    Link
+                                <a href="#section1" class="list-group-item list-group-item-action active" aria-current="page" role="listitem">
+                                    Section 1
                                 </a>
-                                <a href="#1" class="list-group-item list-group-item-action" role="listitem">
-                                    Link
+                                <a href="#section2" class="list-group-item list-group-item-action" role="listitem">
+                                    Section 2
                                 </a>
-                                <a href="#1" class="list-group-item list-group-item-action" role="listitem">
-                                    Link
+                                <a href="#section3" class="list-group-item list-group-item-action" role="listitem">
+                                    Section 3
                                 </a>
-                                <a href="#1" class="list-group-item list-group-item-action" role="listitem">
-                                    Link
+                                <a href="#section4" class="list-group-item list-group-item-action" role="listitem">
+                                    Section 4
                                 </a>
-                                <a href="#1" class="list-group-item list-group-item-action" role="listitem">
-                                    Link
-                                </a>
+
 
                             </div>
 
@@ -129,7 +128,7 @@
 
                         <div class="narrow my-4">
 
-                            <h2>Lorem ipsum dolor sit amet</h2>
+                            <h2 id="section1">Lorem ipsum dolor sit amet</h2>
 
                             <p>
                                 Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
@@ -164,97 +163,17 @@
                                 dictumst porttitor est volutpat.
                             </p>
 
-                            <div class="accordion-group my-4" role="tablist" id="accordion-01">
-
-                                <div class="card">
-
-                                    <a class="card-header h4 collapse collapsed" id="acc-button-01"
-                                        data-toggle="collapse" href="#panel-acc-button-01" role="tab"
-                                        aria-expanded="false" aria-controls="panel-acc-button-01">
-                                        <span class="title" role="heading" aria-level="2">Accordion Title</span>
-                                    </a>
-
-                                    <div class="collapse" id="panel-acc-button-01" role="tabpanel"
-                                        aria-labelledby="acc-button-01" data-parent="#accordion-01">
-
-                                        <div class="card-body">
-                                            <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore debitis
-                                                provident
-                                                natus, unde fugit
-                                                voluptatibus quia molestias odit deleniti, maxime tempora quod magni sit
-                                                praesentium
-                                                ipsam neque
-                                                consequatur voluptates.
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                    <!-- .collapse -->
-
-                                </div>
-                                <!-- .card -->
-
-                                <div class="card">
-
-                                    <a class="card-header h4 collapse collapsed" id="acc-button-02"
-                                        data-toggle="collapse" href="#panel-acc-button-02" role="tab"
-                                        aria-expanded="false" aria-controls="panel-acc-button-02">
-                                        <span class="title" role="heading" aria-level="2">Accordion Title</span>
-                                    </a>
-
-                                    <div class="collapse" id="panel-acc-button-02" role="tabpanel"
-                                        aria-labelledby="acc-button-02" data-parent="#accordion-01">
-
-                                        <div class="card-body">
-                                            <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore debitis
-                                                provident
-                                                natus, unde fugit
-                                                voluptatibus quia molestias odit deleniti, maxime tempora quod magni sit
-                                                praesentium
-                                                ipsam neque
-                                                consequatur voluptates.
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                    <!-- .collapse -->
-
-                                </div>
-                                <!-- .card -->
-
-                                <div class="card">
-
-                                    <a class="card-header h4 collapse collapsed" id="acc-button-03"
-                                        data-toggle="collapse" href="#panel-acc-button-03" role="tab"
-                                        aria-expanded="false" aria-controls="panel-acc-button-03">
-                                        <span class="title" role="heading" aria-level="2">Accordion Title</span>
-                                    </a>
-
-                                    <div class="collapse" id="panel-acc-button-03" role="tabpanel"
-                                        aria-labelledby="acc-button-03" data-parent="#accordion-01">
-
-                                        <div class="card-body">
-                                            <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore debitis
-                                                provident
-                                                natus, unde fugit
-                                                voluptatibus quia molestias odit deleniti, maxime tempora quod magni sit
-                                                praesentium
-                                                ipsam neque
-                                                consequatur voluptates.
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                    <!-- .collapse -->
-
-                                </div>
-                                <!-- .card -->
-
-                            </div>
-                            <!-- .accordion-group -->
+                            <h3 id="section2">Section two</h3>
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi
+                                mi
+                                dictumst porttitor est volutpat.
+                            </p>
 
                             <p>
                                 Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
@@ -267,6 +186,30 @@
                                 dictumst porttitor est volutpat.
                             </p>
 
+                            <h3 id="section3">Section three</h3>
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi
+                                mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi
+                                mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                            <h3 id="section4">Section four</h3>
                             <p>
                                 Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
                                 pretium et
@@ -346,198 +289,10 @@
         <!-- #primary-content -->
 
     </main>
+</body>
     <!-- #content -->
 
-    <footer class="bg-black" id="global-footer" role="contentinfo">
 
-        <h2 class="sr-only">
-            Page Footer
-        </h2>
-
-        <div class="bg-opacity-black-25 text-white" id="nyc-footer">
-
-            <div class="container py-3 d-none" id="languages">
-
-                <div class="row fs-md">
-
-                    <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
-                        <ul class="extensible-list">
-                            <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
-                            <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
-                        <ul class="extensible-list">
-                            <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
-                            <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
-                        <ul class="extensible-list">
-                            <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
-                            <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
-                        <ul class="extensible-list">
-                            <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
-                            <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg">
-                        <ul class="extensible-list">
-                            <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
-                            <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            <!-- #languages -->
-
-            <div class="container py-3" id="languages">
-
-                <ul class="fs-md" role="list">
-                    <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
-                    <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
-                    <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
-                    <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
-                    <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
-                    <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
-                    <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
-                    <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
-                    <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
-                    <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
-                </ul>
-
-            </div>
-            <!-- #languages -->
-
-            <hr class="opacity-10" aria-hidden="true">
-
-            <div class="container py-3">
-
-                <div class="row">
-
-                    <div class="col-md-6 col-lg-8 mb-3 mb-lg-0">
-
-                        <nav class="row fs-md" role="navigation">
-
-                            <div class="col-lg mb-3 mb-lg-0">
-
-                                <ul class="extensible-list">
-                                    <li>
-                                        <a class="text-reset" href="http://www1.nyc.gov/nyc-resources/agencies.page">
-                                            <strong>City Agencies</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-reset" href="https://a858-nycnotify.nyc.gov/notifynyc/">
-                                            <strong>Notify NYC</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-reset"
-                                            href="http://www1.nyc.gov/connect/mobile-applications.page">
-                                            <strong>NYC Mobile Apps</strong>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- .col -->
-
-                            <div class="col-lg mb-3 mb-lg-0">
-
-                                <ul class="extensible-list">
-                                    <li>
-                                        <a class="text-reset" href="http://www1.nyc.gov/home/contact-us.page">
-                                            <strong>Contact NYC Government</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-reset" href="https://a856-citystore.nyc.gov/">
-                                            <strong>CityStore</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-reset" href="http://maps.nyc.gov/doitt/nycitymap/">
-                                            <strong>Maps</strong>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <!-- .col -->
-
-                            <div class="col-lg mb-3 mb-lg-0">
-
-                                <ul class="extensible-list">
-                                    <li>
-                                        <a class="text-reset"
-                                            href="https://a127-ess.nyc.gov/psp/prdess/?cmd=login&languageCd=ENG&">
-                                            <strong>City Employees</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-reset" href="http://www1.nyc.gov/connect/social-media.page">
-                                            <strong>Stay Connected</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-reset"
-                                            href="http://www1.nyc.gov/nyc-resources/resident-toolkit.page">
-                                            <strong>Resident Toolkit</strong>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <!-- .col -->
-
-                        </nav>
-
-                    </div>
-                    <!-- .col -->
-
-                    <div class="col-md-6 col-lg-4">
-
-                        <a class="mb-2" href="https://www1.nyc.gov" title="Go to nyc.gov" target="_blank">
-                            <img class="mb-2" src="../images/nyc-bubble-logo.svg" width="90" alt="NYC Logo">
-                        </a>
-                        <p class="fs-sm">City of New York - 2019 All Rights Reserved. NYC is a trademark and service
-                            mark of the City of New York.</p>
-
-                        <ul class="extensible-list horizontal fs-sm">
-                            <li>
-                                <a class="text-reset" href="http://www1.nyc.gov/home/privacy-policy.page">Privacy
-                                    Policy</a>
-                            </li>
-                            <li>
-                                <a class="text-reset" href="http://www1.nyc.gov/home/terms-of-use.page">Terms
-                                    of Use</a>
-                            </li>
-                            <li>
-                                <a class="text-reset" href="http://www1.nyc.gov/site/mopd/index.page"
-                                    title="Mayor's Office for People with Disabilities">
-                                    <span class="sr-only">Mayor's Office for People with Disabilities</span>
-                                    <span class="fab fa-lg fa-accessible-icon"></span>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- .col -->
-
-                </div>
-                <!-- .row -->
-
-            </div>
-            <!-- .container -->
-
-        </div>
-        <!-- #nyc-bottom-footer -->
-
-    </footer>
 
     <!-- jQuery (full, compressed version) -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
