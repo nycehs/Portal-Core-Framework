@@ -11,7 +11,7 @@
     <!-- Corrects IE Compatibility Mode -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Outdoor Air Quality: EH Data Portal</title>
+    <title>Explore your neighborhood's air quality</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
@@ -266,141 +266,130 @@
 
 
     <main id="skip-header-target" role="main" style="background-color:#f8f9fa;">
-       
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2>Outdoor Air Quality: the NYC air quality data hub</h2>
-                        <p>New York City's air contains particles, drops of liquid, gasses, and other pollution that can affect health - it can affect our breathing, and bad air quality can be particularly dangerous for older adults, children, and people with heart or lung conditions.</p>
-                        <p>Air quality can vary from neighborhood to neighborhood, based on local levels of emmissions and many other factors. We monitor air quality using the New York City Community Air Survey (NYCCAS). NYCCAS is NYC's comprehensive air quality monitoring and modeling network, and it allows us to understand neighborhood differences in air quality - and what contributes to those differences.
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
 
-                        </p>
-
+                        <h3>The air quality in your neighborhood</h3>
                         <br>
-                    </div>
-
-                </div>
-
-
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
-                        <div class="card bg-light">
-                            <div class="card-header"><b><i class="fas fa-info-circle"></i>&nbsp;Annual Report</b></div>
-                            <img src="../images/nyccasbanner.jpg" class="card-img-top" alt="New York City seen from an airplane">
-                            <div class="card-body">
-                                <a href="https://nyc-ehs.net/besp-report/web/nyccas">Neighborhood Air Quality 2008-2018</a>: pollutants, key factors, and air quality trends over time in New York City.
-                            </div>
-
-                        </div>
+                        <p>So how's the air quality in your neighborhood? Enter an address to see concentrations of PM2.5 and NO2 in your neighborhood - and why.</p> 
                         <br>
+                        <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="125 Worth Street">
+                                    
+                                </div>
+                                <button type="submit" class="btn btn-primary mb-2 float-right">Submit</button>
+        
+                            </form>
+                            <br><br><br>
 
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
-                        <div class="card bg-light">
-                            <div class="card-header"><b><i class="fas fa-wind"></i>&nbsp;Neighborhood AQ browser</b></div>
-                            <img src="../images/airquality.jpg" class="card-img-top" alt="New York City seen from an airplane">
-                            <div class="card-body">
-                                <a href="AQExplorer.html">What affects air quality in your neighborhood?</a> Get data on your neighborhood's traffic, emissions, and air quality.
-                            </div>
-
-                        </div>
-                        <br>
-                        <div class="card bg-light">
-                            <div class="card-header"><b><i class="fas fa-map-marked-alt"></i>&nbsp;Neighborhood Report</b></div>
-                            <div class="card-body">
-                            See data on <a href="">outdoor air and health</a> in your neighborhood.
-                            </div>	
-                        </div>
-                        <br>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="card bg-light">
-                            <div class="card-header"><b><i class="fas fa-atlas"></i>&nbsp;Snapshots</b></div>
-                            <img src="../images/AQchart.PNG" class="card-img-top" alt="An image of a data chart">
-                            <div class="card-body">
-                                <li><a href="">Traffic and air toxics</a></li>
-                                <li><a href="">Traffic and noise</a></li>
-                                <li><a href="">Cleaner fuels: who benefits?</a></li>
-                                <li><a href="">Shifting to cleaner fuels - and cleaner air</a></li>
-                                <li><a href="">Monitoring for environmental justice</a></li>
-                                <hr>
-                                <li><a href="">Breathe easy - the air is getting better</a></li>
-                                <li><a href="">Why asthma is a social justice issue</a></li>
-                                <li><a href="">Going car-free - for cleaner air</a></li>
-                                <li><a href="">Air and NYC neighborhoods</a></li>
-
-                            </div>
-
-                        </div>
-
-                        <br>
-
-                    </div>
-
-                </div>
-                <br>
-                <hr>
-                <br>
-
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4><i class="fas fa-chart-line"></i>&nbsp;Get the data: <span class="text-muted">related indicators on the EH Data Portal</span></h4><br>
-                        </div> 
-
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="card">
-                        <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Environmental factors</div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><a href="">Air quality</a>
-                            <li class="list-group-item"><a href="">Traffic</a>
-                            <li class="list-group-item"><a href="">Parks and public space</a>
-                            <li class="list-group-item"><a href="">Walking, driving, and cycling</a>
-                            <li class="list-group-item"><a href="">Climate change</a>
-                        </ul>
-                
-                        </div>
-                        <br>
-                    </div>
-
-                    
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="card">
-                            <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Related health outcomes </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><a href="">Asthma</a>
-                            <li class="list-group-item"><a href="">Chronic obstructive pulmonary disease</a>
-                            <li class="list-group-item"><a href="">Heart attacks</a>
-                            <li class="list-group-item"><a href="">Low birth weight</a>
-                            <li class="list-group-item"><a href="">Health impacts of air pollution</a>
-                            </ul>
                         
-                            </div>
-                            <br>
-                    </div>	
-                    
-                    
-                
-                
+                            <div class="card">
+                                    <div class="card-header"><b>So what's going on?</b></div>
+                            <div class="card-body">
+                                    <p>We've used our citywide air quality monitoring system, NYCCAS, to understand what affects air quality across the city. We observe that certain factors - like building density (buildings, like vehicles, emit pollution), industrial areas, and traffic, and trucks - are associated with worse air quality.</p>
+        
+                                    <p>Though we don't have monitors in every neighborhood in the city, NYCCAS shows us that we can predict air quality by understanding these factors. So if we dont't have an air quality monitor in one neighborhood, but we know its building density, its industrial area, and its traffic, then we can <em>model</em> (estimate or predict) its air quality - based on what we know about similar neighborhoods. </p>
+        
+        
+                            </div></div>
+
                 </div>
 
 
-
+                <div class="col-lg-6">
+                            <div class="card">
+                                    <div class="card-header"><b>Air pollutants</b></div>
+                                <div class="card-body">
+                                        <iframe title="" aria-label="Range Plot" id="datawrapper-chart-dyjBz" src="//datawrapper.dwcdn.net/dyjBz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="161"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                        <br><hr><br>
+                                        <iframe title="" aria-label="Range Plot" id="datawrapper-chart-D9Qjg" src="//datawrapper.dwcdn.net/D9Qjg/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="161"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                </div>
+                                 </div>
+                                 <br>
+                                 <hr>
+                                 <br>
+                                 <div class="card">
+                                        <div class="card-header"><b>What affects your air quality</b></div>
+                                <div class="card-body">
+                                        <table class="table">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">Factor</th>
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">in <span style="color:#1d81a2;">your neighborhood</span></th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">Building density</th>
+                                                    <td><span class="badge badge-secondary">3/XXX</span></td>
+                                                    <td><button type="button" class="btn btn-worse btn-block" data-toggle="collapse" href="#buildingdensity" role="button" role="button" aria-expanded="true" aria-controls="buildingdensity">High</button></td>
                     
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">Industrial area</th>
+                                                    <td><span class="badge badge-secondary">21/XXX</span></td>
+                                                    <td><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#industrial" role="button" role="button" aria-expanded="false" aria-controls="industrial">Medium</button></td>
+                    
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">Traffic density</th>
+                                                    <td><span class="badge badge-secondary">13/XXX</span></td>
+                                                    <td><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#traffic" role="button" role="button" aria-expanded="false" aria-controls="traffic">Medium</button></td>
+                    
+                                                  </tr>
+                    
+                                                  <tr>
+                                                        <th scope="row">Truck routes</th>
+                                                        <td><span class="badge badge-secondary">7/XXX</span></td>
+                                                        <td><button type="button" class="btn btn-better btn-block"  data-toggle="collapse" href="#truck" role="button" role="button" aria-expanded="false" aria-controls="truck">Low</button></td>
+                        
+                                                      </tr>
+                                                </tbody>
+                                              </table>
+                                              <em>Click on a low, medium, or high button to see other neighborhoods like yours on the map.</em>
+            
+                                </div></div>
+                                <br>
+                                <hr>
+                                <br>
+                                <div class="card">
+                                        <div class="card-header"><b>Map those factors</b></div>
+                                <div class="card-body">
+                                        <div class="collapse show" id="buildingdensity">
+                                                <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-9SZDW" src="//datawrapper.dwcdn.net/9SZDW/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                
+                                        </div>
+                    
+                                        <div class="collapse" id="industrial">
+                                                <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-KOEok" src="//datawrapper.dwcdn.net/KOEok/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                        </div>
+                                        <div class="collapse" id="traffic">
+                                                <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-WXkwA" src="//datawrapper.dwcdn.net/WXkwA/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                            </div>
+                    
+                                        <div class="collapse" id="truck">
+                                                <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-gNTSO" src="//datawrapper.dwcdn.net/gNTSO/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                        </div>
+        
+                                </div></div>
 
 
+                        
 
-
-
-
-
+                </div>
 
             </div>
+
+
+        </div>
+
+
+
+
+
 
        <br><br>
 
@@ -635,6 +624,11 @@
       $('#theModal').modal('show').find('.modal-content').load($(this).attr('href'));
     });
   </script>
+
+    <!--Script that makes collapsed button content hide on selection of another button-->
+    <script>jQuery('button').click( function(e) {
+		jQuery('.collapse').collapse('hide');
+	});</script>
 
 </body>
 

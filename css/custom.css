@@ -12,6 +12,10 @@
 	height: 100%;
 }
 
+.card {
+	box-shadow: 2px 2px 2px grey;
+
+}
 
 /* All tile-color classes are for custom page cards*/
 .tile-green {
@@ -313,3 +317,84 @@ body {
 		font-size: 3em;
 		margin-bottom: 15px;
 	}
+
+
+	/* custon button classes*/
+
+.btn-worse {
+	color: #fff;
+	background-color: #cc6ce0;
+	border-color: #cc6ce0;
+  }
+  
+  .btn-worse:hover {
+	color: #fff;
+	background-color: #9f31b6
+	;
+	border-color: #9f31b6;
+  }
+  
+  .btn-worse:focus, .btn-worse.focus {
+	box-shadow: 0 0 0 0.2rem rgba(204, 108, 224, 0.5);
+  }
+  
+  .btn-worse.disabled, .btn-worse:disabled {
+	color: #fff;
+	background-color: #9f31b6;
+	border-color: #9f31b6;
+  }
+  
+  .btn-worse:not(:disabled):not(.disabled):active, .btn-worse:not(:disabled):not(.disabled).active,
+  .show > .btn-worse.dropdown-toggle {
+	color: #fff;
+	background-color: #9f31b6;
+	border-color: #9f31b6;
+  }
+  
+  .btn-worse:not(:disabled):not(.disabled):active:focus, .btn-worse:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-worse.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0.2rem rgba(204, 108, 224, 0.5);
+  }
+
+
+  .btn-better {
+	color: #2b2b2b;
+	background-color: #bae4b3;
+	border-color: #bae4b3;
+  }
+  
+  .btn-better:hover {
+	color: #2b2b2b;
+	background-color:#74c476;
+	border-color: #74c476;
+  }
+  
+  .btn-better:focus, .btn-better.focus {
+	box-shadow: 0 0 0 0.2rem rgba(186, 228, 179, 0.5);
+  }
+  
+  .btn-better.disabled, .btn-better:disabled {
+	color: #2b2b2b;
+	background-color: #f0f9e8;;
+	border-color: #17a2b8;
+  }
+  
+  .btn-better:not(:disabled):not(.disabled):active, .btn-better:not(:disabled):not(.disabled).active,
+  .show > .btn-better.dropdown-toggle {
+	color: #2b2b2b;
+	background-color: #f0f9e8;;
+	border-color: #10707f;
+  }
+  
+  .btn-better:not(:disabled):not(.disabled):active:focus, .btn-better:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-better.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0.2rem rgba(186, 228, 179, 0.5);
+  }
+
+  #scrollerview {
+	  height: 65vh;
+	  width: 100%;
+	  overflow: scroll;
+	  overflow-x: hidden;
+	  box-shadow: 2px 2px 2px grey;
+  }
