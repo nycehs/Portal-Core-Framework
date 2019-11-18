@@ -391,10 +391,3 @@ body {
 	box-shadow: 0 0 0 0.2rem rgba(186, 228, 179, 0.5);
   }
 
-  #scrollerview {
-	  height: 65vh;
-	  width: 100%;
-	  overflow: scroll;
-	  overflow-x: hidden;
-	  box-shadow: 2px 2px 2px grey;
-  }
