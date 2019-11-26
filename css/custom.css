@@ -160,7 +160,7 @@
 
 
 body {
-  font-size: .875rem;
+  font-size: 1 rem;
 }
 
 .feather {
@@ -227,9 +227,7 @@ body {
  * Content
  */
 
-[role="main"] {
-  padding-top: 48px; /* Space for fixed navbar */
-}
+
 
 /*
  * Navbar
@@ -401,3 +399,13 @@ body {
   .breadcrumb-item+.breadcrumb-item:hover::before{text-decoration:underline}
   .breadcrumb-item+.breadcrumb-item:hover::before{text-decoration:none}
   .breadcrumb-item.active{color:#6c757d}
+
+
+
+  /*styles for dang anchor offsetting*/
+
+  .storyanchor {
+	  padding-top: 100px;
+	margin-top: -100px;
+
+  }
