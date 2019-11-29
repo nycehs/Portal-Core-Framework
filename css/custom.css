@@ -251,3 +251,6 @@
   .breadcrumb-item+.breadcrumb-item:hover::before{text-decoration:none}
   .breadcrumb-item.active{color:#6c757d}
 
+main {
+	padding-top: 40px;
+}
