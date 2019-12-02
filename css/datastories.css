@@ -206,3 +206,6 @@
 	  main {
 		padding-top: 0px!important;
 	}
+
+	html {scroll-behavior: smooth;}  
+
