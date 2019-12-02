@@ -202,3 +202,7 @@
 	body {
 		font-size: 1 rem;
 	  }
+
+	  main {
+		padding-top: 0px!important;
+	}
