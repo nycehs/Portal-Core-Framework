@@ -268,113 +268,100 @@
     <main id="skip-header-target" role="main" style="background-color:#f8f9fa;">
         <div class="container">
             <div class="row">
+                <div class="col"><h3>Neighborhood air quality explorer</h3>
+                <br>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-lg-6">
-
-                        <h3>The air quality in your neighborhood</h3>
-                        <br>
-                        <p>So how's the air quality in your neighborhood? Enter an address to see concentrations of PM2.5 and NO2 in your neighborhood - and why.</p> 
-                        <br>
-                        <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="125 Worth Street">
-                                    
-                                </div>
-                                <button type="submit" class="btn btn-primary mb-2 float-right">Submit</button>
-        
-                            </form>
-                            <br><br><br>
-
-                        
-                            <div class="card">
-                                    <div class="card-header"><b>So what's going on?</b></div>
+                    <div class="sticky-top">
+                            <div class="card bg-light">
+    
                             <div class="card-body">
-                                    <p>We've used our citywide air quality monitoring system, NYCCAS, to understand what affects air quality across the city. We observe that certain factors - like building density (buildings, like vehicles, emit pollution), industrial areas, and traffic, and trucks - are associated with worse air quality.</p>
-        
-                                    <p>Though we don't have monitors in every neighborhood in the city, NYCCAS shows us that we can predict air quality by understanding these factors. So if we dont't have an air quality monitor in one neighborhood, but we know its building density, its industrial area, and its traffic, then we can <em>model</em> (estimate or predict) its air quality - based on what we know about similar neighborhoods. </p>
-        
-        
+                                    <p>To understand what affects air quality across the city, we've used our citywide air quality monitoring system, NYCCAS. We found that building density, industrial areas, traffic density, and truck traffic are associated with worse air quality.</p>
+                
+                                    <p>We can predict air quality by understanding these factors. So if we don't have an air quality monitor in one neighborhood, but we know its building density, its industrial area, and its traffic, then we can <em>model</em> (estimate or predict) its air quality - based on monitored air quality in similar neighborhoods. </p>
+                    
+                    
                             </div></div>
+                            <br>
+                            <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter an address for neighborhood air quality">
+                                        
+                                    </div>
+                                    <button type="submit" class="btn btn-primary mb-2 float-right">Submit</button>
+            
+                                </form>
 
+                        </div>
                 </div>
 
 
                 <div class="col-lg-6">
+                    <h4><i class="fas fa-smog"></i>&nbsp;Air pollution in <span style="font-weight:bold;color:#15607a">your neighborhood</span></h4>
                             <div class="card">
-                                    <div class="card-header"><b>Air pollutants</b></div>
-                                <div class="card-body">
-                                        <iframe title="" aria-label="Range Plot" id="datawrapper-chart-dyjBz" src="//datawrapper.dwcdn.net/dyjBz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="161"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                        <br><hr><br>
-                                        <iframe title="" aria-label="Range Plot" id="datawrapper-chart-D9Qjg" src="//datawrapper.dwcdn.net/D9Qjg/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="161"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                </div>
+                                    
+                                    <div class="card-body">
+                                            Fine particulate matter (PM2.5)
+                                            <iframe title="" aria-label="Column Chart" id="datawrapper-chart-YEW9b" src="//datawrapper.dwcdn.net/YEW9b/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                                <br><hr><br>
+                                               Nitrogen dioxide (NO2)
+                                                <iframe title="" aria-label="Column Chart" id="datawrapper-chart-55OPS" src="//datawrapper.dwcdn.net/55OPS/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                        </div>
                                  </div>
                                  <br>
                                  <hr>
                                  <br>
-                                 <div class="card">
-                                        <div class="card-header"><b>What affects your air quality</b></div>
-                                <div class="card-body">
-                                        <table class="table">
+                                 <h4><i class="far fa-question-circle"></i>&nbsp;What affect air quality in <span style="font-weight:bold;color:#15607a">your neighborhood</span></h4><br>
+                                 <div class="card" style="height: 630px;">
+
+                                        <div class="card-body">
+                                            <table class="table">
                                                 <thead>
-                                                  <tr>
-                                                    <th scope="col">Factor</th>
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">in <span style="color:#1d81a2;">your neighborhood</span></th>
-                                                  </tr>
+                                                    <tr>
+                                                        <th scope="col" style="width: 25%;" class="text-center"><i class="far fa-building"></i>&nbsp;Building density</th>
+                                                        <th scope="col" style="width: 25%;" class="text-center"><i class="fas fa-industry"></i>&nbsp;Industrial area</th>
+                                                        <th scope="col" style="width: 25%;" class="text-center"><i class="fas fa-car-side"></i>&nbsp;Traffic density</th>
+                                                        <th scope="col" style="width: 25%;" class="text-center"><i class="fas fa-truck"></i>&nbsp;Truck traffic</th>
+                                                    </tr>
                                                 </thead>
                                                 <tbody>
-                                                  <tr>
-                                                    <th scope="row">Building density</th>
-                                                    <td><span class="badge badge-secondary">3/XXX</span></td>
-                                                    <td><button type="button" class="btn btn-worse btn-block" data-toggle="collapse" href="#buildingdensity" role="button" role="button" aria-expanded="true" aria-controls="buildingdensity">High</button></td>
-                    
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">Industrial area</th>
-                                                    <td><span class="badge badge-secondary">21/XXX</span></td>
-                                                    <td><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#industrial" role="button" role="button" aria-expanded="false" aria-controls="industrial">Medium</button></td>
-                    
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">Traffic density</th>
-                                                    <td><span class="badge badge-secondary">13/XXX</span></td>
-                                                    <td><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#traffic" role="button" role="button" aria-expanded="false" aria-controls="traffic">Medium</button></td>
-                    
-                                                  </tr>
-                    
-                                                  <tr>
-                                                        <th scope="row">Truck routes</th>
-                                                        <td><span class="badge badge-secondary">7/XXX</span></td>
-                                                        <td><button type="button" class="btn btn-better btn-block"  data-toggle="collapse" href="#truck" role="button" role="button" aria-expanded="false" aria-controls="truck">Low</button></td>
-                        
-                                                      </tr>
+                                                    <tr>
+                                                        <th scope="row"><button type="button" class="btn btn-worse btn-block" data-toggle="collapse" href="#buildingdensity" role="button" role="button" aria-expanded="true" aria-controls="buildingdensity">High</button></th>
+                                                        <th scope="row"><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#industrial" role="button" role="button" aria-expanded="false" aria-controls="industrial">Medium</button></th>
+                                                        <th scope="row"><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#traffic" role="button" role="button" aria-expanded="false" aria-controls="traffic">Medium</button></th>
+                                                        <th scope="row"><button type="button" class="btn btn-better btn-block"  data-toggle="collapse" href="#truck" role="button" role="button" aria-expanded="false" aria-controls="truck">Low</button></th>
+                                                    </tr>
                                                 </tbody>
-                                              </table>
-                                              <em>Click on a low, medium, or high button to see other neighborhoods like yours on the map.</em>
-            
-                                </div></div>
+                                            </table>
+                                            <hr>
+        
+                                            <div class="collapse show" id="buildingdensity">
+                                                    <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-9SZDW" src="//datawrapper.dwcdn.net/9SZDW/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                    
+                                            </div>
+                        
+                                            <div class="collapse" id="industrial">
+                                                    <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-KOEok" src="//datawrapper.dwcdn.net/KOEok/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                            </div>
+                                            <div class="collapse" id="traffic">
+                                                    <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-WXkwA" src="//datawrapper.dwcdn.net/WXkwA/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                                </div>
+                        
+                                            <div class="collapse" id="truck">
+                                                    <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-gNTSO" src="//datawrapper.dwcdn.net/gNTSO/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                            </div>
+        
+        
+                                        </div>
+                                </div>
+    
                                 <br>
                                 <hr>
                                 <br>
-                                <div class="card">
-                                        <div class="card-header"><b>Map those factors</b></div>
-                                <div class="card-body">
-                                        <div class="collapse show" id="buildingdensity">
-                                                <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-9SZDW" src="//datawrapper.dwcdn.net/9SZDW/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                
-                                        </div>
-                    
-                                        <div class="collapse" id="industrial">
-                                                <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-KOEok" src="//datawrapper.dwcdn.net/KOEok/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                        </div>
-                                        <div class="collapse" id="traffic">
-                                                <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-WXkwA" src="//datawrapper.dwcdn.net/WXkwA/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                            </div>
-                    
-                                        <div class="collapse" id="truck">
-                                                <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-gNTSO" src="//datawrapper.dwcdn.net/gNTSO/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                        </div>
         
-                                </div></div>
 
 
                         
