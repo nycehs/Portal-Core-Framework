@@ -275,10 +275,10 @@
                     </div>
                  </div>
 
-                 <div class="row border-bottom my-3">
-                        <div class="col-lg-4"><em>Choose a topic to get data</em><br></div>
-                        <div class="col-lg-6"> <em>Viewing:</em></div>
-                    </div>
+                <div class="row border-bottom my-3">
+                    <div class="col-lg-4"><em>Choose a topic to get data</em><br></div>
+                    <div class="col-lg-6"> <em>Viewing:</em></div>
+                </div>
 
 
              <div class="row">
@@ -295,10 +295,6 @@
                                 <a class="nav-link" id="v-pills-Population-tab" data-toggle="pill" href="#v-pills-population" role="tab" aria-controls="v-pills-population" aria-selected="true">Population characteristics      </a>
                                 <hr>
                                 <a class="nav-link" id="v-pills-subtopics-tab" data-toggle="pill" href="#v-pills-subtopics" role="tab" aria-controls="v-pills-subtopics" aria-selected="false">All data (A-Z)</a>
-                                <hr>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search indicators">
-                                        
-                                   
                         
                               </div>
 
@@ -306,7 +302,7 @@
 
                 <div class="col-lg-2">
                         <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-outdoor" role="tabpanel" aria-labelledby="v-pills-outdoor-tab" style="height:100%">
+                                <div class="tab-pane fade show active" id="v-pills-outdoor" role="tabpanel" aria-labelledby="v-pills-outdoor-tab" style="height: 450px;">
                                   <b>Outdoor air and weather</b>
                                   <ul>
                                       <li><a href="">Air quality</a>
@@ -411,7 +407,7 @@
                                 </div>
                         
                         
-                                <div class="tab-pane fade" id="v-pills-subtopics" role="tabpanel" aria-labelledby="v-pills-subtopics-tab" style="height: 522px; overflow:scroll; overflow-x: hidden;">
+                                <div class="tab-pane fade" id="v-pills-subtopics" role="tabpanel" aria-labelledby="v-pills-subtopics-tab" style="height: 450px; overflow:scroll; overflow-x: hidden;">
                                   <b>All topics A-Z</b>
                                   <ul>
                                   <li><a href="">Active design</a></li>
@@ -467,8 +463,105 @@
                               </div></div>
   
                 <div class="col-lg-6">
-                      
+                        <div class="card bg-white">
+                        <div class="card-header">
+                        <h3>Asthma</h3></div>
 
+                        <br>
+
+                        <div class="nav nav-pills bg-white device-md" role="tablist">
+
+                            <a class="nav-item nav-link flex-fill active" id="tab-btn-01-a" href="#tab-01-a"
+                                data-toggle="pill" aria-controls="tab-01-a" aria-selected="true" role="tab">
+                                <i class="fas fa-chart-line"></i>&nbsp;Data
+                            </a>
+                        
+                            <a class="nav-item nav-link flex-fill" id="tab-btn-01-b" href="#tab-01-b"
+                                data-toggle="pill" aria-controls="tab-01-b" aria-selected="false" role="tab">
+                                <i class="fas fa-info-circle"></i>&nbsp;About asthma
+                            </a>
+                        
+                            <a class="nav-item nav-link flex-fill" id="tab-btn-01-c" href="#tab-01-c"
+                                data-toggle="pill" aria-controls="tab-01-c" aria-selected="false" role="tab">
+                                <i class="fas fa-external-link-alt"></i>&nbsp;More info
+                            </a>
+                        
+                        </div>
+                        
+                        <div class="tab-content bg-white p-2" id="tabs-01-content">
+                        
+                            <div class="tab-pane fade show active" id="tab-01-a" aria-labelledby="tab-btn-01-a" role="tabpanel">
+                                <h5>View data for:</h5> 
+                                <hr>
+                                Asthma emergency department visits
+                                <li><a href="">Children age 0-4</a></li>
+                                <li><a href="/Data/AsthmaData.html">Children age 5-14</a> <a href="">(small neighborhoods)</a></li>
+                                <li><a href="">Adults</a> <a href="">(small neighborhoods)</a></li>
+                                <hr>
+                                Asthma hospitalizations
+                                <li><a href="">Children age 0-4</a></li>
+                                <li><a href="">Children age 5-14</a> <a href="">(small neighborhoods)</a></li>
+                                <li><a href="">Adults</a> <a href="">(small neighborhoods)</a></li>
+                                <hr>
+                                Asthma prevalence
+                                <li><a href="">Adults with asthma in the past 12 months</a></li>
+                                <li><a href="">Public school children (age 5-14) with asthma</a></li>
+                                <li><a href="">Public school children (age 5-14) with persistent asthma</a></li>
+                                <li><a href="">Youth asthma in the past 12 months</a></li>
+                                <li><a href="">Children (age 0-13) ever diagnosed with asthma</a></li>
+                                <hr>
+                                <b>Neighborhood Reports</b>
+                                <ul>
+                                    <li><a href="">Asthma and the environment</a></li>
+                                    <li><a href="">Outdoor air and health</a></li>
+                                    <li><a href="">Housing and health</a></li>
+                                </ul>
+                            </div>
+                        
+                            <div class="tab-pane fade" id="tab-01-b" aria-labelledby="tab-btn-01-b" role="tabpanel">
+                                <h5>About asthma</h5>
+                                <p>Asthma is a common disease in which the lungs become swollen, making breathing difficult. Symptoms include wheezing, coughing, shortness of breath and tightness in the chest. The exact causes of asthma are not known. Asthma cannot be cured, but it can be controlled. </p>
+        
+                                <p>Asthma is a leading cause of emergency room visits, hospitalizations and missed school days in New York City's poorest neighborhoods. In NYC, asthma is more common among low-income Black and Latino children.  </p>
+
+                                <h5>Asthma and the environment</h5>
+
+                                <p>Certain things in the environment can trigger an asthma attack or make symptoms worse. Common triggers include: 
+                                    <ul>
+                                        <li>Tobacco smoke</li>
+                                        <li>Air pollution, such as particulates, ozone, and diesel exhaust</li>
+                                        <li>Dust mites, cockroaches, and mold</li>
+                                        <li>Pollen</li>
+                                        <li>Pets</li>
+                                    </ul>
+                                    </p>
+                                    <h5>Controlling asthma</h5>
+                                    <p>Asthma does not have to prevent you from leading an active and healthy life. You can take charge by having a plan to control asthma, including these strategies for avoiding asthma triggers:
+    
+     
+                                        <ul>
+                                            <li>Check the weather report daily for air pollution level ("air quality index") and pollen counts. Limit time outside when air pollution levels or pollen counts are high.
+                                                </li>
+                                            <li>If you smoke, quit. Don't allow smoking in your home or car.
+                                                </li>
+                                            <li>Remove clutter and clean regularly to reduce dust levels in your home.
+                                                </li>
+                                            <li>Work with your landlord to fix leaks promptly to prevent mold. If your landlord fails to fix the problem, call 311. 
+                                                </li>
+                                            <li>Do not allow furry pets on the furniture or in the bedroom.
+                                                </li>
+                                            <li>Pest proof your home. If building conditions may be attracting pests, contact your landlord. If your landlord does not addres your concerns, call 311. </li>
+                                        </ul>
+                                        </p>
+                            </div>
+                        
+                            <div class="tab-pane fade" id="tab-01-c" aria-labelledby="tab-btn-01-c" role="tabpanel">
+                                <h5>More info</h5>
+                                <ul><li><a href="http://www.aaaai.org/home.aspx" content="http://www.aaaai.org/home.aspx" class="message_urls" target="_blank">American Academy  of Allergy and Immunology</a></li><li><a href="http://www.healthyschools.org/links.html" content="http://www.healthyschools.org/links.html" class="message_urls" target="_blank">Healthy Schools Network, Inc.</a></li><li><a href="http://www.airnow.gov/" content="http://www.airnow.gov/" class="message_urls" target="_blank">EPA AIRNow</a></li><li><a href="http://www.aafa.org/" content="http://www.aafa.org/" class="message_urls" target="_blank">Asthma and Allergy Foundation of America</a></li><li><a href="http://www.asthmacommunitynetwork.org/resources/conferences" content="http://www.asthmacommunitynetwork.org/resources/conferences" class="message_urls" target="_blank">Healthy Kids: The Key to Basics</a></li><li><a href="http://www.nhlbi.nih.gov/about/org/naepp/" content="http://www.nhlbi.nih.gov/about/org/naepp/" class="message_urls" target="_blank">National Asthma Education and Prevention Program</a></li><li><a href="http://www.lung.org" content="http://www.lung.org" class="message_urls" target="_blank">The American Lung Association </a></li><li><a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/asthma-medication-administration-form-english" content="https://www.schools.nyc.gov/docs/default-source/default-document-library/asthma-medication-administration-form-english" class="message_urls" target="_blank">Asthma Medication Administration Form (AMAF) School Year 2018-19</a></li></ul>
+                            </div>
+                        
+                        </div>
+                    </div>
                  </div>
 
             </div>
