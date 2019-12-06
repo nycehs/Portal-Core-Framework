@@ -29,7 +29,7 @@
     <!-- For keyboard users -->
     <a class="sr-only sr-only-focusable skip-menu" href="#skip-header-target">Skip Header</a>
 
-    <header id="global-header" class="titleslide" role="banner" style="background-image: url(images/background.png);">
+    <header id="global-header" class="titleslide fs-md" role="banner" style="background-image: url(images/background.png);">
 
         <div class="bg-black text-white" id="nyc-top-header">
 
@@ -239,7 +239,7 @@
 
                     <div class="nav-item dropdown">
     
-                        <a class="nav-link li-modal" href="Modal.html" id="nav-item-03" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
+                        <a class="nav-link" href="DataExplorer.html" id="nav-item-03" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
                         </a>    
                     </div>
                     <!-- .nav-item -->
@@ -270,211 +270,228 @@
             <div class="container-fluid fs-sm">
 
                 <div class="row">
-                    <div class="col-lg-12">
+                    
+                    <div class="col border-bottom text-center">
                         <h2><i class="fas fa-chart-line"></i>&nbsp;Data Explorer</h2>
                     </div>
+                    
                  </div>
 
-                 <div class="row border-bottom my-3">
-                        <div class="col-lg-4"><em>Choose a topic to get data</em><br></div>
-                        <div class="col-lg-6"> <em>Viewing:</em></div>
+                <div class="row border-bottom">
+                    <div class="col-lg-3"> </div>
+
+               
+                    <div class="col-lg-6">
+
+                            <div class="accordion-group my-3" role="tablist" id="accordion-01">
+
+                                    <div class="card">
+                                
+                                        <a class="card-header collapse border-bottom" id="acc-button-01" data-toggle="collapse" href="#panel-acc-button-01"  role="tab" aria-expanded="false" aria-controls="panel-acc-button-01">
+                                            <span class="title" role="heading" aria-level="3">Choose a topic (try Asthma)</span>
+                                        </a>
+                                
+                                        <div class="collapse show" id="panel-acc-button-01" role="tabpanel" aria-labelledby="acc-button-01" data-parent="#accordion-01">
+                                
+                                            <div class="card-body">
+                                                    <div class="row">
+                                                            <div class="col-lg-6">
+                                                                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                                            <a class="nav-link active" id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="true">Outdoor air and weather</a>
+                                                                    
+                                                                            <a class="nav-link" id="v-pills-built-tab" data-toggle="pill" href="#v-pills-built" role="tab" aria-controls="v-pills-built" aria-selected="true">Built environment</a>
+                                                                            <a class="nav-link" id="v-pills-Pests-tab" data-toggle="pill" href="#v-pills-pests" role="tab" aria-controls="v-pills-pests" aria-selected="true">Pests and pesticide use</a>
+                                                                            <a class="nav-link" id="v-pills-Food-tab" data-toggle="pill" href="#v-pills-food" role="tab" aria-controls="v-pills-food" aria-selected="true">Food and drink</a>
+                                                                            <a class="nav-link" id="v-pills-sust-tab" data-toggle="pill" href="#v-pills-sust" role="tab" aria-controls="v-pills-sust" aria-selected="true">Environmental sustainability</a>
+                                                                            <a class="nav-link" id="v-pills-Health-tab" data-toggle="pill" href="#v-pills-health" role="tab" aria-controls="v-pills-health" aria-selected="true">Health outcomes</a>
+                                                                            <a class="nav-link" id="v-pills-Behavior-tab" data-toggle="pill" href="#v-pills-behavior" role="tab" aria-controls="v-pills-behavior" aria-selected="true">Behavior</a>
+                                                                            <a class="nav-link" id="v-pills-Population-tab" data-toggle="pill" href="#v-pills-population" role="tab" aria-controls="v-pills-population" aria-selected="true">Population characteristics      </a>
+                                                                            <hr>
+                                                                            <a class="nav-link" id="v-pills-subtopics-tab" data-toggle="pill" href="#v-pills-subtopics" role="tab" aria-controls="v-pills-subtopics" aria-selected="false">All data (A-Z)</a>
+                                                                            <hr>
+                                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search indicators">
+                                                                            <br>
+                                                                          </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                    <div class="tab-content" id="v-pills-tabContent">
+                                                                            <div class="tab-pane fade show active" id="v-pills-outdoor" role="tabpanel" aria-labelledby="v-pills-outdoor-tab" style="height: 450px;">
+                                                                              <b>Outdoor air and weather</b>
+                                                                              <ul>
+                                                                                  <li><a href="">Air quality</a>
+                                                                                  <li><a href="">Climate</a>
+                                                                                  </ul>
+                                                                            
+                                                                            </div>
+                                                                    
+                                                                            <div class="tab-pane fade" id="v-pills-built" role="tabpanel" aria-labelledby="v-pills-built-tab" style="height: 450px;">
+                                                                              <b>Built environment</b>
+                                                                              <ul>
+                                                                                  <li><a href="">Active design</a>
+                                                                                  <li><a href="">Carbon monoxide incidents</a>
+                                                                                  <li><a href="">Housing</a>
+                                                                                  <li><a href="">Lead hazards</a>
+                                                                                  <li><a href="">Noise</a>
+                                                                                  <li><a href="">Traffic</a>
+                                                                                  </ul>
+                                                                            
+                                                                            </div>
+                                                                    
+                                                                            <div class="tab-pane fade" id="v-pills-pests" role="tabpanel" aria-labelledby="v-pills-pests-tab" style="height: 450px;">
+                                                                              <b>Pests and pesticides</b>
+                                                                              <ul>
+                                                                                  <li><a href="">Bed bugs</a>
+                                                                                  <li><a href="">Cockroaches</a>
+                                                                                  <li><a href="">Mice and rats</a>
+                                                                                  <li><a href="">Pesticides</a>
+                                                                                  </ul>
+                                                                            
+                                                                            </div>
+                                                                    
+                                                                            <div class="tab-pane fade" id="v-pills-food" role="tabpanel" aria-labelledby="v-pills-food-tab" style="height: 450px;">
+                                                                              <b>Food and drink</b>
+                                                                              <ul>
+                                                                                  <li><a href="">Alcohol access</a>
+                                                                                  <li><a href="">Alcohol use</a>
+                                                                                  <li><a href="">Drinking water quality</a>
+                                                                                  <li><a href="">Restaurant food safety</a>
+                                                                                  </ul>
+                                                                            
+                                                                            </div>
+                                                                    
+                                                                            <div class="tab-pane fade" id="v-pills-sust" role="tabpanel" aria-labelledby="v-pills-sust-tab" style="height: 450px;">
+                                                                              <b>Environmental sustainability</b>
+                                                                              <ul>
+                                                                                  <li><a href="">Climate change</a>
+                                                                                  <li><a href="">Energy</a>
+                                                                                  <li><a href="">Housing and neighborhoods</a>
+                                                                                  <li><a href="">Large city air quality comparison</a>
+                                                                                  <li><a href="">Parks and public space</a>
+                                                                                  <li><a href="">Transportation</a>
+                                                                                  <li><a href="">Water supply</a>
+                                                                                  <li><a href="">Waterways</a>
+                                                                                  </ul>
+                                                                            
+                                                                            </div>
+                                                                    
+                                                                            <div class="tab-pane fade" id="v-pills-health" role="tabpanel" aria-labelledby="v-pills-health-tab" style="height: 450px;">
+                                                                              <b>Health outcomes</b>
+                                                                              <ul>
+                                                                                  <li><a href="DataExplorerAsthma.html">Asthma</a>
+                                                                                  <li><a href="">Birth defects</a>
+                                                                                  <li><a href="">Birth outcomes</a>
+                                                                                  <li><a href="">Cancer</a>
+                                                                                  <li><a href="">Cancer in children</a>
+                                                                                  <li><a href="">Carbon monoxide poisoning</a>
+                                                                                  <li><a href="">Childhood lead exposure</a>
+                                                                                  <li><a href="">Chronic obstructive pulmonary disease</a>
+                                                                                  <li><a href="">Falls among older adults</a>
+                                                                                  <li><a href="">Health impacts of air pollution</a>
+                                                                                  <li><a href="">Heart attacks</a>
+                                                                                  <li><a href="">Mortality</a>
+                                                                                  <li><a href="">Overweight</a>
+                                                                                  <li><a href="">Traffic-related injuries</a>
+                                                                                  <li><a href="">Vector-borne disease</a>
+                                                                                  <li><a href="">Weather-related illness</a>
+                                                                                  <li><a href="">Worker health</a>
+                                                                                  </ul>
+                                                                            
+                                                                            </div>
+                                                                    
+                                                                            <div class="tab-pane fade" id="v-pills-behavior" role="tabpanel" aria-labelledby="v-pills-behavior-tab" style="height: 450px;">
+                                                                              <b>Behavior</b>
+                                                                              <ul>
+                                                                                  <li><a href="">Alcohol use</a>
+                                                                                  <li><a href="">Cigarette smoke</a>
+                                                                                  <li><a href="">Physical activity</a>
+                                                                                  <li><a href="">Sugary drink consumption</a>
+                                                                                  <li><a href="">Walking, driving, and cycling</a></li>
+                                                                                  </ul>
+                                                                            
+                                                                            </div>
+                                                                    
+                                                                            <div class="tab-pane fade" id="v-pills-population" role="tabpanel" aria-labelledby="v-pills-population-tab" style="height: 450px;">
+                                                                              <b>Population characteristics</b>
+                                                                              <ul>
+                                                                                  <li><a href="">Health care</a>
+                                                                                  <li><a href="">Social and economic conditions</a>
+                                                                                  </ul>
+                                                                            
+                                                                            </div>
+                                                                    
+                                                                    
+                                                                            <div class="tab-pane fade" id="v-pills-subtopics" role="tabpanel" aria-labelledby="v-pills-subtopics-tab" style="height: 522px; overflow:scroll; overflow-x: hidden;">
+                                                                              <b>All topics A-Z</b>
+                                                                              <ul>
+                                                                              <li><a href="">Active design</a></li>
+                                                                              <li><a href="">Air quality</a></li>
+                                                                              <li><a href="">Alcohol access</a></li>
+                                                                              <li><a href="">Alcohol use</a></li>
+                                                                              <li><a href="">Asthma</a></li>
+                                                                              <li><a href="">Bed bugs</a></li>
+                                                                              <li><a href="">Birth defects</a></li>
+                                                                              <li><a href="">Birth outcomes</a></li>
+                                                                              <li><a href="">Cancer</a></li>
+                                                                              <li><a href="">Cancer in children</a></li>
+                                                                              <li><a href="">Carbon monoxide incidents</a></li>
+                                                                              <li><a href="">Carbon monoxide poisoning</a></li>
+                                                                              <li><a href="">Childhood lead exposure</a></li>
+                                                                              <li><a href="">Chronic obstructive pulmonary disease</a></li>
+                                                                              <li><a href="">Cigarette smoke</a></li>
+                                                                              <li><a href="">Climate</a></li>
+                                                                              <li><a href="">Climate change</a></li>
+                                                                              <li><a href="">Cockroaches</a></li>
+                                                                              <li><a href="">Drinking water quality</a></li>
+                                                                              <li><a href="">Energy</a></li>
+                                                                              <li><a href="">Falls among older adults</a></li>
+                                                                              <li><a href="">Health care</a></li>
+                                                                              <li><a href="">Health impacts of air pollution</a></li>
+                                                                              <li><a href="">Heart attacks</a></li>
+                                                                              <li><a href="">Housing</a></li>
+                                                                              <li><a href="">Housing and neighborhoods</a></li>
+                                                                              <li><a href="">Large city air quality comparison</a></li>
+                                                                              <li><a href="">Lead hazards</a></li>
+                                                                              <li><a href="">Mice and rats</a></li>
+                                                                              <li><a href="">Mortality</a></li>
+                                                                              <li><a href="">Noise</a></li>
+                                                                              <li><a href="">Overweight</a></li>
+                                                                              <li><a href="">Parks and public space</a></li>
+                                                                              <li><a href="">Pesticides</a></li>
+                                                                              <li><a href="">Physical activity</a></li>
+                                                                              <li><a href="">Restaurant food safety</a></li>
+                                                                              <li><a href="">Social and economic conditions</a></li>
+                                                                              <li><a href="">Sugary drink consumption</a></li>
+                                                                              <li><a href="">Traffic</a></li>
+                                                                              <li><a href="">Traffic-related injuries</a></li>
+                                                                              <li><a href="">Transportation</a></li>
+                                                                              <li><a href="">Vector-borne disease</a></li>
+                                                                              <li><a href="">Walking, driving, and cycling</a></li>
+                                                                              <li><a href="">Water supply</a></li>
+                                                                              <li><a href="">Waterways</a></li>
+                                                                              <li><a href="">Weather-related illness</a></li>
+                                                                              <li><a href="">Worker health</a></li>
+                                                                            </ul>
+                                                                            </div>
+                                                                    
+                                                                          </div>
+                                                            </div>
+                                                        </div>
+                                            </div>
+                                
+                                        </div>
+                                        <!-- .collapse -->
+                                
+                                    </div>
+                                    <!-- .card (end of first accordion, repeat as needed) -->
+                                
+                                </div>
+                    
                     </div>
-
-
-             <div class="row">
-                <div class="col-lg-2">
-                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link active" id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="true">Outdoor air and weather</a>
-                        
-                                <a class="nav-link" id="v-pills-built-tab" data-toggle="pill" href="#v-pills-built" role="tab" aria-controls="v-pills-built" aria-selected="true">Built environment</a>
-                                <a class="nav-link" id="v-pills-Pests-tab" data-toggle="pill" href="#v-pills-pests" role="tab" aria-controls="v-pills-pests" aria-selected="true">Pests and pesticide use</a>
-                                <a class="nav-link" id="v-pills-Food-tab" data-toggle="pill" href="#v-pills-food" role="tab" aria-controls="v-pills-food" aria-selected="true">Food and drink</a>
-                                <a class="nav-link" id="v-pills-sust-tab" data-toggle="pill" href="#v-pills-sust" role="tab" aria-controls="v-pills-sust" aria-selected="true">Environmental sustainability</a>
-                                <a class="nav-link" id="v-pills-Health-tab" data-toggle="pill" href="#v-pills-health" role="tab" aria-controls="v-pills-health" aria-selected="true">Health outcomes</a>
-                                <a class="nav-link" id="v-pills-Behavior-tab" data-toggle="pill" href="#v-pills-behavior" role="tab" aria-controls="v-pills-behavior" aria-selected="true">Behavior</a>
-                                <a class="nav-link" id="v-pills-Population-tab" data-toggle="pill" href="#v-pills-population" role="tab" aria-controls="v-pills-population" aria-selected="true">Population characteristics      </a>
-                                <hr>
-                                <a class="nav-link" id="v-pills-subtopics-tab" data-toggle="pill" href="#v-pills-subtopics" role="tab" aria-controls="v-pills-subtopics" aria-selected="false">All data (A-Z)</a>
-                                <hr>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search indicators">
-                                        
-                                   
-                        
-                              </div>
-
                 </div>
 
-                <div class="col-lg-2">
-                        <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-outdoor" role="tabpanel" aria-labelledby="v-pills-outdoor-tab" style="height:100%">
-                                  <b>Outdoor air and weather</b>
-                                  <ul>
-                                      <li><a href="">Air quality</a>
-                                      <li><a href="">Climate</a>
-                                      </ul>
-                                
-                                </div>
-                        
-                                <div class="tab-pane fade" id="v-pills-built" role="tabpanel" aria-labelledby="v-pills-built-tab" style="height: 450px;">
-                                  <b>Built environment</b>
-                                  <ul>
-                                      <li><a href="">Active design</a>
-                                      <li><a href="">Carbon monoxide incidents</a>
-                                      <li><a href="">Housing</a>
-                                      <li><a href="">Lead hazards</a>
-                                      <li><a href="">Noise</a>
-                                      <li><a href="">Traffic</a>
-                                      </ul>
-                                
-                                </div>
-                        
-                                <div class="tab-pane fade" id="v-pills-pests" role="tabpanel" aria-labelledby="v-pills-pests-tab" style="height: 450px;">
-                                  <b>Pests and pesticides</b>
-                                  <ul>
-                                      <li><a href="">Bed bugs</a>
-                                      <li><a href="">Cockroaches</a>
-                                      <li><a href="">Mice and rats</a>
-                                      <li><a href="">Pesticides</a>
-                                      </ul>
-                                
-                                </div>
-                        
-                                <div class="tab-pane fade" id="v-pills-food" role="tabpanel" aria-labelledby="v-pills-food-tab" style="height: 450px;">
-                                  <b>Food and drink</b>
-                                  <ul>
-                                      <li><a href="">Alcohol access</a>
-                                      <li><a href="">Alcohol use</a>
-                                      <li><a href="">Drinking water quality</a>
-                                      <li><a href="">Restaurant food safety</a>
-                                      </ul>
-                                
-                                </div>
-                        
-                                <div class="tab-pane fade" id="v-pills-sust" role="tabpanel" aria-labelledby="v-pills-sust-tab" style="height: 450px;">
-                                  <b>Environmental sustainability</b>
-                                  <ul>
-                                      <li><a href="">Climate change</a>
-                                      <li><a href="">Energy</a>
-                                      <li><a href="">Housing and neighborhoods</a>
-                                      <li><a href="">Large city air quality comparison</a>
-                                      <li><a href="">Parks and public space</a>
-                                      <li><a href="">Transportation</a>
-                                      <li><a href="">Water supply</a>
-                                      <li><a href="">Waterways</a>
-                                      </ul>
-                                
-                                </div>
-                        
-                                <div class="tab-pane fade" id="v-pills-health" role="tabpanel" aria-labelledby="v-pills-health-tab" style="height: 450px;">
-                                  <b>Health outcomes</b>
-                                  <ul>
-                                      <li><a href="DataExplorerAsthma.html">Asthma</a>
-                                      <li><a href="">Birth defects</a>
-                                      <li><a href="">Birth outcomes</a>
-                                      <li><a href="">Cancer</a>
-                                      <li><a href="">Cancer in children</a>
-                                      <li><a href="">Carbon monoxide poisoning</a>
-                                      <li><a href="">Childhood lead exposure</a>
-                                      <li><a href="">Chronic obstructive pulmonary disease</a>
-                                      <li><a href="">Falls among older adults</a>
-                                      <li><a href="">Health impacts of air pollution</a>
-                                      <li><a href="">Heart attacks</a>
-                                      <li><a href="">Mortality</a>
-                                      <li><a href="">Overweight</a>
-                                      <li><a href="">Traffic-related injuries</a>
-                                      <li><a href="">Vector-borne disease</a>
-                                      <li><a href="">Weather-related illness</a>
-                                      <li><a href="">Worker health</a>
-                                      </ul>
-                                
-                                </div>
-                        
-                                <div class="tab-pane fade" id="v-pills-behavior" role="tabpanel" aria-labelledby="v-pills-behavior-tab" style="height: 450px;">
-                                  <b>Behavior</b>
-                                  <ul>
-                                      <li><a href="">Alcohol use</a>
-                                      <li><a href="">Cigarette smoke</a>
-                                      <li><a href="">Physical activity</a>
-                                      <li><a href="">Sugary drink consumption</a>
-                                      <li><a href="">Walking, driving, and cycling</a></li>
-                                      </ul>
-                                
-                                </div>
-                        
-                                <div class="tab-pane fade" id="v-pills-population" role="tabpanel" aria-labelledby="v-pills-population-tab" style="height: 450px;">
-                                  <b>Population characteristics</b>
-                                  <ul>
-                                      <li><a href="">Health care</a>
-                                      <li><a href="">Social and economic conditions</a>
-                                      </ul>
-                                
-                                </div>
-                        
-                        
-                                <div class="tab-pane fade" id="v-pills-subtopics" role="tabpanel" aria-labelledby="v-pills-subtopics-tab" style="height: 522px; overflow:scroll; overflow-x: hidden;">
-                                  <b>All topics A-Z</b>
-                                  <ul>
-                                  <li><a href="">Active design</a></li>
-                                  <li><a href="">Air quality</a></li>
-                                  <li><a href="">Alcohol access</a></li>
-                                  <li><a href="">Alcohol use</a></li>
-                                  <li><a href="">Asthma</a></li>
-                                  <li><a href="">Bed bugs</a></li>
-                                  <li><a href="">Birth defects</a></li>
-                                  <li><a href="">Birth outcomes</a></li>
-                                  <li><a href="">Cancer</a></li>
-                                  <li><a href="">Cancer in children</a></li>
-                                  <li><a href="">Carbon monoxide incidents</a></li>
-                                  <li><a href="">Carbon monoxide poisoning</a></li>
-                                  <li><a href="">Childhood lead exposure</a></li>
-                                  <li><a href="">Chronic obstructive pulmonary disease</a></li>
-                                  <li><a href="">Cigarette smoke</a></li>
-                                  <li><a href="">Climate</a></li>
-                                  <li><a href="">Climate change</a></li>
-                                  <li><a href="">Cockroaches</a></li>
-                                  <li><a href="">Drinking water quality</a></li>
-                                  <li><a href="">Energy</a></li>
-                                  <li><a href="">Falls among older adults</a></li>
-                                  <li><a href="">Health care</a></li>
-                                  <li><a href="">Health impacts of air pollution</a></li>
-                                  <li><a href="">Heart attacks</a></li>
-                                  <li><a href="">Housing</a></li>
-                                  <li><a href="">Housing and neighborhoods</a></li>
-                                  <li><a href="">Large city air quality comparison</a></li>
-                                  <li><a href="">Lead hazards</a></li>
-                                  <li><a href="">Mice and rats</a></li>
-                                  <li><a href="">Mortality</a></li>
-                                  <li><a href="">Noise</a></li>
-                                  <li><a href="">Overweight</a></li>
-                                  <li><a href="">Parks and public space</a></li>
-                                  <li><a href="">Pesticides</a></li>
-                                  <li><a href="">Physical activity</a></li>
-                                  <li><a href="">Restaurant food safety</a></li>
-                                  <li><a href="">Social and economic conditions</a></li>
-                                  <li><a href="">Sugary drink consumption</a></li>
-                                  <li><a href="">Traffic</a></li>
-                                  <li><a href="">Traffic-related injuries</a></li>
-                                  <li><a href="">Transportation</a></li>
-                                  <li><a href="">Vector-borne disease</a></li>
-                                  <li><a href="">Walking, driving, and cycling</a></li>
-                                  <li><a href="">Water supply</a></li>
-                                  <li><a href="">Waterways</a></li>
-                                  <li><a href="">Weather-related illness</a></li>
-                                  <li><a href="">Worker health</a></li>
-                                </ul>
-                                </div>
-                        
-                              </div></div>
-  
-                <div class="col-lg-6">
-                      
 
-                 </div>
 
-            </div>
-                        
-
-                        <br>
+ 
 
 
 
