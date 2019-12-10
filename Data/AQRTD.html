@@ -239,7 +239,7 @@
 
                     <div class="nav-item dropdown">
     
-                        <a class="nav-link li-modal" href="../Modal.html" id="nav-item-03" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
+                        <a class="nav-link" href="../DataExplorer.html" id="nav-item-03" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
                         </a>    
                     </div>
                     <!-- .nav-item -->
@@ -267,10 +267,20 @@
 
     <main id="skip-header-target" role="main" style="background-color:#f8f9fa;">
         <div class="container fs-sm">
+                <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/Index.html">Home
+                                </a></li>
+                            <li class="breadcrumb-item"><a href="Outdoor.html">Outdoor air</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">AQ Explorer</li>
+                        </ol>
+    
+                    </nav>
             <div class="row">
-                <div class="col-lg-12 border-bottom">
-                        <button type="button" class="btn btn-secondary float-right">Real-time air quality data</button>
-                    <h3>Neighborhood air quality explorer</h3>
+                <div class="col-lg-12">
+                    <a href="AQExplorer.html">
+                        <button type="button" class="btn btn-secondary float-right">Neighborhood air quality data</button></a>
+                    <h3>Real-time air quality explorer</h3>
                 <br>
 
                 </div>
@@ -278,118 +288,23 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-6 my-2 pt-2">                
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter an address for neighborhood air quality">
-                            
-                        </div>
-                    </form></div>
-
-                <div class="col-lg-6 my-2 pt-2">Your neighborhood: <span style="font-weight:bold;color:#15607a">BK09</span><br>
-                <em>This is a Neighborhood Tabulation Area (NTA). <a href="">Click here to read about different geographies.</a></em></div>
+                <div class="col">
+                <iframe src="http://hpc125wbesp100/nyccas-react/" width="100%" height="800" frameborder="0"></iframe>
+                <br><br>
             </div>
 
-        </div>
-
-        <div class="container fs-sm">
-            <div class="row">
-
-
-                <div class="col-lg-6">
-                        <h4><i class="far fa-question-circle"></i>&nbsp;Factors that affect <span style="font-weight:bold;color:#15607a">your</span> air quality</h4>
-
-                        <div class="card bg-light">
-                                <div class="card-body">
-                                     <p>We combine data from our citywide air quality monitoring system, NYCCAS, with a lot of other data to understand what makes one neighborhood's air quality better or worse than another's. We found that building density, industrial areas, traffic density, and truck traffic are associated with worse air quality.</p>                    
-                             </div>
-                         </div>
-
-                        <div class="card" style="height: 680px;">
-                            <div class="card-body">
-                                <table class="table">
-                                    <thead>
-                                        <th scope="col" style="width: 40%;" class="text-right">Factor</th>
-                                        <th scope="col">Value</th>
-                                    </thead>
-                                        <tr>
-                                            <td class="text-right"><i class="far fa-building"></i>&nbsp;Building density</td>
-                                            <td><button type="button" class="btn btn-worse btn-block" data-toggle="collapse" href="#buildingdensity" role="button" role="button" aria-expanded="true" aria-controls="buildingdensity">High</button></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="text-right"><i class="fas fa-industry"></i>&nbsp;Industrial area</td>
-                                            <td><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#industrial" role="button" role="button" aria-expanded="false" aria-controls="industrial">Medium</button></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="text-right"></i>&nbsp;Traffic density</td>
-                                            <td><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#traffic" role="button" role="button" aria-expanded="false" aria-controls="traffic">Medium</button></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="text-right"><i class="fas fa-truck"></i>&nbsp;Truck traffic</td>
-                                            <td><button type="button" class="btn btn-better btn-block"  data-toggle="collapse" href="#truck" role="button" role="button" aria-expanded="false" aria-controls="truck">Low</button></td>
-                                        </tr>
-
-                                </table>
-
-                                <div class="collapse show" id="buildingdensity">
-                                        Buildings, like vehicles, burn fuel and produce pollution.
-                        
-                                </div>
-            
-                                <div class="collapse" id="industrial">
-                                        Industrial areas create PM2.5 with trucks and construction dust.
-                                </div>
-                                <div class="collapse" id="traffic">
-                                        Whole buncha bad stuff comes outta them tailpipes.
-                                    </div>
-            
-                                <div class="collapse" id="truck">
-                                        Trucks: even worse!
-                                </div>
-
-                            </div>
-                        
-                        </div>
-
-
-                </div>
-
-                <div class="col-lg-6">                    
-                    <h4><i class="fas fa-smog"></i>&nbsp;Air pollution in <span style="font-weight:bold;color:#15607a">your neighborhood</span></h4>
-                    <div class="card bg-light">
-                            <div class="card-body">           
-                                 <p>We can predict air quality by understanding these factors. So if we don't have an air quality monitor in one neighborhood, but we know its building density, its industrial area, and its traffic, then we can <em>model</em> (estimate or predict) its air quality - based on monitored air quality in similar neighborhoods. </p>
-                         </div>
-                     </div>
-                    <div class="card"  style="height: 680px;">
-                            
-                            <div class="card-body">
-                                    Fine particulate matter (PM2.5)
-                                    <iframe title="" aria-label="Column Chart" id="datawrapper-chart-YEW9b" src="//datawrapper.dwcdn.net/YEW9b/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                        <br><hr><br>
-                                       Nitrogen dioxide (NO2)
-                                       <iframe title="" aria-label="Column Chart" id="datawrapper-chart-55OPS" src="//datawrapper.dwcdn.net/55OPS/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                </div>
-                         </div></div>
-
             </div>
+            <br><br><br><br><br><br>
+
+
+
+
+
 
 
         </div>
 
 
-
-        
-
-
-
-
-
-
-       <br><br>
 
 <!--this script supports the modal-->
 <div id="theModal" class="modal fade">
