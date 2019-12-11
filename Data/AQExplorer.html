@@ -321,22 +321,22 @@
                                         <th scope="col">Value</th>
                                     </thead>
                                         <tr>
-                                            <td class="text-right"><i class="far fa-building"></i>&nbsp;Building density</td>
+                                            <td class="text-right"><i class="far fa-building"></i>&nbsp;Building density <a href="#buildingModal" data-toggle="modal"><i class="fas fa-question-circle"></i></a></td>
                                             <td><button type="button" class="btn btn-worse btn-block" data-toggle="collapse" href="#buildingdensity" role="button" role="button" aria-expanded="true" aria-controls="buildingdensity">High</button></td>
                                         </tr>
 
                                         <tr>
-                                            <td class="text-right"><i class="fas fa-industry"></i>&nbsp;Industrial area</td>
+                                            <td class="text-right"><i class="fas fa-industry"></i>&nbsp;Industrial area <a href="#industrialModal" data-toggle="modal"><i class="fas fa-question-circle"></i></a></td>
                                             <td><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#industrial" role="button" role="button" aria-expanded="false" aria-controls="industrial">Medium</button></td>
                                         </tr>
 
                                         <tr>
-                                            <td class="text-right"></i>&nbsp;Traffic density</td>
+                                            <td class="text-right"></i>&nbsp;Traffic density <a href="#trafficModal" data-toggle="modal"><i class="fas fa-question-circle"></i></a></td>
                                             <td><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#traffic" role="button" role="button" aria-expanded="false" aria-controls="traffic">Medium</button></td>
                                         </tr>
 
                                         <tr>
-                                            <td class="text-right"><i class="fas fa-truck"></i>&nbsp;Truck traffic</td>
+                                            <td class="text-right"><i class="fas fa-truck"></i>&nbsp;Truck traffic <a href="#truckModal" data-toggle="modal"><i class="fas fa-question-circle"></i></a></td>
                                             <td><button type="button" class="btn btn-better btn-block"  data-toggle="collapse" href="#truck" role="button" role="button" aria-expanded="false" aria-controls="truck">Low</button></td>
                                         </tr>
 
@@ -403,7 +403,7 @@
 
 
 
-<!--this script supports the modal-->
+<!--this script supports the DE modal-->
 <div id="theModal" class="modal fade">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -411,7 +411,97 @@
     </div>
   </div>
 
+<!--Building modal-->
+<div class="modal fade" id="buildingModal" tabindex="-1" role="dialog" aria-labelledby="distributionModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="distributionModalTitle">Building density</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+             Description of building density
+             
+             High, medium, low
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+      </div>
+      
 
+<!--Industry modal-->
+<div class="modal fade" id="industrialModal" tabindex="-1" role="dialog" aria-labelledby="distributionModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="distributionModalTitle">Industrial areas</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+             Description of industrial density
+             
+             High, medium, low
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+      </div>
+      
+<!--Traffic modal-->
+<div class="modal fade" id="trafficModal" tabindex="-1" role="dialog" aria-labelledby="distributionModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="distributionModalTitle">Traffic density</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+             Description of traffic density
+             
+             High, medium, low
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+      </div>
+      
+<!--Truck modal-->
+<div class="modal fade" id="truckModal" tabindex="-1" role="dialog" aria-labelledby="distributionModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="distributionModalTitle">Truck traffic</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+             Description of trucks
+             
+             high, med, low
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+      <br><br><br>
         
     </main>
 
