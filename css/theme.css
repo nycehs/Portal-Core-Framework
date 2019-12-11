@@ -4136,11 +4136,20 @@ input[type="button"].btn-block {
   margin-top: -1px;
 }
 
+/* original theme color override
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #A513B6;
 }
+*/
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000;
+  background-color: #c7c7c7;
+}
+
 
 .nav-fill .nav-item, #global-header .nav-pills .nav-item {
   flex: 1 1 auto;
@@ -11081,10 +11090,6 @@ legend,
   }
 }
 
-.nav-tabs .nav-item.active {
-  font-weight: 700;
-  color: #A513B6;
-}
 
 .card,
 .card-header,
