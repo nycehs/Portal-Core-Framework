@@ -4136,21 +4136,17 @@ input[type="button"].btn-block {
   margin-top: -1px;
 }
 
-/* original theme color override
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #A513B6;
 }
-*/
 
 
 
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #000;
-  background-color: #f7f5f5;
-}
+
+
 
 
 

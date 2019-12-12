@@ -22,6 +22,9 @@
     <!-- Custom Portal CSS -->
     <link rel="stylesheet" href="../css/custom.css">
 
+    <!--AQE styles-->
+    <link rel="stylesheet" href="../css/aqe.css">
+
 </head>
 
 <body>
@@ -314,12 +317,24 @@
             </div>
         </div>
 
-
-            <div class="row">
+        <div class="row">
                 <div class="col-lg-6 my-2">
                         <h4><i class="far fa-question-circle"></i>&nbsp;What affects air quality in <span style="font-weight:bold;color:#15607a">your neighborhood</span></h4>
                         <p>We combine data from our citywide air quality monitoring system, NYCCAS, with a lot of other data to understand what makes one neighborhood's air quality better or worse than another's. We found that building density, industrial areas, traffic density, and truck traffic are associated with worse air quality.</p>
-                        <div class="card" style="height: 600px;">
+                </div>
+
+                <div class="col-lg-6 my-2">
+                        <h4><i class="fas fa-smog"></i>&nbsp;Air pollution in <span style="font-weight:bold;color:#15607a">your neighborhood</span></h4>
+                        <p>We can predict air quality by understanding these factors. So if we don't have an air quality monitor in one neighborhood, but we know its building density, its industrial area, and its traffic, then we can <em>model</em> (estimate or predict) its air quality - based on monitored air quality in similar neighborhoods. </p>
+                </div>
+
+        </div>
+
+
+            <div class="row">
+                <div class="col-lg-6 my-2">
+
+                        <div class="card h-100">
 
                                <div class="card-body">
                                        <ul class="nav nav-pills" id="myTab" role="tablist">
@@ -338,32 +353,33 @@
                                              </ul>
                                              <div class="tab-content" id="myTabContent">
                                                <div class="tab-pane fade show active" id="building" role="tabpanel" aria-labelledby="building-tab">
-                                                   <div class="greyitem">
-                                                           <span style="font-weight:bold;color:#15607a">Your neighborhood</span> has <span class="badge badge-worse">high</span> building density. Building density affects a neighborhood's air quality because like vehicles, buildings burn fuel and emit pollutants: their boilers run on oil, gas, factcheck to produce heat.
+                                                   <div class="greyitem h-100">
+                                                          <p> <span style="font-weight:bold;color:#15607a">Your neighborhood</span> has <span class="badge badge-worse">high</span> building density.</p> 
+                                                          <p>Building density affects a neighborhood's air quality because like vehicles, buildings burn fuel and emit pollutants: their boilers run on oil, gas, factcheck to produce heat.</p>
                                                    
-                                                       <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-9SZDW" src="//datawrapper.dwcdn.net/9SZDW/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                                       <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-9SZDW" src="//datawrapper.dwcdn.net/9SZDW/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
                                                    
                                                    
                                                    </div>
                                                </div>
                                                <div class="tab-pane fade" id="industry" role="tabpanel" aria-labelledby="industry-tab">
-                                                       <div class="greyitem">
-                                                               <span style="font-weight:bold;color:#15607a">Your neighborhood</span> has <span class="badge badge-medium">medium</span> industrial areas.  
-                                                       Industrial areas affect a neighborhood's air quality because manufacturing may emit pollutants, construction may kick up particulate matter, and increased truck traffic emits pollutants.
+                                                       <div class="greyitem h-100">
+                                                              <p> <span style="font-weight:bold;color:#15607a">Your neighborhood</span> has <span class="badge badge-medium">medium</span> industrial areas.  </p>
+                                                      <p> Industrial areas affect a neighborhood's air quality because manufacturing may emit pollutants, construction may kick up particulate matter, and increased truck traffic emits pollutants.</p>
 
-                                                       <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-KOEok" src="//datawrapper.dwcdn.net/KOEok/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script></div>
+                                                       <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-KOEok" src="//datawrapper.dwcdn.net/KOEok/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script></div>
                                                </div>
                                                <div class="tab-pane fade" id="traffic" role="tabpanel" aria-labelledby="traffic-tab">
-                                                       <div class="greyitem">
-                                                               <span style="font-weight:bold;color:#15607a">Your neighborhood</span> has <span class="badge badge-medium">medium</span> traffic density.  
-                                                           Traffic density affects a neighborhood's air quality because of tailpipe emissions as well as particulate matter from tires and braking.
-                                                   <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-WXkwA" src="//datawrapper.dwcdn.net/WXkwA/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script></div></div>
+                                                       <div class="greyitem h-100">
+                                                              <p> <span style="font-weight:bold;color:#15607a">Your neighborhood</span> has <span class="badge badge-medium">medium</span> traffic density. </p> 
+                                                            <p> Traffic density affects a neighborhood's air quality because of tailpipe emissions as well as particulate matter from tires and braking.</p>
+                                                   <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-WXkwA" src="//datawrapper.dwcdn.net/WXkwA/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script></div></div>
                                                <div class="tab-pane fade" id="truck" role="tabpanel" aria-labelledby="truck-tab">
-                                                       <div class="greyitem">
-                                                               <span style="font-weight:bold;color:#15607a">Your neighborhood</span> has <span class="badge badge-better">low</span> truck traffic.  
+                                                       <div class="greyitem h-100">
+                                                               <p><span style="font-weight:bold;color:#15607a">Your neighborhood</span> has <span class="badge badge-better">low</span> truck traffic.  </p>
                                                            
-                                                           Truck traffic density affects a neighborhood's air quality because trucks produce additional pollutants that other vehicles don't, because diesel exhaust blah blah blah.
-                                                   <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-gNTSO" src="//datawrapper.dwcdn.net/gNTSO/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script></div></div>
+                                                            <p>Truck traffic density affects a neighborhood's air quality because trucks produce additional pollutants that other vehicles don't, because diesel exhaust blah blah blah.</p>
+                                                   <iframe title="" aria-label="USA new york city zip codes choropleth map" id="datawrapper-chart-gNTSO" src="//datawrapper.dwcdn.net/gNTSO/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script></div></div>
                                              </div>
 
                                </div>
@@ -371,49 +387,31 @@
                 </div>
 
                 <div class="col-lg-6 my-2">
-                        <h4><i class="fas fa-smog"></i>&nbsp;Air pollution in <span style="font-weight:bold;color:#15607a">your neighborhood</span></h4>
-                        <p>We can predict air quality by understanding these factors. So if we don't have an air quality monitor in one neighborhood, but we know its building density, its industrial area, and its traffic, then we can <em>model</em> (estimate or predict) its air quality - based on monitored air quality in similar neighborhoods. </p>
+                    <div class="card">
+                        
+                        <div class="card-body">
+                               
+                                        <iframe title="" aria-label="Column Chart" id="datawrapper-chart-YEW9b" src="//datawrapper.dwcdn.net/YEW9b/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                        <p><b>PM2.5</b> (or fine particles) worsen lung and heart diseases and are linked to cancer and premature death. NYC meets the EPA's standard is an annual average of 12 μg/m<sup>3</sup> (or 35 μg/m<sup>3</sup> for 24 hours), but short-term PM2.5 concentrations sometime exceeds this threshold.</p>
+                                
 
-                        <div class="card" style="height: 600px;">
-
-                                <div class="card-body">
-                                        <ul class="nav nav-pills" id="myTab2" role="tablist">
-                                                <li class="nav-item">
-                                                  <a class="nav-link active" id="pm-tab" data-toggle="tab" href="#pm" role="tab" aria-controls="home" aria-selected="true">PM2.5</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                  <a class="nav-link" id="no2-tab" data-toggle="tab" href="#no2" role="tab" aria-controls="profile" aria-selected="false">NO2 </a>
-                                                </li>
-                                               
-                                              </ul>
-                                              <div class="tab-content" id="myTabContent2">
-                                                <div class="tab-pane fade show active" id="pm" role="tabpanel" aria-labelledby="pm-tab">
-                                                    <div class="greyitem">
-                                                            <iframe title="" aria-label="Column Chart" id="datawrapper-chart-YEW9b" src="//datawrapper.dwcdn.net/YEW9b/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                                            <p><b>PM2.5</b> (or fine particles) come from vehicles, industrial areas, and building boilers. They worsen lung and heart diseases and are linked to cancer and premature death. </p>
-                                                                        <p>The EPA's standard is an annual average of 12 μg/m<sup>3</sup> (or 35 μg/m<sup>3</sup> for 24 hours). NYC meets this - but the short-term PM2.5 concentration sometimes exceeds this threshold.</p>
-
-                                                    
-                                                        
-                                                    
-                                                    
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="no2" role="tabpanel" aria-labelledby="no2-tab">
-                                                        <div class="greyitem">
-                                                                <iframe title="" aria-label="Column Chart" id="datawrapper-chart-55OPS" src="//datawrapper.dwcdn.net/55OPS/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-
-                                                                <p><b>Nitrogen dioxide</b> or NO2 primarily comes from combustion: vehicles and buildings. It's linked to asthma hospitalizations and other respiratory conditions. </p>
-                                                                <p>The EPA's standard is an annual average of 53ppb (or 100ppb for 1 hour). NYC meets this annual standard, but the short-term concentration sometimes exceeds this threshold.</p>
- 
-                                                       </div>
-                                                </div>
-                                             
-                                              </div>
- 
-                                </div>
                         </div>
                     </div>
+                    <br>
+                    <div class="card">
+                            <div class="card-body">
+                                   
+                                            <iframe title="" aria-label="Column Chart" id="datawrapper-chart-55OPS" src="//datawrapper.dwcdn.net/55OPS/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+
+                                            <p><b>Nitrogen dioxide</b> is linked to asthma hospitalizations and other respiratory conditions. NYC meets EPA's standard is an annual average of 53ppb (or 100ppb for 1 hour), but short-term concentrations sometimes exceed this threshold.</p>   
+                                   
+    
+                            </div>
+                        </div>
+
+                    
+
+                </div>
 
             </div>
 

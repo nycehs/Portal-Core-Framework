@@ -1,0 +1,7 @@
+/*modifying the nav pills colors for the air quality explorer*/
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000;
+  background-color: #f7f5f5;
+}
