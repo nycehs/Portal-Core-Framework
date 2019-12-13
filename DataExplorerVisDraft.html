@@ -29,7 +29,7 @@
     <!-- For keyboard users -->
     <a class="sr-only sr-only-focusable skip-menu" href="#skip-header-target">Skip Header</a>
 
-    <header id="global-header" class="titleslide fs-md" role="banner" style="background-image: url(images/background.png);">
+    <header id="global-header" class="titleslide" role="banner" style="background-image: url(images/background.png);">
 
         <div class="bg-black text-white" id="nyc-top-header">
 
@@ -239,7 +239,7 @@
 
                     <div class="nav-item dropdown">
     
-                        <a class="nav-link" href="DataExplorer.html" id="nav-item-03" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
+                        <a class="nav-link li-modal" href="Modal.html" id="nav-item-03" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
                         </a>    
                     </div>
                     <!-- .nav-item -->
@@ -267,44 +267,27 @@
 
     <main id="skip-header-target" role="main" style="background-color:#f8f9fa;">
        
-        <div class="container fs-sm">
-                <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="DataExplorer.html">Data Explorer
-                                </a></li>
-                            <li class="breadcrumb-item active">Asthma</li>
-                            
-                        </ol>
-    
-                    </nav>
-        </div>
-
             <div class="container-fluid fs-sm">
 
-
                 <div class="row">
-                    
-                    <div class="col text-center">
+                    <div class="col-lg-12 text-center">
                         <h2><i class="fas fa-chart-line"></i>&nbsp;Data Explorer</h2>
                     </div>
-                    
                  </div>
+                 <hr>
+                 <br>
 
-                <div class="row border-bottom">
-                    <div class="col-lg-3"> </div>
-
-               
-                    <div class="col-lg-6">
-
-                            <div class="accordion-group my-3" role="tablist" id="accordion-01">
+                <div class="row">
+                    <div class="col-lg-3">
+                            <div class="accordion-group" role="tablist" id="accordion-01">
 
                                     <div class="card">
                                 
-                                        <a class="card-header collapse" id="acc-button-01" data-toggle="collapse" href="#panel-acc-button-01"  role="tab" aria-expanded="false" aria-controls="panel-acc-button-01">
+                                        <a class="card-header collapse border-bottom" id="acc-button-01" data-toggle="collapse" href="#panel-acc-button-01"  role="tab" aria-expanded="false" aria-controls="panel-acc-button-01">
                                             <span class="title" role="heading" aria-level="3"><i class="fas fa-exchange-alt"></i>&nbsp;Change topic</span>
                                         </a>
                                 
-                                        <div class="collapse" id="panel-acc-button-01" role="tabpanel" aria-labelledby="acc-button-01" data-parent="#accordion-01">
+                                        <div class="collapse show" id="panel-acc-button-01" role="tabpanel" aria-labelledby="acc-button-01" data-parent="#accordion-01">
                                 
                                             <div class="card-body">
                                                     <div class="row">
@@ -496,70 +479,28 @@
                                 
                                     </div>
                                     <!-- .card (end of first accordion, repeat as needed) -->
+                                </div>
+                    </div>
 
-                                    <!--start topic card-->
-                                    <div class="card bg-white">
-                                            <div class="card-header">
-                                            <h3>Topic: Asthma</h3></div>
-                    
-                                            <br>
-                    
-                                            <div class="nav nav-pills bg-white device-md border-bottom" role="tablist">
-                    
-                                                <a class="nav-item nav-link flex-fill active" id="tab-btn-01-a" href="#tab-01-a"
-                                                    data-toggle="pill" aria-controls="tab-01-a" aria-selected="true" role="tab">
-                                                    <i class="fas fa-chart-line"></i>&nbsp;Data
-                                                </a>
-                                            
-                                                <a class="nav-item nav-link flex-fill" id="tab-btn-01-b" href="#tab-01-b"
-                                                    data-toggle="pill" aria-controls="tab-01-b" aria-selected="false" role="tab">
-                                                    <i class="fas fa-info-circle"></i>&nbsp;About asthma
-                                                </a>
-                                            
-                                                <a class="nav-item nav-link flex-fill" id="tab-btn-01-c" href="#tab-01-c"
-                                                    data-toggle="pill" aria-controls="tab-01-c" aria-selected="false" role="tab">
-                                                    <i class="fas fa-external-link-alt"></i>&nbsp;More info
-                                                </a>
-                                            
-                                            </div>
-                                            
-                                            <div class="tab-content bg-white p-2" id="tabs-01-content">
-                                            
-                                                <div class="tab-pane fade show active" id="tab-01-a" aria-labelledby="tab-btn-01-a" role="tabpanel">
-                                                    <h5>View data for:</h5> 
-                                                    <br>
-                                                    Asthma emergency department visits
-                                                    <li><a href="">Children age 0-4</a></li>
-                                                    <li><a href="./Data/AsthmaData.html">Children age 5-14</a> <a href="">(small neighborhoods)</a></li>
-                                                    <li><a href="">Adults</a> <a href="">(small neighborhoods)</a></li>
-                                                    <br>
-                                                    Asthma hospitalizations
-                                                    <li><a href="">Children age 0-4</a></li>
-                                                    <li><a href="">Children age 5-14</a> <a href="">(small neighborhoods)</a></li>
-                                                    <li><a href="">Adults</a> <a href="">(small neighborhoods)</a></li>
-                                                    <br>
-                                                    Asthma prevalence
-                                                    <li><a href="">Adults with asthma in the past 12 months</a></li>
-                                                    <li><a href="">Public school children (age 5-14) with asthma</a></li>
-                                                    <li><a href="">Public school children (age 5-14) with persistent asthma</a></li>
-                                                    <li><a href="">Youth asthma in the past 12 months</a></li>
-                                                    <li><a href="">Children (age 0-13) ever diagnosed with asthma</a></li>
-                                                    <br>
-                                                    <b>Neighborhood Reports</b>
-                                                    <ul>
-                                                        <li><a href="">Asthma and the environment</a></li>
-                                                        <li><a href="">Outdoor air and health</a></li>
-                                                        <li><a href="">Housing and health</a></li>
-                                                    </ul>
-                                                </div>
-                                            
-                                                <div class="tab-pane fade" id="tab-01-b" aria-labelledby="tab-btn-01-b" role="tabpanel">
-                                                    <h5>About asthma</h5>
+                    <div class="col-lg-9">
+                        <div class="card">
+                            <div class="card-header h3">Asthma</div>
+                        </div>
+                        
+                       
+
+                        <div class="row pt-2">
+                            <div class="col-lg-4">
+                                    <div class="card">
+
+                                
+                                            <div class="card-body">
+                                                
                                                     <p>Asthma is a common disease in which the lungs become swollen, making breathing difficult. Symptoms include wheezing, coughing, shortness of breath and tightness in the chest. The exact causes of asthma are not known. Asthma cannot be cured, but it can be controlled. </p>
-                            
+        
                                                     <p>Asthma is a leading cause of emergency room visits, hospitalizations and missed school days in New York City's poorest neighborhoods. In NYC, asthma is more common among low-income Black and Latino children.  </p>
                     
-                                                    <h5>Asthma and the environment</h5>
+                                                    <b>Asthma and the environment</b>
                     
                                                     <p>Certain things in the environment can trigger an asthma attack or make symptoms worse. Common triggers include: 
                                                         <ul>
@@ -570,7 +511,7 @@
                                                             <li>Pets</li>
                                                         </ul>
                                                         </p>
-                                                        <h5>Controlling asthma</h5>
+                                                        <b>Controlling asthma</b>
                                                         <p>Asthma does not have to prevent you from leading an active and healthy life. You can take charge by having a plan to control asthma, including these strategies for avoiding asthma triggers:
                         
                          
@@ -588,34 +529,146 @@
                                                                 <li>Pest proof your home. If building conditions may be attracting pests, contact your landlord. If your landlord does not addres your concerns, call 311. </li>
                                                             </ul>
                                                             </p>
-                                                </div>
-                                            
-                                                <div class="tab-pane fade" id="tab-01-c" aria-labelledby="tab-btn-01-c" role="tabpanel">
-                                                    <h5>More info</h5>
-                                                    <ul><li><a href="http://www.aaaai.org/home.aspx" content="http://www.aaaai.org/home.aspx" class="message_urls" target="_blank">American Academy  of Allergy and Immunology</a></li><li><a href="http://www.healthyschools.org/links.html" content="http://www.healthyschools.org/links.html" class="message_urls" target="_blank">Healthy Schools Network, Inc.</a></li><li><a href="http://www.airnow.gov/" content="http://www.airnow.gov/" class="message_urls" target="_blank">EPA AIRNow</a></li><li><a href="http://www.aafa.org/" content="http://www.aafa.org/" class="message_urls" target="_blank">Asthma and Allergy Foundation of America</a></li><li><a href="http://www.asthmacommunitynetwork.org/resources/conferences" content="http://www.asthmacommunitynetwork.org/resources/conferences" class="message_urls" target="_blank">Healthy Kids: The Key to Basics</a></li><li><a href="http://www.nhlbi.nih.gov/about/org/naepp/" content="http://www.nhlbi.nih.gov/about/org/naepp/" class="message_urls" target="_blank">National Asthma Education and Prevention Program</a></li><li><a href="http://www.lung.org" content="http://www.lung.org" class="message_urls" target="_blank">The American Lung Association </a></li><li><a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/asthma-medication-administration-form-english" content="https://www.schools.nyc.gov/docs/default-source/default-document-library/asthma-medication-administration-form-english" class="message_urls" target="_blank">Asthma Medication Administration Form (AMAF) School Year 2018-19</a></li></ul>
-                                                </div>
-                                            
                                             </div>
-                                        </div>
-
-                                        <hr>
-
-                                        
-
-
-
-                                    
-
-
                                 
+                                        
+                                
+                                    </div>
+                            </div>
+
+                            
+
+                            
+
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col">
+                                            <div class="dropdown">
+                                                    <button type="button" class="btn btn-lg btn-outline-success dropdown-toggle btn-block text-center" id="indicatordropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Asthma emergency department visits</button> 	
+                                                    <div class="dropdown-menu" aria-labelledby="indicatordropdown">
+                                                            <a class="dropdown-item" href="#">Asthma ED visits</a>
+                                                            <a class="dropdown-item" href="#">Asthma hospitalizations</a>
+                                                            <a class="dropdown-item" href="#">Asthma prevalence</a>
+                                                          </div>
+                                                        
+                                                    </div>
+                                    </div>
+                                    
                                 </div>
-                    
+
+
+                                <div class="row pt-2">
+                                    <div class="col-lg-6">
+                                            <div class="card">
+                                                    <div class="card-body"><b>Asthma ED visits</b> are an important measure of asthma, particularly for children age 5 to 17. It's triggered by several environmental conditions and there are notable racial and socioeconomic disparities.</div>
+                                                </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                            <div class="card h-100">
+                                                <div class="card-header">Refine data</div>
+                                                    <div class="card-body">
+                                                        
+                                                                    <b>Age:</b>
+                                                                    <div class="form-check form-check-inline">
+                                                                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                                      <label class="form-check-label" for="inlineRadio1">0 to 4</label>
+                                                                    </div>
+                                                                    <div class="form-check form-check-inline">
+                                                                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                                      <label class="form-check-label" for="inlineRadio2">5 to 17</label>
+                                                                    </div>
+                                                                    <div class="form-check form-check-inline">
+                                                                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                                      <label class="form-check-label" for="inlineRadio3">Adults</label>
+                                                                    </div>
+                                                                    <hr>
+                                                                    <b>Measure:</b>
+                                                                    <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                                            <label class="form-check-label" for="inlineRadio1">Rate</label>
+                                                                          </div>
+                                                                          <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                                            <label class="form-check-label" for="inlineRadio2">Count</label>
+                                                                          </div>
+                                                </div>
+                                                </div>
+                                    </div>
+                                </div>
+
+                                <div class="row pt-2">
+                                    <div class="col">
+                                            <div class="nav nav-pills bg-light device-md" role="tablist">
+
+                                                    <a class="nav-item nav-link flex-fill active" id="tab-btn-01-a" href="#tab-01-a"
+                                                        data-toggle="pill" aria-controls="tab-01-a" aria-selected="true" role="tab">
+                                                        Summary
+                                                    </a>
+                                                
+                                                    <a class="nav-item nav-link flex-fill" id="tab-btn-01-b" href="#tab-01-b"
+                                                        data-toggle="pill" aria-controls="tab-01-b" aria-selected="false" role="tab">
+                                                        Map
+                                                    </a>
+                                                
+                                                    <a class="nav-item nav-link flex-fill" id="tab-btn-01-c" href="#tab-01-c"
+                                                        data-toggle="pill" aria-controls="tab-01-c" aria-selected="false" role="tab">
+                                                        Trend
+                                                    </a>
+                        
+                                                    <a class="nav-item nav-link flex-fill" id="tab-btn-01-d" href="#tab-01-d"
+                                                    data-toggle="pill" aria-controls="tab-01-d" aria-selected="false" role="tab">
+                                                    Disparities
+                                                    </a>
+                        
+                                                 <a class="nav-item nav-link flex-fill" id="tab-btn-01-e" href="#tab-01-e"
+                                                 data-toggle="pill" aria-controls="tab-01-e" aria-selected="false" role="tab">
+                                                 Links
+                                                    </a>
+                                                
+                                                </div>
+                                                
+                                                <div class="tab-content bg-light p-2" id="tabs-01-content">
+                                                
+                                                    <div class="tab-pane fade show active" id="tab-01-a" aria-labelledby="tab-btn-01-a" role="tabpanel">
+                                                            <iframe title="" aria-label="Table" id="datawrapper-chart-r5ziK" src="https://datawrapper.dwcdn.net/r5ziK/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="844"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                                    </div>
+                                                
+                                                    <div class="tab-pane fade" id="tab-01-b" aria-labelledby="tab-btn-01-b" role="tabpanel">
+                                                            <iframe title="" aria-label="USA new york city neighborhoods (ntas) choropleth map" id="datawrapper-chart-52c6Y" src="https://datawrapper.dwcdn.net/52c6Y/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="600"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                                    </div>
+                                                
+                                                    <div class="tab-pane fade" id="tab-01-c" aria-labelledby="tab-btn-01-c" role="tabpanel">
+                                                            <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-0JdfH" src="https://datawrapper.dwcdn.net/0JdfH/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                                    </div>
+                        
+                                                    <div class="tab-pane fade" id="tab-01-d" aria-labelledby="tab-btn-01-d" role="tabpanel">
+                                                            <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-80S2v" src="https://datawrapper.dwcdn.net/80S2v/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                                        </div>
+                        
+                        
+                                                        <div class="tab-pane fade" id="tab-01-e" aria-labelledby="tab-btn-01-e" role="tabpanel">
+                                                                <iframe title="" aria-label="Scatter Plot" id="datawrapper-chart-CL80B" src="https://datawrapper.dwcdn.net/CL80B/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="409"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                                            </div>
+                        
+                        
+                                                </div>
+                                    </div>
+                                    
+                                </div>
+                            
+                                
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
 
 
+          
+                        
 
- 
+                        
 
 
 
