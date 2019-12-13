@@ -188,15 +188,15 @@
                                     <div class="d-lg-none">
                                                 
                                             <div class="btn-toggle">
-                                                <button class="btn btn-block btn-md btn-light" style="width: 100%;" data-toggle="collapse"
+                                                <button class="btn btn-block btn-md btn-secondary" data-toggle="collapse"
                                                     data-target="#sidebar-nav1" aria-expanded="false" aria-controls="sidebar-nav1">
-                                                    <span class="title">Data explorer</span>
+                                                    <span class="title">Change topic</span>
                                                 </button>
                                             </div>
                                         
                                     </div>
 
-                                    <div class="collapse d-lg-block" id="sidebar-nav1">
+                                    <div class="collapse d-lg-block pt-2" id="sidebar-nav1">
                                             <div class="btn-toggle">
                                                     <button class="btn btn-block btn-sm btn-secondary text-white" data-toggle="collapse" data-target="#toggle-target" aria-expanded="false" aria-controls="toggle-target">
                                                         <span class="title">Outdoor air</span>
@@ -447,11 +447,21 @@
                         <!--start primary window-->
                         <div class="col-lg-9" id="primary-content">
                           <div class="row my-2">
-                              <div class="col"><h3>Asthma</h3></div>
+                              <div class="col"><h3>Asthma</h3>
+                            
+                                <div class="d-lg-none">
+                                        <div class="btn-toggle">
+                                        <button class="btn btn-block btn-md btn-light" data-toggle="collapse" data-target="#topicdescription" aria-expanded="false" aria-controls="topicdescription">
+                                            <span class="title">About asthma</span>
+                                        </button>
+                                        </div>
+                                    </div>
+                            </div>
                           </div>
 
                           <div class="row my-2">
                               <div class="col-lg-4">
+                                <div class="collapse d-lg-block" id="topicdescription">
                                 <div class="card">
 
                                 
@@ -495,13 +505,14 @@
                                 
                         
                             </div>
+                            </div>
 
                             
 
                               </div>
 
                               <div class="col-lg-8">
-                                  <div class="row my-2">
+                                  <div class="row">
                                       <div class="col">
                                         <em>Choose indicator to display:</em>  
                                         <div class="dropdown">
@@ -538,7 +549,7 @@
                                                                         </div>
                                                                         <div class="form-check form-check-inline">
                                                                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                                          <label class="form-check-label" for="inlineRadio3">Adults</label>
+                                                                          <label class="form-check-label" for="inlineRadio3">18+</label>
                                                                         </div>
                                                                         <hr>
                                                                         <b>Measure:</b>
@@ -550,6 +561,8 @@
                                                                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                                                                                 <label class="form-check-label" for="inlineRadio2">Count</label>
                                                                               </div>
+                                                                              <hr>
+                                                                              <a href="">More options.</a>
                                                     </div>
                                                     </div>
                                       </div>
