@@ -278,7 +278,8 @@ main {
 
 /*adding grey cards */
 .greyitem {background-color: #f7f5f5;
-padding: 10px;}
+padding: 10px;
+height: 175px;}
 
 
 
