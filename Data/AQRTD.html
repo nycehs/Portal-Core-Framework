@@ -377,8 +377,65 @@
                     
 
                     <h5>Common patterns</h5>
-                        <em>We often see real-time data take the shapes below. Take a look at the images and see if you can see similar patterns in today's data - or come back tomorrow to check.</em>
+                    <p>We often see real-time data take the shapes below. Take a look at the images and see if you can see similar patterns in today's data - or come back tomorrow to check.</p>
+                    <div class="card">
+                        <div class="card-body">
 
+                        
+                       
+
+
+                        <div class="row">
+                                <div class="col-4 h-100">
+                                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link active" id="v-pills-spatial-tab" data-toggle="pill" href="#v-pills-spatial" role="tab" aria-controls="v-pills-spatial" aria-selected="true">Spatial differences</a>
+                                    <a class="nav-link" id="v-pills-daily-tab" data-toggle="pill" href="#v-pills-daily" role="tab" aria-controls="v-pills-daily" aria-selected="false">Daily spikes</a>
+                                    <a class="nav-link" id="v-pills-other-tab" data-toggle="pill" href="#v-pills-other" role="tab" aria-controls="v-pills-other" aria-selected="false">Other spikes</a>
+                                    <a class="nav-link" id="v-pills-weather-tab" data-toggle="pill" href="#v-pills-weather" role="tab" aria-controls="v-pills-weather" aria-selected="false">Weather patterns</a>
+                                  </div>
+                                </div>
+                                <div class="col-8">
+                                  <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-spatial" role="tabpanel" aria-labelledby="v-pills-spatial-tab">
+                                            
+                                                    <figure class="figure">
+                                                            <figcaption class="figure-caption fs-sm"><span style="color: #A513B6; font-weight: bold;">Spatial differences</span>
+                                                                <br>The monitors are in neighborhoods with different emissions sources, so have different PM2.5 levels. <span style="color:purple"><b>Midtown</b></span> has the highest traffic density, usually has the most PM2.5. <span style="color:red"><b>Queens College</b></span>, with the least traffic, often has the cleanest air.</figcaption>
+                                                        <img src="../images/AQweather.png" class="figure-img img-fluid rounded" alt="ALT TEXT HERE">
+                                                        
+                                                    </figure>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-daily" role="tabpanel" aria-labelledby="v-pills-daily-tab">
+                                            
+                                                    <figure class="figure">
+                                                            <figcaption class="figure-caption fs-sm"><span style="color: #A513B6; font-weight: bold;">Daily spikes</span> <br>PM2.5 levels rise in the morning as traffic volume increases. These <em>temporal</em> differences (spikes) are usually greater than <em>spatial</em> differences (the differences between neighborhoods).</figcaption>
+                                                        <img src="../images/aqimage.PNG" class="figure-img img-fluid rounded" alt="ALT TEXT HERE">
+                                                        
+                                                    </figure>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-other" role="tabpanel" aria-labelledby="v-pills-other-tab">
+                                           
+                                                    <figure class="figure">
+                                                            <figcaption class="figure-caption fs-sm"><span style="color: #A513B6; font-weight: bold;">Other spikes</span> <br>Sometimes there are <span style="color:#008000;"><b>dramatic spikes</b></span> at unexpected times, and without having a camera on each monitor, we don't know what causes them - however, they can be explained by something as simple as a truck idling for a few minutes underneath the monitor.</figcaption>
+                                                        <img src="../images/AQspike.PNG" class="figure-img img-fluid rounded" alt="ALT TEXT HERE" >
+                                                        
+                                                    </figure>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-weather" role="tabpanel" aria-labelledby="v-pills-weather-tab">
+                                            
+                                                    <figure class="figure">
+                                                            <figcaption class="figure-caption fs-sm"><span style="color: #A513B6; font-weight: bold;">Weather patterns</span> <br>Weather can trap emissions and cause PM2.5 to build up. Sometimes we see a clear west-to-east pattern in rising PM2.5, likely related to a weather pattern moving in to New York City and causing pollution levels to rise as emissions are trapped.</figcaption>
+                                                        <img src="../images/aqweather2.PNG" class="figure-img img-fluid rounded" alt="ALT TEXT HERE">
+                                                        
+                                                    </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                              <!--comment 
                     <div class="row">
                         <div class="col-6 mx-auto">
                                 <div class="border rounded px-1 mb-2">
@@ -410,7 +467,8 @@
 
                         </div>
                     </div>
-
+                    this out-->
+                    <br>
                     <h5>"What about my neighborhood?"</h5>
                    <p>We don't have real-time data for every neighborhood in New York City. However, we use our network of air quality monitors and a huge dataset of sources factors to model air quality based on key factors that affect air quality. To find out about air quality in your neighborhood, click the button below.</P>
 
