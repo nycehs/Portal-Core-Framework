@@ -11,25 +11,29 @@
     <!-- Corrects IE Compatibility Mode -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Explore your neighborhood's air quality</title>
+    <title>Data Stories: EH Data Portal</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
 
     <!-- NYC Theme CSS -->
-    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="./css/theme.css">
 
     <!-- Custom Portal CSS -->
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="./css/custom.css">
+
+    
+
 
 </head>
 
 <body>
+        
     
     <!-- For keyboard users -->
     <a class="sr-only sr-only-focusable skip-menu" href="#skip-header-target">Skip Header</a>
 
-    <header id="global-header" class="titleslide" role="banner" style="background-image: url(../images/background.png);">
+    <header id="global-header" class="titleslide" role="banner">
 
         <div class="bg-black text-white" id="nyc-top-header">
 
@@ -67,7 +71,7 @@
                             </li>
                             <li>
                                 <a href="https://www1.nyc.gov/" title="Go to nyc.gov">
-                                    <img class="d-block" src="../images/nyc-bubble-logo.svg" width="45" alt="NYC Logo">
+                                    <img class="d-block" src="./images/nyc-bubble-logo.svg" width="45" alt="NYC Logo">
                                 </a>
                             </li>
                         </ul>
@@ -84,143 +88,56 @@
         </div>
         <!-- #nyc-top-header -->
 
-        <div class="wrap-header">
+        
 
-            <div class="container-fluid wide">
-
-                <div class="row align-items-center">
-
-                    <div class="col-lg py-2">
-
-                        <div class="d-flex justify-content-center justify-content-lg-start">
-
-                            <a class="align-self-center" href="#" title="Home">
-
-                                <!-- Placeholder logo, replace the following <svg> tag with your own image version -->
-
-                                <svg id="nyc-logo-placeholder" data-name="NYC Bubble Logo"
-                                    xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60">
-                                    <title>NYC Bubble Logo Placeholder</title>
-                                    <polygon points="176.25 26.204 180 22.5 180 11.251 168.75 0 131.25 0 120.001 11.251 120.001 3.75 116.25 0 101.25 0 97.5
-                                        3.75 97.5 11.251 90.001 18.75 82.5 11.251 82.5 3.75 78.75 0 63.75 0 60.001 3.75 56.25 0 41.25 0 37.501 3.75
-                                        37.501 18.75 18.751 0 3.751 0 0 3.75 0 56.25 3.751 60 18.751 60 22.501 56.25 22.501 41.25 41.25 60 56.25 60
-                                        60.001 56.25 60.001 26.25 78.75 45 78.75 56.25 82.5 60 97.5 60 101.25 56.25 101.25 45 120.001 26.25 120.001
-                                        48.751 131.25 60 168.75 60 180 48.751 180 37.5 176.25 33.745 157.5 33.745 157.5 37.5 142.5 37.5 142.5 22.5 157.5
-                                        22.5 157.5 26.204 176.25 26.204" />
-                                    <path
-                                        d="M177.32981,2.5304c.3495,0,.65757-.03335.65757-.44445,0-.34343-.33634-.38486-.61614-.38486h-.56365V2.5304Zm-.52222,1.61111h-.46566V1.30412h1.07678c.68584,0,1.03433.23939,1.03433.81516a.72555.72555,0,0,1-.73939.77576l.795,1.24647h-.52829L177.247,2.92836h-.43939Zm.5081-3.58486a1.99063,1.99063,0,0,0-1.97477,2.1182,1.97357,1.97357,0,1,0,3.93637,0,1.98825,1.98825,0,0,0-1.9616-2.1182m0,4.68282a2.46874,2.46874,0,0,1-2.52427-2.56462,2.51762,2.51762,0,1,1,5.03436,0,2.48592,2.48592,0,0,1-2.51009,2.56462" />
-                                </svg>
-
-                            </a>
-
-                        </div>
-                        <!-- .d-flex -->
-
-                    </div>
-                    <!-- .col -->
-
-                    <div class="col-lg-auto border-top border-lg-0">
-
-                        <div class="row no-gutters justify-content-between py-2">
-
-                            <!-- Menu Toggle -->
-                            <div class="col-auto d-flex d-lg-none">
-
-                                <button class="no-btn-style" type="button" data-toggle="collapse"
-                                    data-target="#nav-primary" aria-controls="nav-primary" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <span class="fas fa-bars fa-lg" role="img"></span>
-                                </button>
-
-                            </div>
-                            <!-- .col -->
-
-                            <div class="col-auto">
-
-                                <ul class="extensible-list horizontal">
-                                    <li>
-                                        <button class="no-btn-style" type="button" title="Language"
-                                            data-toggle="collapse" data-target="#global-language"
-                                            aria-controls="global-language" aria-expanded="false">
-                                            <span class="sr-only">Language</span>
-                                            <span class="fas fa-language fa-lg" role="img"></span>
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="no-btn-style" type="button" title="Search" data-toggle="collapse"
-                                            data-target="#global-search" aria-controls="global-search"
-                                            aria-expanded="false">
-                                            <span class="sr-only">Search</span>
-                                            <span class="fas fa-search fa-lg" role="img"></span>
-                                        </button>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <!-- .col -->
-
-                        </div>
-                        <!-- .row -->
-
-                    </div>
-                    <!-- .col -->
-
+                <div class="container-fluid wide">
+    
+                    
+    
+                            
+    
+                                <!-- Menu Toggle -->
+                                <div class="col-auto d-flex d-lg-none">
+    
+                                    <button class="no-btn-style" type="button" data-toggle="collapse"
+                                        data-target="#nav-primary" aria-controls="nav-primary" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="fas fa-bars fa-lg" role="img"></span>
+                                    </button>
+    
+                                </div>
+                                <!-- .col -->
+    
+                                
+    
+                           
+    
+                      
+    
                 </div>
-                <!-- .row -->
+                <!-- .container-fluid -->
+    
+         
 
-            </div>
-            <!-- .container-fluid -->
 
-        </div>
-        <!-- .wrap-header -->
-
-        <div class="container-fluid border-top collapse" id="global-language">
-            <div class="narrow py-2">
-                <div id="google_translate_element"></div>
-            </div>
-        </div>
-
-        <div class="container-fluid border-top collapse" id="global-search">
-            <form class="narrow py-2" aria-label="Search" role="search">
-                <div class="input-group">
-                    <label class="sr-only" for="global-search-bar">Search</label>
-                    <input class="form-control form-control-lg" id="global-search-bar" placeholder="Search">
-                    <div class="input-group-btn">
-                        <button class="btn btn-primary btn-lg" type="button" title="Search">
-                            <span class="sr-only">Search</span>
-                            <span class="fas fa-arrow-right" role="img"></span>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                    <a href="Index.html" style="text-decoration: none;"><h1 style="color:#403f3d">Environment and Health <span style="opacity: 0.6;">Data Portal</span></h1></a>
-            <p>Explore data on how environments shape health in New York City.</p>
-            <br>
-             </div>
-        </div>
-    </div>
 
         <div class="container-fluid collapse d-lg-block px-0 border-lg-top border-lg-bottom" id="nav-primary" style="background-color:white;">
 
             <h2 class="sr-only">
                 Primary Navigation
             </h2>
-    
+
+   
             <div class="wide">
-    
+
                 <nav class="nav nav-pills" role="navigation">
     
                      <!-- .nav-item -->
     
                     <div class="nav-item">
     
-                        <a class="nav-link" href="../Index.html" id="nav-item-01" role="button">
-                            <i class="fas fa-home"></i>&nbsp;Portal Home
+                        <a class="nav-link" href="Index.html" id="nav-item-01" role="button">
+                            <i class="fas fa-home"></i>&nbsp;EH Data Portal home
                         </a>
 
     
@@ -229,7 +146,7 @@
 
                     <div class="nav-item">
     
-                        <a class="nav-link" href="../DataStories.html" id="nav-item-02" role="button">
+                        <a class="nav-link" href="DataStories.html" id="nav-item-02" role="button">
                             <i class="fas fa-atlas"></i>&nbsp;Data Stories
                         </a>
 
@@ -239,14 +156,33 @@
 
                     <div class="nav-item dropdown">
     
-                        <a class="nav-link li-modal" href="../Modal.html" id="nav-item-03" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
-                        </a>    
+                        <a class="nav-link dropdown-toggle active" href="DataExplorerHub.html" id="nav-item-03" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
+                        </a>  
+                        
+                        <div class="dropdown-menu" aria-labelledby="nav-item-03">
+
+                            <ul class="extensible-list">
+                                <li><a href="/Data/Outdoor.html">Outdoor Air</a></li>
+                                <li><a href="#">Housing</a></li>
+                                <li><a href="#">Climate</a></li>
+                                <li><a href="#">Transportation</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Pests</a></li>
+                                <hr>
+                                <li><a href="#">Special populations</a></li>
+                                <li><a href="">Child health</a></li>
+                                <li><a href="">All health outcomes</a></li>
+                            </ul>
+
+                        </div>
+
                     </div>
                     <!-- .nav-item -->
     
                     <div class="nav-item">
     
-                        <a class="nav-link" href="../NeighborhoodReports.html" id="nav-item-04" role="button">
+                        <a class="nav-link" href="NeighborhoodReports.html" id="nav-item-04" role="button">
                             <i class="fas fa-map-marked-alt"></i>&nbsp;Neighborhood Reports
                         </a>
     
@@ -254,6 +190,7 @@
                     <!-- .nav-item -->
     
                 </nav>
+
     
             </div>
             <!-- .wide -->
@@ -266,128 +203,170 @@
 
 
     <main id="skip-header-target" role="main" style="background-color:#f8f9fa;">
-        <div class="container fs-sm">
-            <div class="row">
-                <div class="col-lg-12 border-bottom">
-                        <button type="button" class="btn btn-secondary float-right">Real-time air quality data</button>
-                    <h3>Neighborhood air quality explorer</h3>
-                <br>
+       
+            <div class="container-fluid fs-sm">
+                <div class="row">
+                    <div class="col-lg-3 border-xl-right">
 
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6 my-2 pt-2">                
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter an address for neighborhood air quality">
-                            
-                        </div>
-                    </form></div>
-
-                <div class="col-lg-6 my-2 pt-2">Your neighborhood: <span style="font-weight:bold;color:#15607a">BK09</span><br>
-                <em>This is a Neighborhood Tabulation Area (NTA). <a href="">Click here to read about different geographies.</a></em></div>
-            </div>
-
-        </div>
-
-        <div class="container fs-sm">
-            <div class="row">
-
-
-                <div class="col-lg-6">
-                        <h4><i class="far fa-question-circle"></i>&nbsp;Factors that affect <span style="font-weight:bold;color:#15607a">your</span> air quality</h4>
-
-                        <div class="card bg-light">
-                                <div class="card-body">
-                                     <p>We combine data from our citywide air quality monitoring system, NYCCAS, with a lot of other data to understand what makes one neighborhood's air quality better or worse than another's. We found that building density, industrial areas, traffic density, and truck traffic are associated with worse air quality.</p>                    
-                             </div>
-                         </div>
-
-                        <div class="card" style="height: 680px;">
-                            <div class="card-body">
-                                <table class="table">
-                                    <thead>
-                                        <th scope="col" style="width: 40%;" class="text-right">Factor</th>
-                                        <th scope="col">Value</th>
-                                    </thead>
-                                        <tr>
-                                            <td class="text-right"><i class="far fa-building"></i>&nbsp;Building density</td>
-                                            <td><button type="button" class="btn btn-worse btn-block" data-toggle="collapse" href="#buildingdensity" role="button" role="button" aria-expanded="true" aria-controls="buildingdensity">High</button></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="text-right"><i class="fas fa-industry"></i>&nbsp;Industrial area</td>
-                                            <td><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#industrial" role="button" role="button" aria-expanded="false" aria-controls="industrial">Medium</button></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="text-right"></i>&nbsp;Traffic density</td>
-                                            <td><button type="button" class="btn btn-light btn-block" data-toggle="collapse" href="#traffic" role="button" role="button" aria-expanded="false" aria-controls="traffic">Medium</button></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="text-right"><i class="fas fa-truck"></i>&nbsp;Truck traffic</td>
-                                            <td><button type="button" class="btn btn-better btn-block"  data-toggle="collapse" href="#truck" role="button" role="button" aria-expanded="false" aria-controls="truck">Low</button></td>
-                                        </tr>
-
-                                </table>
-
-                                <div class="collapse show" id="buildingdensity">
-                                        Buildings, like vehicles, burn fuel and produce pollution.
-                        
-                                </div>
-            
-                                <div class="collapse" id="industrial">
-                                        Industrial areas create PM2.5 with trucks and construction dust.
-                                </div>
-                                <div class="collapse" id="traffic">
-                                        Whole buncha bad stuff comes outta them tailpipes.
+                            <div class="sticky-top" id="sidebar-nav">
+                                    <div class="d-lg-none">
+                                                
+                                            <div class="btn-toggle">
+                                                <button class="btn btn-block btn-md btn-secondary" data-toggle="collapse"
+                                                    data-target="#sidebar-nav1" aria-expanded="false" aria-controls="sidebar-nav1">
+                                                    <span class="title">Choose topic</span>
+                                                </button>
+                                            </div>
+                                        
                                     </div>
-            
-                                <div class="collapse" id="truck">
-                                        Trucks: even worse!
-                                </div>
+
+                                    <div class="collapse d-lg-block pt-2" id="sidebar-nav1">
+                                        <h2><i class="fas fa-chart-line"></i>&nbsp;Data Explorer</h2>
+                                        <div class="border-bottom mb-2"></div>
+                                        <button type="button" class="btn btn-outline-primary btn-large btn-block">Outdoor air</button>   
+                                        <button type="button" class="btn btn-outline-primary btn-large btn-block">Housing</button>  
+                                        <button type="button" class="btn btn-outline-primary btn-large btn-block">Climate</button>  
+                                        <button type="button" class="btn btn-outline-primary btn-large btn-block">Transportation</button>  
+                                        <button type="button" class="btn btn-outline-primary btn-large btn-block">Food</button>  
+                                        <button type="button" class="btn btn-outline-primary btn-large btn-block">Pests</button>  
+                                        <div class="border-bottom my-2"></div>
+                                        <button type="button" class="btn btn-outline-primary btn-large btn-block">Special populations</button>  
+                                        <button type="button" class="btn btn-outline-primary btn-large btn-block">Child health</button>  
+                                        <button type="button" class="btn btn-outline-primary btn-large btn-block">All health outcomes</button> 
+                                        <div class="border-bottom my-2"></div>     
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search topics">
+                                    </div>
+                                    <!--end collapse div-->
+                                   
+                                
+
 
                             </div>
-                        
+                            <!-- .sticky-top -->
+        
                         </div>
 
+                        <!--start primary window-->
+                        <div class="col-lg-9" id="primary-content">
+                                <div class="row">
+                                        <div class="col"><h3>Housing</h3>
+                                            <p>Note: I think this works best, because the other system sets up a heavy page that takes additional work to implement deep-linking.</p>
+                                            <p>Secondly, I think this is best implemented without a 'home' data explorer: on the Portal home page, clicking the Data Explorer button unfolds an accordion with the main Hub Page buttons, which bring you here - fewer page changes, emphasis on lateral browse.</p>
+                                          <p>Most people spend most of their time at home - so the household environment can significantly affect health. Disrepair that stems from longterm maintenance neglect can lead to serious health problems, including: lead poisoning from lead paint; asthma and other respiratory issues triggered by pests; and carbon monoxide poisoning.</p>
+                                          <p>In NYC, substandard housing is disproportionately located in low-income neighborhoods, as historical disinvestment lead to severe, systemic maintenance deficiencies that threatens people's health. No family should have to choose between affordable and healthy housing - all tenants are entitled to safe, decent, healthy housing that prevents disease and injury.</p>
+    
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col mt-4">
+                                                <h4><i class="fas fa-chart-line"></i>&nbsp;Get the data</h4>
+                                        </div>
+                                    </div>
+          
+                                    <div class="row mt-2">
+                                        <div class="col-lg-4 col-xs-12">
+                                          <div class="card mb-2">
+                                              <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Environmental factors</div>
+                                              <ul class="list-group list-group-flush">
+                                                  <li class="list-group-item"><a href="">Housing maintenance</a>
+                                                  <li class="list-group-item"><a href="">Housing safety</a>
+                                                  <li class="list-group-item"><a href="">Housing characteristics</a>
+                                                  <li class="list-group-item"><a href="">Lead hazads</a>
+                                                  <li class="list-group-item"><a href="">Asthma triggers</a>
+                                                  <li class="list-group-item"><a href="">Carbon monoxide incidents</a>
+                                              </ul>
+                                      
+                                              </div>
+          
+                                        </div>
+          
+                                        <div class="col-lg-4 col-xs-12">
+                                          <div class="card mb-2">
+                                              <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Vulnerable populations </div>
+                                              <ul class="list-group list-group-flush">
+                                              <li class="list-group-item"><a href="">Poverty</a>
+                                              <li class="list-group-item"><a href="">Air conditioning (adults 65+)</a>
+                                              </ul>
+                                          
+                                              </div>
+          
+                                              <div class="card mb-2">
+                                                  <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Behaviors </div>
+                                                  <ul class="list-group list-group-flush">
+                                                  <li class="list-group-item"><a href="">Smoking</a>
+                                                  </ul>
+                                              
+                                                  </div>
+          
+                                        </div>
+          
+                                        <div class="col-lg-4 col-xs-12">
+                                              <div class="card mb-2">
+                                                      <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Health outcomes </div>
+                                                      <ul class="list-group list-group-flush">
+                                                      <li class="list-group-item"><a href="">Childhood lead exposure</a>
+                                                      <li class="list-group-item"><a href="Asthma.html">Asthma</a>
+                                                      <li class="list-group-item"><a href="">Chronic obstructive pulmonary disease</a>
+                                                      <li class="list-group-item"><a href="">Carbon monoxide poisoning</a>
+                                                      <li class="list-group-item"><a href="">Falls among older adults</a>
+                                                      </ul>
+                                                      </div>
+          
+          
+                                        </div>
+          
+                                      </div>
+                                      <div class="row">
+                                          <div class="col mt-4">
+                                                  <h4><i class="fas fa-book-reader"></i>&nbsp;More resources</h4>
+                                          </div>
+                                      </div>
+          
+                                      <div class="row mt-2">
+          
+                                        <hr>
+          
+                                        <div class="col-lg-4 col-xs-12">
+                                              <div class="card mb-2">
+                                                      <div class="card-header bg-light"><i class="fas fa-link"></i>&nbsp;Related categories</div>
+                                                      <ul class="list-group list-group-flush">
+                                                          <li class="list-group-item"><a href="pests.html">Pests and pesticides</a>
+                                                      </ul>
+                                              
+                                                      </div>
+                                        </div>
+                                        <div class="col-lg-4 col-xs-12">
+                                                <div class="card mb-2">
+                                                        <div class="card-header bg-secondary text-white"><i class="fas fa-map-marked-alt"></i>&nbsp;Neighborhood reports </div>
+                                                        <a href="">
+                                                                <button type="button" class="btn btn-light btn-block">Housing and health</button></a>
+    
+                                                        </div>	
+                                        </div>
+                                        <div class="col-lg-4 col-xs-12">
+                                              <div class="card mb-2">
+                                                      <div class="card-header bg-light"><i class="fas fa-atlas"></i>&nbsp;Data stories</div>
+                                                      <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item"><a href="pests.html">Housing, racism, and health</a>
+                                                        </ul>	
+                                                  </div>	
+                                        </div>
+                                        
+          
+                                      
+                                    </div>
 
-                </div>
+                        
 
-                <div class="col-lg-6">                    
-                    <h4><i class="fas fa-smog"></i>&nbsp;Air pollution in <span style="font-weight:bold;color:#15607a">your neighborhood</span></h4>
-                    <div class="card bg-light">
-                            <div class="card-body">           
-                                 <p>We can predict air quality by understanding these factors. So if we don't have an air quality monitor in one neighborhood, but we know its building density, its industrial area, and its traffic, then we can <em>model</em> (estimate or predict) its air quality - based on monitored air quality in similar neighborhoods. </p>
-                         </div>
-                     </div>
-                    <div class="card"  style="height: 680px;">
-                            
-                            <div class="card-body">
-                                    Fine particulate matter (PM2.5)
-                                    <iframe title="" aria-label="Column Chart" id="datawrapper-chart-YEW9b" src="//datawrapper.dwcdn.net/YEW9b/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                        <br><hr><br>
-                                       Nitrogen dioxide (NO2)
-                                       <iframe title="" aria-label="Column Chart" id="datawrapper-chart-55OPS" src="//datawrapper.dwcdn.net/55OPS/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                </div>
-                         </div></div>
+                          
 
+
+                         
+                        </div>
+                        <!--end primary window-->
+           
+                    </div>
             </div>
-
-
-        </div>
-
-
-
-        
-
-
-
-
-
 
        <br><br>
 
@@ -622,11 +601,6 @@
       $('#theModal').modal('show').find('.modal-content').load($(this).attr('href'));
     });
   </script>
-
-    <!--Script that makes collapsed button content hide on selection of another button-->
-    <script>jQuery('button').click( function(e) {
-		jQuery('.collapse').collapse('hide');
-	});</script>
 
 </body>
 

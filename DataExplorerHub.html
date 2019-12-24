@@ -156,8 +156,27 @@
 
                     <div class="nav-item dropdown">
     
-                        <a class="nav-link active" href="Modal.html" id="nav-item-03" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
-                        </a>    
+                        <a class="nav-link dropdown-toggle active" href="DataExplorerHub.html" id="nav-item-03" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" role="button"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer
+                        </a>  
+                        
+                        <div class="dropdown-menu" aria-labelledby="nav-item-03">
+
+                            <ul class="extensible-list">
+                                <li><a href="/Data/Outdoor.html">Outdoor Air</a></li>
+                                <li><a href="#">Housing</a></li>
+                                <li><a href="#">Climate</a></li>
+                                <li><a href="#">Transportation</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Pests</a></li>
+                                <li><a href="#">Special populations</a></li>
+                                <li><a href="">Child health</a></li>
+                                <hr>
+                                <li><a href="">All health outcomes</a></li>
+                            </ul>
+
+                        </div>
+
                     </div>
                     <!-- .nav-item -->
     
@@ -184,557 +203,652 @@
 
 
     <main id="skip-header-target" role="main" style="background-color:#f8f9fa;">
-       
-            <div class="container-fluid fs-sm">
-                <div class="row">
-                    <div class="col-lg-3 border-xl-right">
 
-                            <div class="sticky-top" id="sidebar-nav">
-                                    <div class="d-lg-none">
-                                                
-                                            <div class="btn-toggle">
-                                                <button class="btn btn-block btn-md btn-secondary" data-toggle="collapse"
-                                                    data-target="#sidebar-nav1" aria-expanded="false" aria-controls="sidebar-nav1">
-                                                    <span class="title">Change topic</span>
-                                                </button>
+<div class="container-fluid">
+        <div class="row">
+                <div class="col-3">
+                    <div class="sticky-top">
+                    <h2>Data Explorer</h2>
+                    <hr>
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="true">Outdoor air</a>
+                   
+                    <a class="nav-link" id="v-pills-housing-tab" data-toggle="pill" href="#v-pills-housing" role="tab" aria-controls="v-pills-housing" aria-selected="false">Housing</a>
+                   
+                    <a class="nav-link" id="v-pills-climate-tab" data-toggle="pill" href="#v-pills-climate" role="tab" aria-controls="v-pills-climate" aria-selected="false">Climate</a>
+                   
+                    <a class="nav-link" id="v-pills-transportation-tab" data-toggle="pill" href="#v-pills-transportation" role="tab" aria-controls="v-pills-transportation" aria-selected="false">Transportation</a>
+
+                    <a class="nav-link" id="v-pills-food-tab" data-toggle="pill" href="#v-pills-food" role="tab" aria-controls="v-pills-food" aria-selected="true">Food</a>
+                   
+                    <a class="nav-link" id="v-pills-pests-tab" data-toggle="pill" href="#v-pills-pests" role="tab" aria-controls="v-pills-pests" aria-selected="false">Pests</a>
+                    <div class="border-bottom"></div>
+                   
+                    <a class="nav-link" id="v-pills-special-tab" data-toggle="pill" href="#v-pills-special" role="tab" aria-controls="v-pills-special" aria-selected="false">Special populations</a>
+                   
+                    <a class="nav-link" id="v-pills-child-tab" data-toggle="pill" href="#v-pills-child" role="tab" aria-controls="v-pills-child" aria-selected="false">Child health</a>
+
+                    <a class="nav-link" id="v-pills-all-tab" data-toggle="pill" href="#v-pills-all" role="tab" aria-controls="v-pills-all" aria-selected="false">All health outcomes</a>
+                    <div class="border-bottom mb-2"></div>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search topics">
+                    <br>
+                </div>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-outdoor" role="tabpanel" aria-labelledby="v-pills-outdoor-tab">
+                            <div class="row">
+                                    <div class="col">
+                                        <h3>Outdoor Air Quality: the NYC air quality data hub</h3>
+                                        <p>New York City's air contains particles, drops of liquid, gasses, and other pollution that can affect health - it can affect our breathing, and bad air quality can be particularly dangerous for older adults, children, and people with heart or lung conditions.</p>
+                                        <p>Air quality can vary from neighborhood to neighborhood, based on local levels of emmissions and many other factors. We monitor air quality using the New York City Community Air Survey (NYCCAS). NYCCAS is NYC's comprehensive air quality monitoring and modeling network, and it allows us to understand neighborhood differences in air quality - and what contributes to those differences.
+                
+                                        </p>
+                
+                                        <br>
+                                    </div>
+                
+                                </div>
+                
+                
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                                        <div class="card bg-light h-100 mb-2">
+                                            <div class="card-header"><b><i class="fas fa-info-circle"></i>&nbsp;Annual Report</b></div>
+                                            <img src="../images/nyccasbanner.jpg" class="card-img-top" alt="New York City seen from an airplane">
+                                            <div class="card-body">
+                                                <a href="https://nyc-ehs.net/besp-report/web/nyccas">Neighborhood Air Quality 2008-2018</a>: pollutants, key factors, and air quality trends over time in New York City.
                                             </div>
+                
+                                        </div>
+                                        
+                
+                                    </div>
+                
+                                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                                        <div class="card bg-light h-100 mb-2">
+                                            <div class="card-header"><b><i class="fas fa-wind"></i>&nbsp;Explore air quality data</b></div>
+                                             
+                                            <img src="../images/airquality.jpg" class="card-img-top" alt="New York City seen from an airplane">
+                                                   
+                                          
+                                            
+                                                <a href="AQExplorer.html">
+                                                        <button type="button" class="btn btn-secondary btn-block">Your neighborhood</button></a>
+                                                        <a href="AQRTD.html">
+                                                                <button type="button" class="btn btn-secondary btn-block">Real-time data</button></a>
+                                            
+                
+                                                  
+                                                                          
+                
+                                            </div>
+                
+                                        
                                         
                                     </div>
-
-                                    <div class="collapse d-lg-block pt-2" id="sidebar-nav1">
-                                            <div class="btn-toggle">
-                                                    <button class="btn btn-block btn-sm btn-secondary text-white" data-toggle="collapse" data-target="#toggle-target" aria-expanded="false" aria-controls="toggle-target">
-                                                        <span class="title">Outdoor air</span>
-                                                    </button>
-                                                </div>
-                                                
-                                                <nav class="collapse bg-light p-2" id="toggle-target" role="navigation">
-                                                    <ul class="extensible-list">
-                                                        <li>
-                                                            <a class="active" href="#" title="Link">Air quality</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Link">Climate</a>
-                                                        </li>
-                                                       
-                                                    </ul>
-                                                </nav>
-            
-                                                <div class="btn-toggle">
-                                                        <button class="btn btn-block btn-sm btn-secondary text-white" data-toggle="collapse" data-target="#toggle-target2" aria-expanded="false" aria-controls="toggle-target2">
-                                                            <span class="title">Built environment</span>
-                                                        </button>
-                                                    </div>
-                                                    
-                                                    <nav class="collapse bg-light p-2" id="toggle-target2" role="navigation">
-                                                        <ul class="extensible-list">
-                                                            <li>
-                                                                <a class="active" href="#" title="Link">Active design</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Link">Carbon monoxide incidents</a>
-                                                            </li>
-                                                            <li>
-                                                                    <a class="active" href="#" title="Link">Housing</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="Link">Lead hazards</a>
-                                                                </li>
-                                                                <li>
-                                                                        <a class="active" href="#" title="Link">Noise</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#" title="Link">Traffic</a>
-                                                                    </li>
-                                                           
-                                                        </ul>
-                                                    </nav>
-            
-                                                    <div class="btn-toggle">
-                                                            <button class="btn btn-block btn-sm btn-secondary text-white" data-toggle="collapse" data-target="#toggle-target3" aria-expanded="false" aria-controls="toggle-target3">
-                                                                <span class="title">Pests and pesticides</span>
-                                                            </button>
-                                                        </div>
-                                                        
-                                                        <nav class="collapse bg-light p-2" id="toggle-target3" role="navigation">
-                                                            <ul class="extensible-list">
-                                                                <li>
-                                                                    <a class="active" href="#" title="Link">Bed bugs</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="Link">Cockroaches</a>
-                                                                </li>
-                                                                <li>
-                                                                        <a class="active" href="#" title="Link">Mice and rats</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#" title="Link">Pesticides</a>
-                                                                    </li>                                                   
-                                                            </ul>
-                                                        </nav>
-            
-                                                        <div class="btn-toggle">
-                                                                <button class="btn btn-block btn-sm btn-secondary text-white" data-toggle="collapse" data-target="#toggle-target4" aria-expanded="false" aria-controls="toggle-target4">
-                                                                    <span class="title">Food and drink</span>
-                                                                </button>
-                                                            </div>
-                                                            
-                                                            <nav class="collapse bg-light p-2" id="toggle-target4" role="navigation">
-                                                                <ul class="extensible-list">
-                                                                    <li>
-                                                                        <a class="active" href="#" title="Link">Alcohol access</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#" title="Link">Alcohol use</a>
-                                                                    </li>
-                                                                    <li>
-                                                                            <a class="active" href="#" title="Link">Drinking water quality</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#" title="Link">Restaurant food safety</a>
-                                                                        </li>                                                   
-                                                                </ul>
-                                                            </nav>
-            
-                                                            <div class="btn-toggle">
-                                                                    <button class="btn btn-block btn-sm btn-secondary text-white" data-toggle="collapse" data-target="#toggle-target5" aria-expanded="false" aria-controls="toggle-target5">
-                                                                        <span class="title">Environmental sustainability</span>
-                                                                    </button>
-                                                                </div>
-
-                                                                <nav class="collapse bg-light p-2" id="toggle-target5" role="navigation">
-                                                                        <ul class="extensible-list">
-                                                                            <li>
-                                                                                <a class="active" href="#" title="Link">Climate change</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="#" title="Link">Energy</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                    <a class="active" href="#" title="Link">Housing and neighborhoods</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a href="#" title="Link">Large city air quality comparison</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                        <a class="active" href="#" title="Link">Parks and public space</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="#" title="Link">Transportation</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                            <a class="active" href="#" title="Link">Water supply</a>
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            <a href="#" title="Link">Waterways</a>
-                                                                                        </li>                                                    
-                                                                        </ul>
-                                                                    </nav>
-                    
-                                                                <div class="btn-toggle">
-                                                                        <button class="btn btn-block btn-sm btn-secondary text-white" data-toggle="collapse" data-target="#toggle-target6" aria-expanded="false" aria-controls="toggle-target6">
-                                                                            <span class="title">Health outcomes</span>
-                                                                        </button>
-                                                                    </div>
-
-                                                                    <nav class="collapse bg-light p-2" id="toggle-target6" role="navigation">
-                                                                            <ul class="extensible-list">
-                                                                                <li>
-                                                                                    <a class="active" href="#" title="Link">Asthma</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a href="#" title="Link">Birth defects</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                        <a class="active" href="#" title="Link">Birth outcomes</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="#" title="Link">Cancer</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                            <a class="active" href="#" title="Link">Cancer in children</a>
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            <a href="#" title="Link">Carbon monoxide poisoning</a>
-                                                                                        </li>
-                                                                                        <li>
-                                                                                                <a class="active" href="#" title="Link">COPD</a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="#" title="Link">Falls among older adults</a>
-                                                                                            </li>    
-                                                                                            <li>
-                                                                                                    <a class="active" href="#" title="Link">Health impacts of air pollution</a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="#" title="Link">Heart attacks</a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                        <a class="active" href="#" title="Link">Mortality</a>
-                                                                                                    </li>
-                                                                                                    <li>
-                                                                                                        <a href="#" title="Link">Overweight</a>
-                                                                                                    </li>
-                                                                                                    <li>
-                                                                                                            <a class="active" href="#" title="Link">Traffic-related injuries</a>
-                                                                                                        </li>
-                                                                                                        <li>
-                                                                                                            <a href="#" title="Link">Vector-borne disease</a>
-                                                                                                        </li>
-                                                                                                        <li>
-                                                                                                                <a class="active" href="#" title="Link">Weather-related illness</a>
-                                                                                                            </li>
-                                                                                                            <li>
-                                                                                                                <a href="#" title="Link">Worker health</a>
-                                                                                                            </li>                                                   
-                                                                            </ul>
-                                                                        </nav>
-            
-                                                                <div class="btn-toggle">
-                                                                            <button class="btn btn-block btn-sm btn-secondary text-white" data-toggle="collapse" data-target="#toggle-target7" aria-expanded="false" aria-controls="toggle-target7">
-                                                                                <span class="title">Behavior</span>
-                                                                            </button>
-                                                                        </div>
-
-                                                                        <nav class="collapse bg-light p-2" id="toggle-target7" role="navigation">
-                                                                                <ul class="extensible-list">
-                                                                                    <li>
-                                                                                        <a class="active" href="#" title="Link">Alcohol use</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="#" title="Link">Cigarette smoke</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                            <a class="active" href="#" title="Link">Physical activity</a>
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            <a href="#" title="Link">Sugary drink consumption</a>
-                                                                                        </li>
-                                                                                        <li>
-                                                                                                <a class="active" href="#" title="Link">Walking, driving, cycling</a>
-                                                                                            </li>
-                                                                                                                                         
-                                                                                </ul>
-                                                                            </nav>
-            
-            
-                                                                        <div class="btn-toggle">
-                                                                                <button class="btn btn-block btn-sm btn-secondary text-white" data-toggle="collapse" data-target="#toggle-target8" aria-expanded="false" aria-controls="toggle-target8">
-                                                                                    <span class="title">Population characteristics</span>
-                                                                                </button>
-                                                                            </div>
-
-                                                                            <nav class="collapse bg-light p-2" id="toggle-target8" role="navigation">
-                                                                                    <ul class="extensible-list">
-                                                                                        <li>
-                                                                                            <a class="active" href="#" title="Link">Health care</a>
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            <a href="#" title="Link">Social and economic conditions</a>
-                                                                                        </li>
-                                                                                                                                   
-                                                                                    </ul>
-                                                                                </nav>
-            
-                                                                            <hr>
-                                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search indicators">
+                
+                                    <div class="col-lg-4 col-sm-12">
+                                        <div class="card bg-light h-100 mb-2">
+                                            <div class="card-header"><b><i class="fas fa-atlas"></i>&nbsp;Snapshots</b></div>
+                                            <img src="../images/AQchart.PNG" class="card-img-top" alt="An image of a data chart">
+                                            <div class="card-body">
+                                                <li><a href="">Traffic and air toxics</a></li>
+                                                <li><a href="">Traffic and noise</a></li>
+                                                <li><a href="">Cleaner fuels: who benefits?</a></li>
+                                                <li><a href="">Shifting to cleaner fuels - and cleaner air</a></li>
+                                                <li><a href="">Monitoring for environmental justice</a></li>
+                                                <hr>
+                                                <a href="/DataStories.html"><em>more air quality data stories</em></a>
+                
+                                            </div>
+                
+                                        </div>
+                
+                                       
+                
                                     </div>
-                                    <!--end collapse div-->
-                                   
+                
+                                </div>
+                                <br>
+                                <hr>
+                                <br>
+                
+                
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4><i class="fas fa-chart-line"></i>&nbsp;Get the data: <span class="text-muted">related indicators on the EH Data Portal</span></h4><br>
+                                        </div> 
+                
+                                </div>
+                
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card mb-2">
+                                        <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Environmental factors</div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><a href="">Air quality</a>
+                                            <li class="list-group-item"><a href="">Traffic</a>
+                                            <li class="list-group-item"><a href="">Parks and public space</a>
+                                            <li class="list-group-item"><a href="">Walking, driving, and cycling</a>
+                                            <li class="list-group-item"><a href="">Climate change</a>
+                                        </ul>
                                 
+                                        </div>
+                                        
+                                    </div>
+                
+                                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card mb-2">
+                                            <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Related health outcomes </div>
+                                            <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><a href="Asthma.html">Asthma</a>
+                                            <li class="list-group-item"><a href="">Chronic obstructive pulmonary disease</a>
+                                            <li class="list-group-item"><a href="">Heart attacks</a>
+                                            <li class="list-group-item"><a href="">Low birth weight</a>
+                                            <li class="list-group-item"><a href="">Health impacts of air pollution</a>
+                                            </ul>
+                                        
+                                            </div>
+                                           
+                                    </div>	
+                
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <div class="card mb-2">
+                                                <div class="card-header bg-secondary text-white"><i class="fas fa-map-marked-alt"></i>&nbsp;Neighborhood reports </div>
+                                                <a href="">
+                                                        <button type="button" class="btn btn-light btn-block">Outdoor air and health</button></a>
+                                                        <a href="">
+                                                                <button type="button" class="btn btn-light btn-block">Asthma and the environment</button></a>
+                                            
+                                                </div>
+                                              
+                                        </div>	
 
+                                </div>
+                    </div>
+                   
+                   
+                    <div class="tab-pane fade" id="v-pills-housing" role="tabpanel" aria-labelledby="v-pills-housing-tab">
+                            <div class="row">
+                                    <div class="col"><h3>Housing</h3>
+                                      <p>Most people spend most of their time at home - so the household environment can significantly affect health. Disrepair that stems from longterm maintenance neglect can lead to serious health problems, including: lead poisoning from lead paint; asthma and other respiratory issues triggered by pests; and carbon monoxide poisoning.</p>
+                                      <p>In NYC, substandard housing is disproportionately located in low-income neighborhoods, as historical disinvestment lead to severe, systemic maintenance deficiencies that threatens people's health. No family should have to choose between affordable and healthy housing - all tenants are entitled to safe, decent, healthy housing that prevents disease and injury.</p>
 
+                                  </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mt-4">
+                                            <h4><i class="fas fa-chart-line"></i>&nbsp;Get the data</h4>
+                                    </div>
+                                </div>
+      
+                                <div class="row mt-2">
+                                    <div class="col-lg-4 col-xs-12">
+                                      <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Environmental factors</div>
+                                          <ul class="list-group list-group-flush">
+                                              <li class="list-group-item"><a href="">Housing maintenance</a>
+                                              <li class="list-group-item"><a href="">Housing safety</a>
+                                              <li class="list-group-item"><a href="">Housing characteristics</a>
+                                              <li class="list-group-item"><a href="">Lead hazads</a>
+                                              <li class="list-group-item"><a href="">Asthma triggers</a>
+                                              <li class="list-group-item"><a href="">Carbon monoxide incidents</a>
+                                          </ul>
+                                  
+                                          </div>
+      
+                                    </div>
+      
+                                    <div class="col-lg-4 col-xs-12">
+                                      <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Vulnerable populations </div>
+                                          <ul class="list-group list-group-flush">
+                                          <li class="list-group-item"><a href="">Poverty</a>
+                                          <li class="list-group-item"><a href="">Air conditioning (adults 65+)</a>
+                                          </ul>
+                                      
+                                          </div>
+      
+                                          <div class="card mb-2">
+                                              <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Behaviors </div>
+                                              <ul class="list-group list-group-flush">
+                                              <li class="list-group-item"><a href="">Smoking</a>
+                                              </ul>
+                                          
+                                              </div>
+      
+                                    </div>
+      
+                                    <div class="col-lg-4 col-xs-12">
+                                          <div class="card mb-2">
+                                                  <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Health outcomes </div>
+                                                  <ul class="list-group list-group-flush">
+                                                  <li class="list-group-item"><a href="">Childhood lead exposure</a>
+                                                  <li class="list-group-item"><a href="Asthma.html">Asthma</a>
+                                                  <li class="list-group-item"><a href="">Chronic obstructive pulmonary disease</a>
+                                                  <li class="list-group-item"><a href="">Carbon monoxide poisoning</a>
+                                                  <li class="list-group-item"><a href="">Falls among older adults</a>
+                                                  </ul>
+                                                  </div>
+      
+      
+                                    </div>
+      
+                                  </div>
+                                  <div class="row">
+                                      <div class="col mt-4">
+                                              <h4><i class="fas fa-book-reader"></i>&nbsp;More resources</h4>
+                                      </div>
+                                  </div>
+      
+                                  <div class="row mt-2">
+      
+                                    <hr>
+      
+                                    <div class="col-lg-4 col-xs-12">
+                                          <div class="card mb-2">
+                                                  <div class="card-header bg-light"><i class="fas fa-link"></i>&nbsp;Related categories</div>
+                                                  <ul class="list-group list-group-flush">
+                                                      <li class="list-group-item"><a href="pests.html">Pests and pesticides</a>
+                                                  </ul>
+                                          
+                                                  </div>
+                                    </div>
+                                    <div class="col-lg-4 col-xs-12">
+                                            <div class="card mb-2">
+                                                    <div class="card-header bg-secondary text-white"><i class="fas fa-map-marked-alt"></i>&nbsp;Neighborhood reports </div>
+                                                    <a href="">
+                                                            <button type="button" class="btn btn-light btn-block">Housing and health</button></a>
+
+                                                    </div>	
+                                    </div>
+                                    <div class="col-lg-4 col-xs-12">
+                                          <div class="card mb-2">
+                                                  <div class="card-header bg-light"><i class="fas fa-atlas"></i>&nbsp;Data stories</div>
+                                                  <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item"><a href="pests.html">Housing, racism, and health</a>
+                                                    </ul>	
+                                              </div>	
+                                    </div>
+                                    
+      
+                                  
+                                </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="v-pills-transportation" role="tabpanel" aria-labelledby="v-pills-transportation-tab">
+                        <div class="row">
+                            <div class="col"><h3>Transportation and active design</h3>
+                                <p>Physical inactivity and unhealthy diet rank among the leading risk factors for premature death in the United States. Active design, however, promotes health by using architectural and urban design strategies to encourage walking, bicycling, stair climbing, transit use, active recreation, and healthy eating.</p>
+	<p>Designing to increase access to parks, create pedestrian plazas, ensure well-maintained sidewalks, plant street trees, provide secure bicycle storage, and make stairwaus in buildings attractive and accessible can have a measurable effect on people's ability to safetly get regular physical activity that can keep them healthy.</p>
+
+                          </div></div>
+                        
+                        <div class="row">
+                            <div class="col mt-4">
+                                    <h4><i class="fas fa-chart-line"></i>&nbsp;Get the data</h4>
                             </div>
-                            <!-- .sticky-top -->
-        
                         </div>
 
-                        <!--start primary window-->
-                        <div class="col-lg-9" id="primary-content">
-                          <div class="row my-2">
-                              <div class="col"><h3>Asthma</h3>
-                            
-                                <div class="d-lg-none">
-                                        <div class="btn-toggle">
-                                        <button class="btn btn-block btn-md btn-light" data-toggle="collapse" data-target="#topicdescription" aria-expanded="false" aria-controls="topicdescription">
-                                            <span class="title">About asthma</span>
-                                        </button>
-                                        </div>
-                                    </div>
+                        <div class="row mt-2">
+                            <div class="col-lg-4 col-xs-12">
+                              <div class="card mb-2">
+                                  <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Environmental factors</div>
+                                  <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="">Walkability index</a>
+                                            <li class="list-group-item"><a href="">Sidewalk area</a>
+                                        <li class="list-group-item"><a href="">Walking distance to a park</a>
+                                        <li class="list-group-item"><a href="">Green space</a>
+                                        <li class="list-group-item"><a href="">Subway station density</a>
+                                        <li class="list-group-item"><a href="">Walking distance to a subway station</a>
+                                        <li class="list-group-item"><a href="">Bicycle network coverage</a>
+                                        <li class="list-group-item"><a href="">Unhealthy food access</a>
+                                    </ul>
+                          
+                                  </div>
+
                             </div>
-                          </div>
 
-                          <div class="row my-2">
-                              <div class="col-xl-4 col-lg-4">
-                                <div class="collapse d-lg-block" id="topicdescription">
-                                <div class="card">
+                            <div class="col-lg-4 col-xs-12">
+                              <div class="card mb-2">
+                                  <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Behaviors </div>
+                                  <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="">Walking for transportation</a>
+                                        <li class="list-group-item"><a href="">Biking for transportation</a>
+                                            <li class="list-group-item"><a href="">Driving behavior</a>
+                                        </ul>
+                              
+                                  </div>
 
-                                
-                                    <div class="card-body">
-                                        <p>What we're going to do here: change expansion left-menu to large buttons all blocked together with no margins, a real nice left nav.</p>
-                                        <p>Then, we'll load Hub Page content into the main panel display. We'll have to fiddle to see what sort of layout balance we can strike between info, indicators, and supplements.</p>
-                                        
-                                            <p>Asthma is a common disease in which the lungs become swollen, making breathing difficult. Symptoms include wheezing, coughing, shortness of breath and tightness in the chest. The exact causes of asthma are not known. Asthma cannot be cured, but it can be controlled. </p>
+                            </div>
 
-                                            <p>Asthma is a leading cause of emergency room visits, hospitalizations and missed school days in New York City's poorest neighborhoods. In NYC, asthma is more common among low-income Black and Latino children.  </p>
-            
-                                            <b>Asthma and the environment</b>
-            
-                                            <p>Certain things in the environment can trigger an asthma attack or make symptoms worse. Common triggers include: 
-                                                <ul>
-                                                    <li>Tobacco smoke</li>
-                                                    <li>Air pollution, such as particulates, ozone, and diesel exhaust</li>
-                                                    <li>Dust mites, cockroaches, and mold</li>
-                                                    <li>Pollen</li>
-                                                    <li>Pets</li>
+                            <div class="col-lg-4 col-xs-12">
+                                  <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Health outcomes </div>
+                                          <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><a href="">Physical activity</a>
+                                                <li class="list-group-item"><a href="">Overweight</a>
+                                                    <li class="list-group-item"><a href="">Traffic-related injuries</a>
                                                 </ul>
-                                                </p>
-                                                <b>Controlling asthma</b>
-                                                <p>Asthma does not have to prevent you from leading an active and healthy life. You can take charge by having a plan to control asthma, including these strategies for avoiding asthma triggers:
-                
-                 
-                                                    <ul>
-                                                        <li>Check the weather report daily for air pollution level ("air quality index") and pollen counts. Limit time outside when air pollution levels or pollen counts are high.
-                                                            </li>
-                                                        <li>If you smoke, quit. Don't allow smoking in your home or car.
-                                                            </li>
-                                                        <li>Remove clutter and clean regularly to reduce dust levels in your home.
-                                                            </li>
-                                                        <li>Work with your landlord to fix leaks promptly to prevent mold. If your landlord fails to fix the problem, call 311. 
-                                                            </li>
-                                                        <li>Do not allow furry pets on the furniture or in the bedroom.
-                                                            </li>
-                                                        <li>Pest proof your home. If building conditions may be attracting pests, contact your landlord. If your landlord does not addres your concerns, call 311. </li>
-                                                    </ul>
-                                                    </p>
-                                    </div>
-                        
-                                
-                        
-                            </div>
+                                          </div>
+
+
                             </div>
 
-                            
-
-                              </div>
-
-                              <div class="col-lg-8">
-                                  <div class="row">
-                                      <div class="col">
-                                        <em>Choose indicator to display:</em>  
-                                        <div class="dropdown">
-                                            <button type="button" class="btn btn-md btn-outline-success dropdown-toggle btn-block" id="indicatordropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Asthma emergency department visits</button> 	
-                                            <div class="dropdown-menu" aria-labelledby="indicatordropdown">
-                                                    <a class="dropdown-item" href="#">Asthma ED visits</a>
-                                                    <a class="dropdown-item" href="#">Asthma hospitalizations</a>
-                                                    <a class="dropdown-item" href="#">Asthma prevalence</a>
-                                                  </div>
-                                                
-                                            </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="row my-2">
-                                      <div class="col-lg-6">
-                                            <div class="card h-100">
-                                                    <div class="card-body"><b>Asthma ED visits</b> are an important measure of asthma, particularly for children age 5 to 17. It's triggered by several environmental conditions and there are notable racial and socioeconomic disparities.</div>
-                                                </div>
-                                      </div>
-                                      <div class="col-lg-6">
-                                            <div class="card h-100">
-                                                    
-                                                        <div class="card-body">
-                                                            
-                                                                        <b>Age:&nbsp;&nbsp;&nbsp;</b>
-                                                                        <div class="form-check form-check-inline">
-                                                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                                          <label class="form-check-label" for="inlineRadio1">0 to 4</label>
-                                                                        </div>
-                                                                        <div class="form-check form-check-inline">
-                                                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                                          <label class="form-check-label" for="inlineRadio2">5 to 17</label>
-                                                                        </div>
-                                                                        <div class="form-check form-check-inline">
-                                                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                                          <label class="form-check-label" for="inlineRadio3">18+</label>
-                                                                        </div>
-                                                                        <hr>
-                                                                        <b>Measure:&nbsp;&nbsp;&nbsp;</b>
-                                                                        <div class="form-check form-check-inline">
-                                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                                                <label class="form-check-label" for="inlineRadio1">Rate</label>
-                                                                              </div>
-                                                                              <div class="form-check form-check-inline">
-                                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                                                <label class="form-check-label" for="inlineRadio2">Count</label>
-                                                                              </div>
-                                                                              <hr>
-                                                                              <a href=""><b>More options.</b></a>
-                                                    </div>
-                                                    </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="row pt-2">
-                                      <div class="col-xl-12">
-                                            <div class="nav nav-pills bg-light device-sm" role="tablist">
-
-                                                    <a class="nav-item nav-link flex-fill active" id="tab-btn-01-a" href="#tab-01-a"
-                                                        data-toggle="pill" aria-controls="tab-01-a" aria-selected="true" role="tab">
-                                                        <i class="fas fa-chart-bar h4 fa-fw"></i><div class="d-none d-lg-block">Summary</div>
-                                                    </a>
-                                                
-                                                    <a class="nav-item nav-link flex-fill" id="tab-btn-01-b" href="#tab-01-b"
-                                                        data-toggle="pill" aria-controls="tab-01-b" aria-selected="false" role="tab">
-                                                        <i class="fas fa-map-marker-alt h4 fa-fw"></i><div class="d-none d-lg-block">Map</div>
-                                                    </a>
-                                                
-                                                    <a class="nav-item nav-link flex-fill" id="tab-btn-01-c" href="#tab-01-c"
-                                                        data-toggle="pill" aria-controls="tab-01-c" aria-selected="false" role="tab">
-                                                        <i class="fas fa-chart-line h4 fa-fw"></i><div class="d-none d-lg-block">Trend</div>
-                                                    </a>
-                        
-                                                    <a class="nav-item nav-link flex-fill" id="tab-btn-01-d" href="#tab-01-d"
-                                                    data-toggle="pill" aria-controls="tab-01-d" aria-selected="false" role="tab">
-                                                    <i class="fas fa-exclamation-circle h4 fa-fw"></i><div class="d-none d-lg-block">Disparities</div>
-                                                    </a>
-                        
-                                                 <a class="nav-item nav-link flex-fill" id="tab-btn-01-e" href="#tab-01-e"
-                                                 data-toggle="pill" aria-controls="tab-01-e" aria-selected="false" role="tab">
-                                                 <i class="fas fa-link h4 fa-fw"></i><div class="d-none d-lg-block">Links</div>
-                                                    </a>
-                                                
-                                                </div>
-                                                
-                                                <div class="tab-content bg-light p-2" id="tabs-01-content">
-                                                
-                                                    <div class="tab-pane fade show active" id="tab-01-a" aria-labelledby="tab-btn-01-a" role="tabpanel">
-                                                            <iframe title="" aria-label="Table" id="datawrapper-chart-r5ziK" src="https://datawrapper.dwcdn.net/r5ziK/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="844"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                                    </div>
-                                                
-                                                    <div class="tab-pane fade" id="tab-01-b" aria-labelledby="tab-btn-01-b" role="tabpanel">
-                                                            <iframe title="" aria-label="USA new york city neighborhoods (ntas) choropleth map" id="datawrapper-chart-52c6Y" src="https://datawrapper.dwcdn.net/52c6Y/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="600"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                                    </div>
-                                                
-                                                    <div class="tab-pane fade" id="tab-01-c" aria-labelledby="tab-btn-01-c" role="tabpanel">
-                                                            <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-0JdfH" src="https://datawrapper.dwcdn.net/0JdfH/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                                    </div>
-                        
-                                                    <div class="tab-pane fade" id="tab-01-d" aria-labelledby="tab-btn-01-d" role="tabpanel">
-                                                            <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-80S2v" src="https://datawrapper.dwcdn.net/80S2v/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                                        </div>
-                        
-                        
-                                                        <div class="tab-pane fade" id="tab-01-e" aria-labelledby="tab-btn-01-e" role="tabpanel">
-                                                                <iframe title="" aria-label="Scatter Plot" id="datawrapper-chart-CL80B" src="https://datawrapper.dwcdn.net/CL80B/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="409"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                                            </div>
-                        
-                        
-                                                </div>
-                                      </div>
-                                  </div>
-
+                          </div>
+                          <div class="row">
+                              <div class="col mt-4">
+                                      <h4><i class="fas fa-book-reader"></i>&nbsp;More resources</h4>
                               </div>
                           </div>
 
-                          <div class="row">
-                                <div class="col-lg-4">
-                                        <div class="accordion-group my-1" role="tablist" id="accordion-01">
-    
-                                                <div class="card">
-                                            
-                                                    <a class="card-header collapse collapsed" id="acc-button-01" data-toggle="collapse" href="#panel-acc-button-01"  role="tab" aria-expanded="false" aria-controls="panel-acc-button-01">
-                                                        <span class="title" role="heading" aria-level="3">More information</span>
-                                                    </a>
-                                            
-                                                    <div class="collapse" id="panel-acc-button-01" role="tabpanel" aria-labelledby="acc-button-01" data-parent="#accordion-01">
-                                            
-                                                        <div class="card-body">
-                                                                <ul><li><a href="http://www.aaaai.org/home.aspx" content="http://www.aaaai.org/home.aspx" class="message_urls" target="_blank">American Academy  of Allergy and Immunology</a></li><li><a href="http://www.healthyschools.org/links.html" content="http://www.healthyschools.org/links.html" class="message_urls" target="_blank">Healthy Schools Network, Inc.</a></li><li><a href="http://www.airnow.gov/" content="http://www.airnow.gov/" class="message_urls" target="_blank">EPA AIRNow</a></li><li><a href="http://www.aafa.org/" content="http://www.aafa.org/" class="message_urls" target="_blank">Asthma and Allergy Foundation of America</a></li><li><a href="http://www.asthmacommunitynetwork.org/resources/conferences" content="http://www.asthmacommunitynetwork.org/resources/conferences" class="message_urls" target="_blank">Healthy Kids: The Key to Basics</a></li><li><a href="http://www.nhlbi.nih.gov/about/org/naepp/" content="http://www.nhlbi.nih.gov/about/org/naepp/" class="message_urls" target="_blank">National Asthma Education and Prevention Program</a></li><li><a href="http://www.lung.org" content="http://www.lung.org" class="message_urls" target="_blank">The American Lung Association </a></li><li><a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/asthma-medication-administration-form-english" content="https://www.schools.nyc.gov/docs/default-source/default-document-library/asthma-medication-administration-form-english" class="message_urls" target="_blank">Asthma Medication Administration Form (AMAF) School Year 2018-19</a></li></ul>
-                                                        </div>
-                                            
-                                                    </div>
-                                                    <!-- .collapse -->
-                                            
-                                                </div>
-                                                <!-- .card (end of first accordion, repeat as needed) -->
-            
-            
-                                            
-                                            </div>
-                                </div>
-    
-                                <div class="col-lg-4">
-                                        <div class="accordion-group my-1" role="tablist" id="accordion-02">
-    
-                                                <div class="card">
-                                            
-                                                    <a class="card-header collapse collapsed" id="acc-button-02" data-toggle="collapse" href="#panel-acc-button-02"  role="tab" aria-expanded="false" aria-controls="panel-acc-button-02">
-                                                        <span class="title" role="heading" aria-level="3">About the measure</span>
-                                                    </a>
-                                            
-                                                    <div class="collapse" id="panel-acc-button-02" role="tabpanel" aria-labelledby="acc-button-02" data-parent="#accordion-02">
-                                            
-                                                        <div class="card-body">
-                                                                CONTENT
-                                                        </div>
-                                            
-                                                    </div>
-                                                    <!-- .collapse -->
-                                            
-                                                </div>
-                                                <!-- .card (end of first accordion, repeat as needed) -->
-            
-            
-                                            
-                                            </div>
-                                </div>
-                                <div class="col-lg-4">
-                                        <div class="accordion-group my-1" role="tablist" id="accordion-03">
-    
-                                                <div class="card">
-                                            
-                                                    <a class="card-header collapse collapsed" id="acc-button-03" data-toggle="collapse" href="#panel-acc-button-03"  role="tab" aria-expanded="false" aria-controls="panel-acc-button-03">
-                                                        <span class="title" role="heading" aria-level="3">Related data</span>
-                                                    </a>
-                                            
-                                                    <div class="collapse" id="panel-acc-button-03" role="tabpanel" aria-labelledby="acc-button-03" data-parent="#accordion-03">
-                                            
-                                                        <div class="card-body">
-                                                                CONTENT
-                                                        </div>
-                                            
-                                                    </div>
-                                                    <!-- .collapse -->
-                                            
-                                                </div>
-                                                <!-- .card (end of first accordion, repeat as needed) -->
-            
-            
-                                            
-                                            </div>
-                                </div>
-                              </div>
+                          <div class="row mt-2">
+
+                            <hr>
+
+                            <div class="col-lg-4 col-xs-12">
+                                  <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-link"></i>&nbsp;Related categories</div>
+                                          <ul class="list-group list-group-flush">
+                                              <li class="list-group-item"><a href="">related</a>
+                                          </ul>
+                                  
+                                          </div>
+                            </div>
+                            <div class="col-lg-4 col-xs-12">
+                                    <div class="card mb-2">
+                                            <div class="card-header bg-secondary text-white"><i class="fas fa-map-marked-alt"></i>&nbsp;Neighborhood reports </div>
+                                            <a href="">
+                                                    <button type="button" class="btn btn-light btn-block">Active design and health</button></a>
+
+                                            </div>	
+                            </div>
+                            <div class="col-lg-4 col-xs-12">
+                                  <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-atlas"></i>&nbsp;Data stories</div>
+                                          <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><a href="">Placeholder</a>
+                                            </ul>
+                                      </div>	
+                            </div>
+                            
 
                           
-
-
-                         
                         </div>
-                        <!--end primary window-->
-           
                     </div>
-            </div>
+                    
+                    <div class="tab-pane fade" id="v-pills-climate" role="tabpanel" aria-labelledby="v-pills-climate-tab">
+                        <div class="row">
+                            <div class="col"><h3>Climate, weather, and health</h3>
+                                <p>NYC's climate is changing along with the world's climate. We expect more frequent and intense heat waves and increased rainfall, precipitation, and coastal storms. These will add to existing weather-related risks. Already, heat kills more people than all other natural disasters combined.</p>
+                                <p>In New York City, those most vulnerable to heat's dangers are older adults and people with health conditions like heart disease, diabetes, and cognitive impairment - especially those in low-income neighborhoods. Air conditioning is the best defense against heat-related illness and death - so the equitable distribution of energy and air conditioning is a crucial way to minimize the health effects of heat and climate change.</p>
 
-       <br><br>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mt-4">
+                                    <h4><i class="fas fa-chart-line"></i>&nbsp;Get the data</h4>
+                            </div>
+                        </div>
 
-<!--this script supports the modal-->
-<div id="theModal" class="modal fade">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      </div>
-    </div>
-  </div>
+                        <div class="row mt-2">
+                            <div class="col-lg-4 col-xs-12">
+                              <div class="card mb-2">
+                                  <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Environmental factors</div>
+                                  <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="">Energy and emissions</a>
+                                        <li class="list-group-item"><a href="">Heat</a>
+                                        <li class="list-group-item"><a href="">Green space</a>
+                                        <li class="list-group-item"><a href="">Storm vulnerability</a>
+                                    </ul>
+                          
+                                  </div>
+
+                            </div>
+
+                            <div class="col-lg-4 col-xs-12">
+                              <div class="card mb-2">
+                                  <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Vulnerable populations </div>
+                                  <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="">Heat vulnerability index</a>
+                                        <li class="list-group-item"><a href="">Air conditioning (adults 65+)</a>
+                                        <li class="list-group-item"><a href="">Households using electric medical equipment</a>
+                                        </ul>
+                              
+                                  </div>
+
+                            </div>
+
+                            <div class="col-lg-4 col-xs-12">
+                                  <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Health outcomes </div>
+                                          <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><a href="">Weather-related illness</a>
+                                                </ul>
+                                          </div>
+
+
+                            </div>
+
+                          </div>
+                          <div class="row">
+                              <div class="col mt-4">
+                                      <h4><i class="fas fa-book-reader"></i>&nbsp;More resources</h4>
+                              </div>
+                          </div>
+
+                          <div class="row mt-2">
+
+                            <hr>
+
+                            <div class="col-lg-4 col-xs-12">
+                                  <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-link"></i>&nbsp;Related categories</div>
+                                          <ul class="list-group list-group-flush">
+                                              <li class="list-group-item"><a href="">related</a>
+                                          </ul>
+                                  
+                                          </div>
+                            </div>
+                            <div class="col-lg-4 col-xs-12">
+                                    <div class="card mb-2">
+                                            <div class="card-header bg-secondary text-white"><i class="fas fa-map-marked-alt"></i>&nbsp;Neighborhood reports </div>
+                                            <a href="">
+                                                    <button type="button" class="btn btn-light btn-block">Climate and health</button></a>
+
+                                            </div>	
+                            </div>
+                            <div class="col-lg-4 col-xs-12">
+                                  <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-atlas"></i>&nbsp;Data stories</div>
+                                          <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><a href="">Air conditioning and equity</a>
+                                            </ul>
+                                      </div>	
+                            </div>
+                            
+
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="v-pills-food" role="tabpanel" aria-labelledby="v-pills-food-tab">
+                            <div class="row">
+                                    <div class="col"><h3>Food and drink</h3>
+                                        <p>We all make choices around food and drink, but sometimes, those choices are made for us by our food environments. </p>
+	<p>Our food environments include neighborhood-level alcohol access, unhealthy food access, and restaurant food safety. Additionally, drinking water quality data includes data on contaminants that are most frequently found at levels that may be of public health significant in the country's drinking water.</p>
+        
+                                  </div></div>
+                                
+                                <div class="row">
+                                    <div class="col mt-4">
+                                            <h4><i class="fas fa-chart-line"></i>&nbsp;Get the data</h4>
+                                    </div>
+                                </div>
+        
+                                <div class="row mt-2">
+                                    <div class="col-lg-4 col-xs-12">
+                                      <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Environmental factors</div>
+                                          <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><a href="">Drinking water quality</a>
+                                                    <li class="list-group-item"><a href="">Alcohol access</a>
+                                                <li class="list-group-item"><a href="">Unhealthy food access</a>
+                                                <li class="list-group-item"><a href="">Restaurant food safety</a>
+                                    
+                                            </ul>
+                                  
+                                          </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4 col-xs-12">
+                                      <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Behaviors </div>
+                                          <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><a href="">Alcohol use</a>
+                                                <li class="list-group-item"><a href="">Sugary drink consumption</a>
+                                        
+                                                </ul>
+                                      
+                                          </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4 col-xs-12">
+                                          <div class="card mb-2">
+                                                  <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Health outcomes </div>
+                                                  <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item"><a href="">Overweight</a>
+                                                        </ul>
+                                                  </div>
+        
+        
+                                    </div>
+        
+                                  </div>
+                                  <div class="row">
+                                      <div class="col mt-4">
+                                              <h4><i class="fas fa-book-reader"></i>&nbsp;More resources</h4>
+                                      </div>
+                                  </div>
+        
+                                  <div class="row mt-2">
+
+                                    <div class="col-lg-4 col-xs-12">
+                                          <div class="card mb-2">
+                                                  <div class="card-header bg-light"><i class="fas fa-atlas"></i>&nbsp;Data stories</div>
+                                                  <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item"><a href="">Summer weather and food safety</a>
+                                                    </ul>
+                                              </div>	
+                                    </div>
+                                    
+        
+                                  
+                                </div>
+
+                    </div>
+                    
+                    <div class="tab-pane fade" id="v-pills-pests" role="tabpanel" aria-labelledby="v-pills-pests-tab">
+                            <div class="row">
+                                    <div class="col"><h3>Pests and pesticides</h3>
+                                        <p>Pests and pesticides can both have health effects. Household pests like mice, rats, and cockroaches can trigger asthma, while bed bugs are a well-known nuisance. Meanwhile, warmer winters may mean more vector-borne diseases like babesiosis and west nile virus.</p>
+	                                    <p>Pesticides are chemicals used to control or kill insects, rats, mice, plants and weeds, or fungi (mold). Esposure to pesticides can occur from consuming foods or beverages that contain pesticide residues, from direct contact with the skin or eyes, or from breathing air in areas where pesticides are applied. Health effects from exposure to pesticides vary by chemical class. In general, short-term effects on humans from high levels of exposure include damage to the skin and eyes, difficulty breathing, neurological tremors or seizure and, in extreme cases, loss of consciousness and death. Current research is investigating whether chronic exposure to certain pesticides increases risk of some cancers, reproductive and developmental problems and neurodegenerative diseases such as Parkinson's disease.</p>
+        
+                                  </div></div>
+                                
+                                <div class="row">
+                                    <div class="col mt-4">
+                                            <h4><i class="fas fa-chart-line"></i>&nbsp;Get the data</h4>
+                                    </div>
+                                </div>
+        
+                                <div class="row mt-2">
+                                    <div class="col-lg-4 col-xs-12">
+                                      <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Environmental factors</div>
+                                          <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><a href="">Mice and rats</a>
+                                                    <li class="list-group-item"><a href="">Cockroaches</a>
+                                                <li class="list-group-item"><a href="">Bedbugs</a>
+                                                <li class="list-group-item"><a href="">Personal pesticide use</a>
+                                                <li class="list-group-item"><a href="">Commercial pesticide use</a>
+                                                <li class="list-group-item"><a href="">NYC agency pesticide use</a>
+                                    
+                                            </ul>
+                                  
+                                          </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4 col-xs-12">
+                                      <div class="card mb-2">
+                                          <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Behaviors </div>
+                                          <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><a href="">Alcohol use</a>
+                                                <li class="list-group-item"><a href="">Sugary drink consumption</a>
+                                        
+                                                </ul>
+                                      
+                                          </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4 col-xs-12">
+                                          <div class="card mb-2">
+                                                  <div class="card-header bg-light"><i class="fas fa-chart-bar"></i>&nbsp;Health outcomes </div>
+                                                  <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item"><a href="">Asthma</a>
+                                                        <li class="list-group-item"><a href="">Vector-borne diseases</a>
+                                                        </ul>
+                                                  </div>
+        
+        
+                                    </div>
+        
+                                  </div>
+                                  <div class="row">
+                                      <div class="col mt-4">
+                                              <h4><i class="fas fa-book-reader"></i>&nbsp;More resources</h4>
+                                      </div>
+                                  </div>
+        
+                                  <div class="row mt-2">
+
+                                    <div class="col-lg-4 col-xs-12">
+                                          <div class="card mb-2">
+                                                  <div class="card-header bg-light"><i class="fas fa-link"></i>&nbsp;Related categories</div>
+                                                  <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item"><a href="#v-pills-housing">Housing</a>
+                                                    </ul>
+                                              </div>	
+                                    </div>
+                                    
+        
+                                  
+                                </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="v-pills-special" role="tabpanel" aria-labelledby="v-pills-special-tab"> special pops...</div>
+                    
+                    <div class="tab-pane fade" id="v-pills-child" role="tabpanel" aria-labelledby="v-pills-child-tab">..child.</div>
+                    
+                    <div class="tab-pane fade" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab">..all HOs.</div>  
+                </div>
+                </div>
+              </div>
+</div>
+
+       
+
+
+
+
+
 
 
         
