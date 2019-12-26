@@ -205,8 +205,20 @@
     <main id="skip-header-target" role="main" style="background-color:#f8f9fa;">
        
             <div class="container-fluid fs-sm">
+
+                    <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item inactive"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer</li>
+                                <li class="breadcrumb-item active">Housing
+                                </a></li>
+                               
+
+                            </ol>
+        
+                        </nav>
+
                 <div class="row">
-                    <div class="col-lg-3 border-xl-right">
+                    <div class="col-lg-2 border-xl-right">
 
                             <div class="sticky-top" id="sidebar-nav">
                                     <div class="d-lg-none">
@@ -221,18 +233,17 @@
                                     </div>
 
                                     <div class="collapse d-lg-block pt-2" id="sidebar-nav1">
-                                        <h2><i class="fas fa-chart-line"></i>&nbsp;Data Explorer</h2>
-                                        <div class="border-bottom mb-2"></div>
-                                        <a href="DataExplorerHubAir.html" class="btn btn-outline-success btn-large btn-block">Outdoor Air</a>   
-                                        <a href="DataExplorerHubHousing.html" class="btn btn-outline-success btn-large btn-block">Housing</a>
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Climate</a>
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Transportation</a> 
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Food</a> 
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Pests</a>
+                                       
+                                        <a href="DataExplorerHubAir.html" class="btn btn-outline-success btn-sm btn-block">Outdoor Air</a>   
+                                        <a href="DataExplorerHubHousing.html" class="btn btn-outline-success btn-sm btn-block">Housing</a>
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Climate</a>
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Transportation</a> 
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Food</a> 
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Pests</a>
                                         <div class="border-bottom my-2"></div>
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Special populations</a>  
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Child health</a> 
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">All health outcomes</a>
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Special populations</a>  
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Child health</a> 
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">All health outcomes</a>
                                         <div class="border-bottom my-2"></div>     
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search topics">
                                     </div>
@@ -247,20 +258,18 @@
                         </div>
 
                         <!--start primary window-->
-                        <div class="col-lg-9" id="primary-content">
+                        <div class="col-lg-8 mr-auto" id="primary-content">
                                 <div class="row">
                                         <div class="col"><h3>Housing</h3>
-                                            <p>Note: I think this works best, because the other system sets up a heavy page that takes additional work to implement deep-linking.</p>
-                                            <p>Secondly, I think this is best implemented without a 'home' data explorer: on the Portal home page, clicking the Data Explorer button unfolds an accordion with the main Hub Page buttons, which bring you here - fewer page changes, emphasis on lateral browse.</p>
-                                            <p>Third, this could let us go right to "subtopic/data vis" pages, though we'd want to separate some thing out into subtopics where hub pages were made - similar to our subheadings.</p>
-                                            <p><b>Actual hub page content starts here:</b> Most people spend most of their time at home - so the household environment can significantly affect health. Disrepair that stems from longterm maintenance neglect can lead to serious health problems, including: lead poisoning from lead paint; asthma and other respiratory issues triggered by pests; and carbon monoxide poisoning.</p>
+                                            
+                                            <p>Most people spend most of their time at home - so the household environment can significantly affect health. Disrepair that stems from longterm maintenance neglect can lead to serious health problems, including: lead poisoning from lead paint; asthma and other respiratory issues triggered by pests; and carbon monoxide poisoning.</p>
                                           <p>In NYC, substandard housing is disproportionately located in low-income neighborhoods, as historical disinvestment lead to severe, systemic maintenance deficiencies that threatens people's health. No family should have to choose between affordable and healthy housing - all tenants are entitled to safe, decent, healthy housing that prevents disease and injury.</p>
     
                                       </div>
                                     </div>
                                     <div class="row">
                                         <div class="col mt-4">
-                                                <h4><i class="fas fa-chart-line"></i>&nbsp;Get the data</h4>
+                                                <h4><i class="fas fa-chart-line"></i>&nbsp;Get the data: <span class="text-muted">indicators on the EH Data Portal</span></h4>
                                         </div>
                                     </div>
           
@@ -355,6 +364,14 @@
                                         
           
                                       
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                                <p>Note: I think this works best, because the other system sets up a heavy page that takes additional work to implement deep-linking.</p>
+                                                <p>Secondly, I think this is best implemented without a 'home' data explorer: on the Portal home page, clicking the Data Explorer button unfolds an accordion with the main Hub Page buttons, which bring you here - fewer page changes, emphasis on lateral browse.</p>
+                                                <p>Third, this could let us go right to "subtopic/data vis" pages, though we'd want to separate some thing out into subtopics where hub pages were made - similar to our subheadings.</p>
+                                        </div>
                                     </div>
 
                         

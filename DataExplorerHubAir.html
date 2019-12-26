@@ -205,8 +205,18 @@
     <main id="skip-header-target" role="main" style="background-color:#f8f9fa;">
        
             <div class="container-fluid fs-sm">
+                    <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item inactive"><i class="fas fa-chart-line"></i>&nbsp;Data Explorer</li>
+                                <li class="breadcrumb-item active">Outdoor air
+                                </a></li>
+                               
+
+                            </ol>
+        
+                        </nav>
                 <div class="row">
-                    <div class="col-lg-3 border-xl-right">
+                    <div class="col-lg-2 border-xl-right">
 
                             <div class="sticky-top" id="sidebar-nav">
                                     <div class="d-lg-none">
@@ -221,18 +231,16 @@
                                     </div>
 
                                     <div class="collapse d-lg-block pt-2" id="sidebar-nav1">
-                                        <h2><i class="fas fa-chart-line"></i>&nbsp;Data Explorer</h2>
-                                        <div class="border-bottom mb-2"></div>
-                                        <a href="DataExplorerHubAir.html" class="btn btn-outline-success btn-large btn-block">Outdoor Air</a>   
-                                        <a href="DataExplorerHubHousing.html" class="btn btn-outline-success btn-large btn-block">Housing</a>
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Climate</a>
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Transportation</a> 
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Food</a> 
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Pests</a>
+                                        <a href="DataExplorerHubAir.html" class="btn btn-outline-success btn-sm btn-block">Outdoor Air</a>   
+                                        <a href="DataExplorerHubHousing.html" class="btn btn-outline-success btn-sm btn-block">Housing</a>
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Climate</a>
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Transportation</a> 
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Food</a> 
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Pests</a>
                                         <div class="border-bottom my-2"></div>
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Special populations</a>  
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">Child health</a> 
-                                        <a href="" class="btn btn-outline-success btn-large btn-block">All health outcomes</a>
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Special populations</a>  
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">Child health</a> 
+                                        <a href="" class="btn btn-outline-success btn-sm btn-block">All health outcomes</a>
                                         <div class="border-bottom my-2"></div>     
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search topics">
                                     </div>
@@ -247,13 +255,19 @@
                         </div>
 
                         <!--start primary window-->
-                        <div class="col-lg-9" id="primary-content">
+                        <div class="col-lg-8 mr-auto" id="primary-content">
                                 <div class="row">
                                         <div class="col"><h3>Outdoor Air Quality: the NYC air quality data hub</h3>
                                             <p>New York City's air contains particles, drops of liquid, gasses, and other pollution that can affect health - it can affect our breathing, and bad air quality can be particularly dangerous for older adults, children, and people with heart or lung conditions.</p>
                                             <p>Air quality can vary from neighborhood to neighborhood, based on local levels of emmissions and many other factors. We monitor air quality using the New York City Community Air Survey (NYCCAS). NYCCAS is NYC's comprehensive air quality monitoring and modeling network, and it allows us to understand neighborhood differences in air quality - and what contributes to those differences.
                                             </p>
                                             <br>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col mb-2">
+                                                <h4><i class="fas fa-chart-line"></i>&nbsp;Key features: <span class="text-muted">explore NYC's air quality</span></h4>
                                         </div>
                                     </div>
 
@@ -272,54 +286,44 @@
                                         </div>
                     
                                         <div class="col-lg-4 col-sm-6 col-xs-12">
-                                            <div class="card bg-light mb-2">
-                                                <div class="card-header"><b><i class="fas fa-wind"></i>&nbsp;Explore air quality data</b></div>
-                                                 
-                                                <img src="../images/airquality.jpg" class="card-img-top" alt="New York City seen from an airplane">
+
+                                                <div class="card bg-light mb-2">
+                                                        <div class="card-header"><b><i class="fas fa-atlas"></i>&nbsp;Snapshots</b></div>
+                                                        <img src="../images/AQchart.PNG" class="card-img-top" alt="An image of a data chart">
+                                                        <div class="card-body">Brief summaries of key findings: how traffic affects air toxics, the health impacts of noise, eliminating SO2 from our air, and more. <a href="">Read more...</a></div>
+        
                                                        
-                                              
-                                                
-                                                    <a href="AQExplorer.html">
-                                                            <button type="button" class="btn btn-secondary btn-block">Your neighborhood</button></a>
-                                                            <a href="AQRTD.html">
-                                                                    <button type="button" class="btn btn-secondary btn-block">Real-time data</button></a>
-                                                
-                    
-                                                      
-                                                                              
-                    
-                                                </div>
+                            
+                                                    </div>
+                                           
                     
                                             
-                                            <br>
-                    
-                                            <br>
+                                            
                                         </div>
                     
                                         <div class="col-lg-4 col-sm-12">
-                                            <div class="card bg-light mb-2">
-                                                <div class="card-header"><b><i class="fas fa-atlas"></i>&nbsp;Snapshots</b></div>
-                                                <img src="../images/AQchart.PNG" class="card-img-top" alt="An image of a data chart">
-                                                <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item"><a href="">Traffic and air toxics</a></li>
-                                                    <li class="list-group-item"><a href="">Traffic and noise</a></li>
-                                                    <li class="list-group-item"><a href="">Cleaner fuels: who benefits?</a></li>
-                                                    <li class="list-group-item"><a href="">Shifting to cleaner fuels - and cleaner air</a></li>
-                                                    <li class="list-group-item"><a href="">Monitoring for environmental justice</a></li>
-                                                </ul>
-
-                                               
-                    
-                                            </div>
-                    
+                                                <div class="card bg-light mb-2">
+                                                        <div class="card-header"><b><i class="fas fa-wind"></i>&nbsp;Explore air quality data</b></div>
+                                                         
+                                                        <img src="../images/airquality.jpg" class="card-img-top" alt="New York City seen from an airplane">
+                                                               
+                                                      
+                                                        
+                                                            <a href="Data/AQExplorer.html">
+                                                                    <button type="button" class="btn btn-secondary btn-block">Your neighborhood</button></a>
+                                                                    <a href="Data/AQRTD.html">
+                                                                            <button type="button" class="btn btn-secondary btn-block">Real-time data</button></a>
+                                                        
+                            
+                                                              
+                                                                                      
+                            
+                                                        </div>
                                            
                     
                                         </div>
                     
                                     </div>
-                                    <br>
-                                    <hr>
-
 
                                     <div class="row">
                                         <div class="col mt-4">
@@ -361,11 +365,11 @@
 
                                         <div class="col-lg-4 col-xs-12">
                                             <div class="card mb-2">
-                                                <div class="card-header bg-secondary text-white"><i class="fas fa-map-marked-alt"></i>&nbsp;Neighborhood reports </div>
+                                                <div class="card-header bg-light"><i class="fas fa-map-marked-alt"></i>&nbsp;Neighborhood reports </div>
                                                 <a href="">
-                                                        <button type="button" class="btn btn-light btn-block">Outdoor air and health</button></a>
+                                                        <button type="button" class="btn btn-secondary btn-block">Outdoor air and health</button></a>
                                                         <a href="">
-                                                                <button type="button" class="btn btn-light btn-block">Asthma and the environment</button></a>
+                                                                <button type="button" class="btn btn-secondary btn-block">Asthma and the environment</button></a>
                                             
                                                 </div>
                                                 
