@@ -277,9 +277,14 @@ main {
 
 
 /*adding grey cards */
-.greyitem {background-color: #f7f5f5;
+.greyitem {background-color: #E2E2E2;
 padding: 10px;
 height: 200px;}
+
+.greyitem2 {background-color: #E2E2E2;
+	padding: 10px;
+	height: 575px;
+	}
 
 
 
