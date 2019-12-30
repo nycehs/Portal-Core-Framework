@@ -293,19 +293,24 @@
 
             </div>
 
+            <div class="row">
+                <div class="col-6 mr-auto">
+                    <h5>NYC's air quality is generally good, but often varies</h5>
+                    <p>Our air quality is pretty good <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Closerlook/breatheeasy/index.html">and has been improving over time</a>. For PM2.5 (fine particles in the air), NYC meets the national air quality standard of an annual average of 12 μg/m<sup>3</sup>. </p>
+                    
+                    <p>But hour to hour, there's large variation in our air quality - even in neighborhoods with the cleanest air. That means sometimes, New Yorkers are exposed to high levels of <a href="">pollutants like PM2.5 that can harm health.</a> </p>
+                    <p>These high levels are driven by daily changes in traffic volume, weather patterns that can trap emissions, and other short-term events.</p>
+                   
+                </div>
+            </div>
+
             <div class="row my-2">
                     <div class="col-lg-6 col-sm-12">
                     
-                                <h5>NYC's air quality is generally good, but often varies</h5>
-                                <p>Our air quality is pretty good <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Closerlook/breatheeasy/index.html">and has been improving over time</a>. For PM2.5 (fine particles in the air), NYC meets the national air quality standard of an annual average of 12 μg/m<sup>3</sup>. </p>
-                                
-                                <p>But hour to hour, there's large variation in our air quality - even in neighborhoods with the cleanest air. That means sometimes, New Yorkers are exposed to high levels of <a href="">pollutants like PM2.5 that can harm health.</a> </p>
-                                <p>These high levels are driven by daily changes in traffic volume, weather patterns that can trap emissions, and other short-term events.</p>
-                                <h5>Time matters...</h5>
+                              <h5>Air quality varies because sources vary</h5>
                                 <p>In New York City, about 45% of PM2.5 comes from far-away sources, like coal-burning power plants in the Midwest. But the rest comes from <b>local sources</b>.</p>
-                                <p>When we study and model air quality in every neighborhood of the city, we're able to consistently identify the sources that are most closely associated with higher levels of air pollution.</p>
-                                
-                                <h5>...because sources matter.</h5>
+                                <p>When we study air quality in every neighborhood of the city, we're able to identify the sources that are most closely associated with higher levels of air pollution.</p>
+
                                 <div class="card mb-2">
                                         <div class="card-body">
                             
@@ -377,7 +382,7 @@
                     
 
                     <h5>Common patterns</h5>
-                    <p>We often see real-time data take the shapes below. Take a look at the images and see if you can see similar patterns in today's data - or come back tomorrow to check.</p>
+                    <p>We often see air quality data take the shapes below. Take a look at the images and see if you can see similar patterns in today's data - or come back tomorrow to check.</p>
                     <div class="card">
                         <div class="card-body">
 
@@ -469,14 +474,7 @@
                     </div>
                     this out-->
                     <br>
-                    <h5>"What about my neighborhood?"</h5>
-                   <p>We don't have real-time data for every neighborhood in New York City. However, we use our network of air quality monitors and a huge dataset of sources factors to model air quality based on key factors that affect air quality. To find out about air quality in your neighborhood, click the button below.</P>
 
-                    <a href="AQExplorer.html">
-                            <button type="button" class="btn btn-secondary float-right">Neighborhood air quality data</button></a>
-                            <br>
-                            <br>
-                            <br>
 
 
 
@@ -499,15 +497,33 @@
                     </div>
 
                     <div class="col-lg-6 col-sm-12">
-                            <div style="background-color:#F8F9FA;" class="sticky-top">
+                            <div style="background-color:#F8F9FA;" class="sticky-top border-top border-bottom py-2">
                                     <h5>Hourly PM2.5 measurements from 5 AQ monitors</h5>
                                     <em>PM2.5, in micrograms per cubic meter (μ/m<sup>3</sup>)</em><br>
-                                    <script type='text/javascript' src='https://appgctableau102.health.dohmh.nycnet/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 500px; height: 527px;'><object class='tableauViz' width='500' height='527' style='display:none;'><param name='host_url' value='https%3A%2F%2Fappgctableau102.health.dohmh.nycnet%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;EH-BESP' /><param name='name' value='NYCCASJawnDash&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
-                                   
+                                    <script type='text/javascript' src='https://appgctableau102.health.dohmh.nycnet/javascripts/api/viz_v1.js'></script>
+                                    
+                                    <div class='tableauPlaceholder' style='width: 500px; height: 527px;'>
+                                        <object class='tableauViz' width='500' height='527' style='display:none;'><param name='host_url' value='https%3A%2F%2Fappgctableau102.health.dohmh.nycnet%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;EH-BESP' /><param name='name' value='NYCCASJawnDash&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object>
+
+                                   </div>
+                                
                                     
                             
                 
                                  </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 ml-auto">
+                        <h5>"What about my neighborhood?"</h5>
+                        <p>We don't have real-time data for every neighborhood in New York City. However, we use our network of air quality monitors and a huge dataset of sources factors to model air quality based on key factors that affect air quality. To find out about air quality in your neighborhood, click the button below.</P>
+     
+                         <a href="AQExplorer.html">
+                                 <button type="button" class="btn btn-secondary float-right">Neighborhood air quality data</button></a>
+                                 <br>
+                                 <br>
+                                 <br>
                     </div>
                 </div>
 
