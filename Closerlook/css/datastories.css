@@ -1,5 +1,6 @@
 /* Custom CSS*/
 
+html {scroll-behavior: smooth;}  
 
 /* Start CSS for AQ Vignette dashboard - some of this from standard Bootstrap Dashboard template, but storycolumn and storyback are custom - can customize further within*/
 .storycolumn {
@@ -190,6 +191,7 @@
 		margin-bottom: 20px;
 	}
 
+	/* comment out image hover function
 	img {
 		transition:transform 0.25s ease;
 	}
@@ -198,6 +200,7 @@
 		-webkit-transform:scale(1.5);
 		transform:scale(1.5);
 	}
+	*/
 
 	body {
 		font-size: 1 rem;

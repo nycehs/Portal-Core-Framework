@@ -12,10 +12,10 @@
     <!-- Corrects IE Compatibility Mode -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Article Three Column • NYC Core Framework</title>
+    <title>Data Story Template: EH Data Portal</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Framework/fontawesome/css/all.min.css">
 
     <!-- NYC Theme CSS -->
     <link rel="stylesheet" href="https://cityofnewyork.github.io/nyc-core-framework/css/theme.css">
@@ -26,9 +26,7 @@
 
 </head>
 
-<style>
-html {scroll-behavior: smooth;}  
-</style>
+
 
 <body>
 
@@ -49,7 +47,7 @@ html {scroll-behavior: smooth;}
                                 <strong>nyc.gov</strong>
                             </a>
                             <span class="mx-1" aria-hidden="true">|</span>
-                            Name of Office
+                            Department of Health
                         </p>
                     </div>
                     <!-- .col -->
@@ -59,7 +57,7 @@ html {scroll-behavior: smooth;}
                         <ul class="extensible-list horizontal fs-md">
                             <li>
                                 <a href="https://www1.nyc.gov/" title="Go to nyc.gov">
-                                    <img class="d-block" src="../images/nyc-bubble-logo.svg" width="45" alt="NYC Logo">
+                                    <img class="d-block" src="https://nycehs.github.io/Portal-Core-Framework/images/nyc-bubble-logo.svg" width="45" alt="NYC Logo">
                                 </a>
                             </li>
                         </ul>
@@ -82,68 +80,32 @@ html {scroll-behavior: smooth;}
 
                 <div class="row align-items-center">
 
-                    <div class="col-lg py-2">
-                        <div class="d-flex justify-content-center justify-content-lg-start">
-                            <a class="align-self-center" href="#" title="Home">
-
-                                <!-- Placeholder logo, replace the following <svg> tag with your own image version -->
-                                    <a href="">
-                                        <i class="fas fa-arrow-circle-left"></i>&nbsp;back to data stories 
-                                    </a>
-
-                            </a>
-                        </div>
-                    </div>
+                    
                     <!-- .col -->
 
-                    <div class="col-lg-auto border-top border-lg-0">
+                    <div class="col border-top">
 
-                        <div class="d-lg-flex align-items-center">
+                        <div class="align-items-center justify-content-between">
 
                             <!-- Mobile Toggle Buttons -->
 
-                            <ul class="extensible-list horizontal justify-content-between my-2 d-lg-none">
+                            <ul class="extensible-list horizontal justify-content-between my-2">
+                                <li><a href="">
+                                    <button class="no-btn-style mr-auto" type="button">
+                                            <i class="fas fa-arrow-circle-left"></i>&nbsp;back to data stories
+                                    </button></a>
+                                </li>
+
                                 <li>
-                                    <button class="no-btn-style" type="button" data-toggle="collapse"
+                                        <button class="no-btn-style float-right" type="button" data-toggle="collapse"
                                         data-target="#global-language" aria-controls="global-language"
                                         aria-expanded="false">
                                         <span class="fas fa-language fa-lg" ></span>
                                     </button>
                                 </li>
-
-                                <li>
-                                    <button class="no-btn-style" type="button" data-toggle="collapse"
-                                        data-target="#global-search" aria-controls="global-search"
-                                        aria-expanded="false">
-                                        <span class="fas fa-search fa-lg" ></span>
-                                    </button>
-                                </li>
                             </ul>
 
-                            <div class="collapse d-lg-block mx-n2 mx-lg-2" id="nav-primary">
-
-                            </div>
-
-                            <!-- Desktop Toggle Buttons -->
-
-                            <ul class="extensible-list horizontal d-none d-lg-flex">
-                                <li>
-                                    <button class="no-btn-style" type="button" title="Language" data-toggle="collapse"
-                                        data-target="#global-language" aria-controls="global-language"
-                                        aria-expanded="false">
-                                        <span class="sr-only">Language</span>
-                                        <span class="fas fa-language fa-lg" ></span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button class="no-btn-style" type="button" title="Search" data-toggle="collapse"
-                                        data-target="#global-search" aria-controls="global-search"
-                                        aria-expanded="false">
-                                        <span class="sr-only">Search</span>
-                                        <span class="fas fa-search fa-lg" ></span>
-                                    </button>
-                                </li>
-                            </ul>
+                            
 
                         </div>
                         <!-- .d-flex -->
@@ -189,11 +151,11 @@ html {scroll-behavior: smooth;}
     <main role="main">
 
         <!-- Add your custom image class below (replace 'oculus' with your own custom class) -->
-        <div class="bg-primary banner-with-background oculus d-flex flex-column" style="height: 450px;">
+        <div class="bg-primary d-flex flex-column titleslide" style="height: 500px; background-image: URL(title1.jpg)">
 
             <div class="container-fluid my-auto">
-                <div class="narrow my-3">
-                    <h1 class="display-4 text-white">Data story title, longer title with a line wrap</h1>
+                <div class="medium my-3 text-left">
+                    <h1 class="display-4 titleheader">Data story template, with writeup of styles and functions</h1>
                 </div>
             </div>
             <!-- .container -->
@@ -214,6 +176,7 @@ html {scroll-behavior: smooth;}
 
         <!--#main-nav - comment this out if there are no chapters-->
 
+
             <div class="sticky-top container-fluid collapse d-lg-block px-0 border-lg-top border-lg-bottom" id="main-nav" style="background-color:white;">
 
                 <h2 class="sr-only">
@@ -228,8 +191,8 @@ html {scroll-behavior: smooth;}
         
                         <div class="nav-item mx-auto">
         
-                            <a class="nav-link" href="#section1" id="nav-item-01" role="button">
-                                Section 1
+                            <a class="nav-link active" href="#section1" id="nav-item-01" role="button">
+                                Intro and header
                             </a>
     
         
@@ -239,7 +202,7 @@ html {scroll-behavior: smooth;}
                         <div class="nav-item mx-auto">
         
                             <a class="nav-link" href="#section2" id="nav-item-02" role="button">
-                                Section 2
+                                Storyanchors
                             </a>
     
         
@@ -248,21 +211,21 @@ html {scroll-behavior: smooth;}
     
                         <div class="nav-item mx-auto">
         
-                            <a class="nav-link" href="#section3" id="nav-item-03" role="button">Section 3
+                            <a class="nav-link" href="#section3" id="nav-item-03" role="button">Widths
                             </a>    
                         </div>
                         <!-- .nav-item -->
         
                         <div class="nav-item mx-auto">
         
-                            <a class="nav-link" href="#section4" id="nav-item-04" role="button">Section 4
+                            <a class="nav-link" href="#section4" id="nav-item-04" role="button">Righthand column
                             </a>    
                         </div>
                         <!-- .nav-item -->
     
                         <div class="nav-item mx-auto">
         
-                            <a class="nav-link" href="#section5" id="nav-item-05" role="button">Section 5
+                            <a class="nav-link" href="#section5" id="nav-item-05" role="button">Footer
                             </a>    
                         </div>
                         <!-- .nav-item -->
@@ -294,31 +257,19 @@ html {scroll-behavior: smooth;}
                 <!--start main content section-->
                 <div class="col-xl-8 overflow-hidden" id="primary-content">
 
-                    <div class="my-5">
+                    <div class="my-4">
 
-                        <div class="narrow my-4">
+                        <div class="narrow my-2">
 
-                            <h2 id="section1" class="storyanchor">Lorem ipsum dolor sit amet</h2>
+                            <h2 id="section1" class="storyanchor">Intro and header</h2>
+                            <p>For this data story template we wanted a simplified page. Accordingly we removed elements of the header, preserving only the main black header bar, the link back to data stories, and the translation function. These are responsive but with less transformation across screen sizes.</p>
+                            <p>The title itself uses class titleheader to get that transparent overlay that ensures readability on a wide variety of title image slides.</p>
 
-                            <p>
-                               This uses a div class .narrow  for the main sections. This sets its width. In order to have wider sections (for images and data visualization) or full-width sections (for superwide data vis), you'll close the narrow div and open a new medium or wide one using class .medium or .wide. You can see a medium one below. These classes come from the <a href="https://www1.nyc.gov/assets/doitt/html/nyc-core-framework/additional-widths.html">Core Framework Documentation</a>.
-                            </p>
+                           
 
-                            <p>
-                               Right now we have the headers IDed as the sections, but we can do this with divs or other formats to ensure that the reference link and header position are where we want them. For complicated chaptered stories we can also set different background colors to differentiate where we are in the story. </p>
-                               <p>
-                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
-                                pretium et
-                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
-                                sapien
-                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
-                                facilisi
-                                mi
-                                dictumst porttitor est volutpat.
-                            </p>
+                           
 
-                            <p>
-                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                            <p> Moving on, I'll include some lorem ipsum text to take up space between sections. Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
                                 pretium et
                                 dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
                                 sapien
@@ -339,14 +290,7 @@ html {scroll-behavior: smooth;}
                                 </p>
     
                                 <p>
-                                    Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
-                                    pretium et
-                                    dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
-                                    sapien
-                                    potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
-                                    facilisi
-                                    mi
-                                    dictumst porttitor est volutpat.
+                                    Below we see a figure with a caption. The figure is wider than the text. It can be an image or a data visualization embed.
                                 </p>
                             
                         </div>
@@ -360,9 +304,17 @@ html {scroll-behavior: smooth;}
                             </div>
                          <div class="narrow my-4">
 
-                            <h3 id="section2" class="storyanchor">Section two</h3>
+                            <h3 id="section2" class="storyanchor">Story anchors</h3>
                             <p>
-                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                    Right now we have the headers IDed as the sections. Datastories.css includes storyanchor class to help align things below the sticky header. For header anchors, use class storyanchor. <strong>This chapter anchor functionality can be easily commented out for simple data stories</strong>. They also collapse into a Contents expander on mobile.</p>
+                                    <p>This is set so that on page load, the "Intro" nav button is active - highlighted. This plus scrolling should give the user a clear understanding of what that sticky anchor-nav does.</p>
+                                    <p>For complicated chaptered stories we can also set different background colors to differentiate where we are in the story. Currently, the image hover expansion is commented out of datastories.css to make development easier.</p>
+                            <p>
+                               As with previous data stories, the title image is set by title1.jpg in the story's folder. 
+                            </p>
+
+                            <p>
+                              Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
                                 pretium et
                                 dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
                                 sapien
@@ -372,36 +324,7 @@ html {scroll-behavior: smooth;}
                                 dictumst porttitor est volutpat.
                             </p>
 
-                            <p>
-                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
-                                pretium et
-                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
-                                sapien
-                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
-                                facilisi
-                                mi
-                                dictumst porttitor est volutpat.
-                            </p>
-                            <p>
-                                    Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
-                                    pretium et
-                                    dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
-                                    sapien
-                                    potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
-                                    facilisi
-                                    mi
-                                    dictumst porttitor est volutpat.
-                                </p>
-                                <p>
-                                        Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
-                                        pretium et
-                                        dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
-                                        sapien
-                                        potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
-                                        facilisi
-                                        mi
-                                        dictumst porttitor est volutpat.
-                                    </p>
+
                                 </div>
                                 <div class="medium my-4">
     
@@ -424,28 +347,11 @@ html {scroll-behavior: smooth;}
                                         dictumst porttitor est volutpat.
                                     </p>
 
-                            <h3 id="section3" class="storyanchor">Section three</h3>
+                            <h3 id="section3" class="storyanchor">Widths</h3>
                             <p>
-                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
-                                pretium et
-                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
-                                sapien
-                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
-                                facilisi
-                                mi
-                                dictumst porttitor est volutpat.
-                            </p>
+                                    This uses a div class .narrow  for the main sections. This sets its width. In order to have wider sections (for images and data visualization) or full-width sections (for superwide data vis), you'll close the narrow div and open a new medium or wide one using class .medium or .wide. You can see a medium one below. These classes come from the <a href="https://www1.nyc.gov/assets/doitt/html/nyc-core-framework/additional-widths.html">Core Framework Documentation</a>.
+                                 </p>
 
-                            <p>
-                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
-                                pretium et
-                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
-                                sapien
-                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
-                                facilisi
-                                mi
-                                dictumst porttitor est volutpat.
-                            </p>
                         </div>
                         <div class="medium my-4">
 
@@ -488,16 +394,8 @@ html {scroll-behavior: smooth;}
                                         dictumst porttitor est volutpat.
                                     </p>
 
-                            <h3 id="section4" class="storyanchor">Section four</h3>
-                            <p>
-                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
-                                pretium et
-                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
-                                sapien
-                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
-                                facilisi
-                                mi
-                                dictumst porttitor est volutpat.
+                            <h3 id="section4" class="storyanchor">Righthand column</h3>
+                            <p>Currently, this column can store links to indicators. It's sticky. While we have used bullets in the past, the thin space of this column means that we should use text separated by horizontal rules for the text. We can also consider buttons, but this is fine for now.
                             </p>
 
                             <p>
@@ -533,17 +431,9 @@ html {scroll-behavior: smooth;}
                                     dictumst porttitor est volutpat.
                                 </p>
 
-                                <h3 id="section5" class="storyanchor">Section 5 goes here</h3>
+                                <h3 id="section5" class="storyanchor">Footer</h3>
 
-                                <p>
-                                    Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
-                                    pretium et
-                                    dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
-                                    sapien
-                                    potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
-                                    facilisi
-                                    mi
-                                    dictumst porttitor est volutpat.
+                                <p>This closes with an email contact and appeal for contact. Below that we have standard Core Framework footers.
                                 </p>
     
                                 <p>
@@ -575,24 +465,12 @@ html {scroll-behavior: smooth;}
 
                             <div class="border-top border-dark">
 
-                                <ul class="extensible-list horizontal text-muted mt-3" id="share-buttons">
-                                    <li class="text-muted">
-                                        <span class="fas fa-share" title="Share this page" ></span>
-                                    </li>
+                                <ul class="extensible-list horizontal text-muted mt-3">
+            
                                     <li>
-                                        <a class="text-muted" href="#" title="Share on Facebook">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-muted" href="#" title="Share on Twitter">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-muted" href="#" title="Share through email">
-                                            <span class="fa fa-envelope"></span>
-                                        </a>
+                                        <a class="text-muted" href="mailto:trackingportal@health.nyc.gov" title="Share through email">
+                                            <span class="fa fa-envelope"></span> Questions about this data story? Ideas for another one? Email us.</a>
+                                        
                                     </li>
                                 </ul>
 
@@ -614,10 +492,12 @@ html {scroll-behavior: smooth;}
 
                     <div class="narrow py-3 mt-n3 mt-xl-0 sticky-top" style="z-index: 0">
                         <br><br>
-                        <p>Explore the data in this story:
-                        <ul><li><a href="">Data link one</a></li>
-                        <li><a href="">Data link two</a></li>
-                        </ul>
+                        <p>Explore the data:
+                            <hr>
+                        <a href="">Data link one</a>
+                        <hr>
+                        <a href="">Data link two</a>
+                        <hr>
                     </p>
                     </div>
                     <!-- .my-3 -->
@@ -632,6 +512,198 @@ html {scroll-behavior: smooth;}
         <!-- #primary-content -->
 
     </main>
+
+    <footer class="bg-black" id="global-footer" role="contentinfo">
+
+            <h2 class="sr-only">
+                Page Footer
+            </h2>
+     
+            <div class="bg-opacity-black-25 text-white" id="nyc-footer">
+     
+                <div class="container py-3 d-none" id="languages">
+     
+                    <div class="row fs-md">
+     
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                            </ul>
+                        </div>
+                    </div>
+     
+                </div>
+                <!-- #languages -->
+     
+                <div class="container py-3" id="languages">
+     
+                    <ul class="fs-md" role="list">
+                        <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                    </ul>
+     
+                </div>
+                <!-- #languages -->
+     
+                <hr class="opacity-10" aria-hidden="true">
+     
+                <div class="container py-3">
+     
+                    <div class="row">
+     
+                        <div class="col-md-6 col-lg-8 mb-3 mb-lg-0">
+     
+                            <nav class="row fs-md" role="navigation">
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/nyc-resources/agencies.page">
+                                                <strong>City Agencies</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a858-nycnotify.nyc.gov/notifynyc/">
+                                                <strong>Notify NYC</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="http://www1.nyc.gov/connect/mobile-applications.page">
+                                                <strong>NYC Mobile Apps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- .col -->
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/home/contact-us.page">
+                                                <strong>Contact NYC Government</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a856-citystore.nyc.gov/">
+                                                <strong>CityStore</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="http://maps.nyc.gov/doitt/nycitymap/">
+                                                <strong>Maps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+     
+                                </div>
+                                <!-- .col -->
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://a127-ess.nyc.gov/psp/prdess/?cmd=login&languageCd=ENG&">
+                                                <strong>City Employees</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/connect/social-media.page">
+                                                <strong>Stay Connected</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="http://www1.nyc.gov/nyc-resources/resident-toolkit.page">
+                                                <strong>Resident Toolkit</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+     
+                                </div>
+                                <!-- .col -->
+     
+                            </nav>
+     
+                        </div>
+                        <!-- .col -->
+     
+                        <div class="col-md-6 col-lg-4">
+     
+                            <a class="mb-2" href="https://www1.nyc.gov" title="Go to nyc.gov" target="_blank">
+                                <img class="mb-2" src="https://nycehs.github.io/Portal-Core-Framework/images/nyc-bubble-logo.svg" width="90" alt="NYC Logo">
+                            </a>
+                            <p class="fs-sm">City of New York - 2019 All Rights Reserved. NYC is a trademark and service
+                                mark of the City of New York.</p>
+     
+                            <ul class="extensible-list horizontal fs-sm">
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/home/privacy-policy.page">Privacy
+                                        Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/home/terms-of-use.page">Terms
+                                        of Use</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/site/mopd/index.page"
+                                        title="Mayor's Office for People with Disabilities">
+                                        <span class="sr-only">Mayor's Office for People with Disabilities</span>
+                                        <span class="fab fa-lg fa-accessible-icon"></span>
+                                    </a>
+                                </li>
+                            </ul>
+     
+                        </div>
+                        <!-- .col -->
+     
+                    </div>
+                    <!-- .row -->
+     
+                </div>
+                <!-- .container -->
+     
+            </div>
+            <!-- #nyc-bottom-footer -->
+     
+        </footer>
+
 </body>
     <!-- #content -->
 
