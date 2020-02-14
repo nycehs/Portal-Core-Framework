@@ -1,3 +1,11 @@
+# Environment and Health Data portal Core Framework Sandbox
+
+We are using this repo to test and template functions and pages to reuse in other contexts for the EH data portal.
+To preview these pages see the links below: 
+ - Locator map: https://nycehs.github.io/Portal-Core-Framework-Sandbox/MapLocatorTemplate.html
+ - Portal landing page: https://nycehs.github.io/Portal-Core-Framework-Sandbox/index.html
+ 
+
 ## About
 
 NYC Core Framework is a Bootstrap-based web framework with added design patterns and other components optimized for accessibility, translatability, usability, and clarity of presentation. NYC Core Framework is the product of hard work by team members from the [NYC Gov Lab & Studio](http://nyc.gov/govlabstudio) at the City's Department of Information Technology and Telecommunications (DoITT). Thank you to:
