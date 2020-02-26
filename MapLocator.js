@@ -21,6 +21,7 @@ var map = new nyc.ol.FrameworkMap({
 
 //map.locationMgr.mapLocator.zoom = 16;  // zoom the map out just a little to experiment
 
+// update the output div with the chosen geocoded NTA
 function update(){
       document.querySelector("#locationOutput").innerHTML = "<br>NTA Code: "+map.location.data.nta+"<br>Neighborhood Name: "+map.location.data.ntaName;
   }
