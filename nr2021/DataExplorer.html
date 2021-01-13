@@ -113,7 +113,7 @@
 
         </div>
 
-        <div class="site-header bg-primary">
+        <div class="site-header bg-primary" style="background-image: url('images/header_background.jpg')">
             <div class="wrap-header">
 
                 <div class="container-fluid wide">
@@ -125,7 +125,9 @@
                             <div class="d-flex justify-content-center justify-content-lg-start">
 
                                 <p class="text-white">
-                                    <span class="site-title">Environment and Health Data Portal</span>
+                                    <span class="site-title"><a href="index.html"
+                                            style="color: white;text-decoration:none;">Environment and Health Data
+                                            Portal</a></span>
                                     <span class="site-subtitle">Explore data on how environments shape health in New
                                         York City</span>
                                 </p>
@@ -230,15 +232,6 @@
 
                     </div>
 
-                    <div class="nav-item active">
-
-                        <a class="nav-link" href="" id="nav-item-03">
-                            <span class='text-primary'><i class='fas fa-chart-line' aria-hidden='true'></i></span> Data
-                            Explorer
-                        </a>
-
-                    </div>
-
 
                     <div class="nav-item">
 
@@ -255,9 +248,30 @@
 
                     <div class="nav-item">
 
-                        <a class="nav-link" href="Reports.html" id="nav-item-04">
+                        <a class="nav-link" href="Reports.html" id="nav-item-03">
                             <span class='text-primary'><i class='fas fa-map-marked-alt' aria-hidden='true'></i></span>
                             Neighborhood Reports
+                        </a>
+
+                    </div>
+
+                    <div class="nav-item">
+
+                        <a class="nav-link" href="KeyTopics.html" id="nav-item-04">
+                            <span class='text-primary'><i class="fas fa-star" aria-hidden="true"></i></span> Key
+                            Topics
+                        </a>
+
+                    </div>
+
+
+
+
+                    <div class="nav-item active">
+
+                        <a class="nav-link" href="DataExplorer.html" id="nav-item-05">
+                            <span class='text-primary'><i class='fas fa-chart-line' aria-hidden='true'></i></span> Data
+                            Explorer
                         </a>
 
                     </div>
@@ -281,38 +295,86 @@
         <article class="container overflow-hidden" id="primary-content">
 
             <div class="col-md-10 mx-auto mt-4">
-                <h1>Data Explorer</h1>
-                <p>Our Portal's Data Explorer has over 50 subtopics and over 250 indicators, or datasets. Explore below
+                <h1><i class="fas fa-chart-line" aria-hidden="true"></i>&nbsp;Data Explorer</h1>
+                <p>Our Portal's Data Explorer has over 50 topics and over 250 indicators, or datasets. Explore below
                     to access datasets, maps, visualizations, and more.</p>
+
+
                 <div class="row">
-                    <div class="col-md-8">
-                        <h2>Browse all data</h2>
-                        <div style="border: 1px solid gray; width: 100%; height: 550px; border-radius: 5px;">
-                            Topic browser
+                    <div class="col-md-9">
+                        <div class="accordion-group my-2" role="tablist" id="accordion-01">
+                            <div class="card bg-lightgray">
+                                <a class="card-header collapse collapsed" id="acc-button-01" data-toggle="collapse"
+                                    href="#panel-acc-button-01" role="tab" aria-expanded="false"
+                                    aria-controls="panel-acc-button-01">
+                                    <span class="title" role="heading" aria-level="3"><i
+                                            class="fas fa-search"></i>&nbsp;Search
+                                        data</span>
+                                </a>
+
+                                <div class="collapse show" id="panel-acc-button-01" role="tabpanel"
+                                    aria-labelledby="acc-button-01" data-parent="#accordion-01">
+
+                                    <div class="card-body">
+                                        <ul class="nav nav-pills nav-pills-justified" role="tablist">
+                                            <li class="active col-md-4 col-lg-4 col-sm-4 col-xs-4 litab"
+                                                style="padding-right:1%;">
+                                                <a href="#SubTAccordiontab" role="tab" data-toggle="tab"
+                                                    class="nav-link tab-link active"><span>
+                                                        <i class="glyphicon glyphicon-collapse-up"></i>
+                                                        By Category</span> </a>
+                                            </li>
+                                            <li class="col-md-4 col-lg-4 col-sm-4 col-xs-4 litab"
+                                                style="padding-right:1%;">
+                                                <a href="#SubTAtoZTab" role="tab" data-toggle="tab"
+                                                    class="nav-link tab-link"><span>
+                                                        <i class="glyphicon glyphicon-list"></i>
+                                                        A to Z</span></a>
+                                            </li>
+                                            <li class="col-md-4 col-lg-4 col-sm-4 col-xs-4 litab">
+                                                <a href="#SubTsearchTab" role="tab" data-toggle="tab"
+                                                    class="nav-link tab-link"><span>
+                                                        <i class="glyphicon glyphicon-search"></i>
+                                                        Search </span> </a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content clearfix col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                            <div id="SubTAtoZTab" class="tab-pane"
+                                                style="height: 510px; overflow-y: scroll;">All topics (A to Z)
+                                            </div>
+
+                                            <div id="SubTAccordiontab" class="tab-pane active"
+                                                style="height: 510px; width: 100%; position: inherit; overflow-y: scroll;">
+                                                Browse by Category</div>
+
+                                            <div id="SubTsearchTab" class="tab-pane"
+                                                style="width: 100%; position: relative; height: 510px;">
+                                                SEARCH</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- .collapse -->
+                            </div>
+                            <!-- .card (end of first accordion, repeat as needed) -->
                         </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <h2>Featured Hubs</h2>
-                        <div class="tile-white">
-                            <i class="fa fa-thermometer-full"></i>&nbsp;Climate and Health Hub
-                        </div>
 
-                        <div class="tile-white">
-                            <i class="fas fa-cloud"></i>&nbsp;Air Quality Hub
-                        </div>
-
-                        <hr>
-
-                        <h2 class="mt-2">Featured Datasets</h2>
-                        <a href="#" class="btn btn-light mb-2">Violence experience</a>
-                        <a href="#" class="btn btn-light mb-2">Asthma ED visits</a>
-                        <a href="#" class="btn btn-light mb-2">Housing condition</a>
-
-
-
+                    <div class="col-md-3">
+                        <h3 class="mt-2 fs-sm">Featured Datasets</h2>
+                            <a href="#" class="btn btn-sm btn-light mb-2">Violence experience</a>
+                            <a href="#" class="btn btn-sm btn-light mb-2">Asthma ED visits</a>
+                            <a href="#" class="btn btn-sm btn-light mb-2">Housing condition</a>
                     </div>
                 </div>
+
+
+
+
+
+
 
 
 
@@ -333,35 +395,7 @@
 
 
 
-        <script>
-            function changeContent(x) {
-                //sets up the initial varibles for the button and content chosen by default
-                var btn;
-                var reveal;
 
-                //Hides all show-hide content based on class
-                for (let output of document.querySelectorAll('.holder')) output.classList.add('hide');
-                for (let toggle of document.querySelectorAll('.btnselector')) toggle.classList.add('btn-light');
-
-                // assigns btn and reveal based on input
-                if (x == 1) {
-                    btn = document.getElementById('id1');
-                    reveal = document.getElementById('show1')
-                } else if (x === 2) {
-                    btn = document.getElementById('id2');
-                    reveal = document.getElementById('show2');
-                } else if (x === 3) {
-                    btn = document.getElementById('id3');
-                    reveal = document.getElementById('show3');
-                }
-                //Highlight, reveal, and label based on variable
-
-                reveal.classList.toggle('hide');
-            }
-
-            changeContent(1);
-
-        </script>
 
 
     </main>
